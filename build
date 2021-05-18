@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+import subprocess
+
+subprocess.check_call(["tsc"])
+
+with open("output/exercise-timer.js", "r") as js, open("src/index.html.in") as html:
+    result = html.read().replace("@SCRIPT@", js.read())
+
+with open("output/index.html", "w") as output:
+    output.write(result)
