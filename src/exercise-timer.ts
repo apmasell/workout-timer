@@ -247,6 +247,12 @@ for (const [name, exercises] of Object.entries(programmes)) {
 }
 
 function runProgramme(exercises: SimpleExercise[]) {
+  while (
+    exercises.length > 0 &&
+    exercises[exercises.length - 1].type == "rest"
+  ) {
+    exercises.length--;
+  }
   function show(current: number) {
     while (document.body.hasChildNodes()) {
       document.body.removeChild(document.body.lastChild!);
@@ -280,6 +286,13 @@ function runProgramme(exercises: SimpleExercise[]) {
           text.innerText = exercise.name;
           showStopwatch(() => show(current + 1));
       }
+      const inner = document.createElement("div");
+      inner.style.backgroundColor = "black";
+      const outer = document.createElement("div");
+      outer.appendChild(inner);
+      outer.className = "progress";
+      document.body.appendChild(outer);
+      inner.style.width = `${(current + 1) / exercises.length * 100}%`;
     }
   }
   show(0);
