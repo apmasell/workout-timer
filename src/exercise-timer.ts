@@ -204,9 +204,187 @@ const programmes: { [s: string]: RootExcercise[] } = {
     },
     { type: "work", name: "Reverse Nordic Curl (F)" },
   ],
+  "Will Strength1 Day 1 (Bench)": [
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Bent Over Reverse DB Fly (10-12; 3-1-1-1)" },
+        { type: "rest", time: 45 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 6,
+      activities: [
+        { type: "work", name: "1¼ Bench Press (4; Slow)" },
+        { type: "rest", time: 75 },
+      ],
+    },
+
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Half-Kneeling OHP (6-8; 3-1-1-0)" },
+        { type: "rest", time: 60 },
+        { type: "work", name: "Powell Raise (6-8; 3-1-1-0)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Single Arm Cable Pushdown (25; Medium)" },
+        { type: "rest", time: 45 },
+      ],
+    },
+  ],
+  "Will Strength1 Day 2 (Front Squat)": [
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "Front Foot Elevated Split Squat (6-8; 3-1-1-1)",
+        },
+        { type: "rest", time: 45 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Front Squat (4; 6-1-x-1)" },
+        { type: "rest", time: 90 },
+      ],
+    },
+
+    {
+      type: "superset",
+      repeat: 6,
+      activities: [
+        { type: "work", name: "Elevated Reverse Lunge (6-8; 3-1-1-0)" },
+        { type: "rest", time: 60 },
+        { type: "work", name: "Single Leg Calf Raise (6-8; 4-4-X-0)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Dynamic Copenhagen Plank (10-12; Medium)" },
+        { type: "rest", time: 45 },
+      ],
+    },
+  ],
+  "Will Strength1 Day 3 (OHP)": [
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "Banded Face Pull with External Rotation (6-8; Slow)",
+        },
+        { type: "rest", time: 45 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 6,
+      activities: [
+        { type: "work", name: "Pike Pushup Press (2; 4-1-x-1)" },
+        { type: "rest", time: 60 },
+        { type: "work", name: "Wide Grip Pullup (2; X-X-X-X)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Single Lateral Raise (6-8; 4-0-4-1)" },
+        { type: "rest", time: 45 },
+        { type: "work", name: "Dual Arm DB Pullover (10-12; Medium)" },
+        { type: "rest", time: 45 },
+      ],
+    },
+  ],
+  "Will Strength1 Day 4 (Posterior)": [
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Front-Loaded Single Leg RDL (6-8; Slow)" },
+        { type: "rest", time: 45 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 6,
+      activities: [
+        { type: "work", name: "Snatch Grip RDL (4; 4-1-x-1)" },
+        { type: "rest", time: 90 },
+      ],
+    },
+
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Towel Hamstring Curl (6-8; Medium)" },
+        { type: "rest", time: 60 },
+        {
+          type: "work",
+          name: "Single Foot Elevated Cossack Squat (6-8; 4-0-4-0)",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Hanging Knee Raises (A; 4-1-X-1)" },
+        { type: "rest", time: 45 },
+      ],
+    },
+  ],
+  "Will Strength1 Day 5 (Arms)": [
+    {
+      type: "superset",
+      repeat: 5,
+      activities: [
+        { type: "work", name: "Concentration Curl (5; 3-1-X-1)" },
+        { type: "rest", time: 45 },
+        { type: "work", name: "Single Arm Cable OH Extension (8-10; 3-3-1-0)" },
+        { type: "rest", time: 45 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 5,
+      activities: [
+        { type: "work", name: "Alternating DB Curl (6-8; Medium)" },
+        { type: "rest", time: 45 },
+        { type: "work", name: "DB Skull Crushers (6-8; 4-1-X-1)" },
+        { type: "rest", time: 45 },
+      ],
+    },
+  ],
 };
 
-for (const [name, exercises] of Object.entries(programmes)) {
+for (const [name, exercises] of Object.entries(programmes).sort((a, b) =>
+  a[0].localeCompare(b[0])
+)) {
   const selector = document.createElement("button");
   selector.innerText = name;
   selector.addEventListener("click", () =>
@@ -244,6 +422,7 @@ for (const [name, exercises] of Object.entries(programmes)) {
     )
   );
   document.body.appendChild(selector);
+  document.body.appendChild(document.createTextNode(" "));
 }
 
 function runProgramme(exercises: SimpleExercise[]) {
@@ -258,6 +437,7 @@ function runProgramme(exercises: SimpleExercise[]) {
       document.body.removeChild(document.body.lastChild!);
     }
     beep.play();
+    let cancel: () => void = () => {};
     if (current >= exercises.length) {
       const text = document.createElement("h1");
       text.innerText = "DONE!!!";
@@ -269,12 +449,14 @@ function runProgramme(exercises: SimpleExercise[]) {
       switch (exercise.type) {
         case "rest":
           text.innerText = "Rest";
-          showTimer(exercise.time, "blue", () => show(current + 1));
+          cancel = showTimer(exercise.time, "#1d3557", () => show(current + 1));
           break;
         case "work":
           text.innerText = exercise.name;
           if (exercise.time) {
-            showTimer(exercise.time, "red", () => show(current + 1));
+            cancel = showTimer(exercise.time, "#e63946", () =>
+              show(current + 1)
+            );
           } else {
             const next = document.createElement("button");
             next.innerText = "Next";
@@ -284,21 +466,46 @@ function runProgramme(exercises: SimpleExercise[]) {
           break;
         case "stopwatch":
           text.innerText = exercise.name;
-          showStopwatch(() => show(current + 1));
+          cancel = showStopwatch(() => show(current + 1));
       }
       const inner = document.createElement("div");
-      inner.style.backgroundColor = "black";
+      inner.style.backgroundColor = "#a8dadc";
       const outer = document.createElement("div");
       outer.appendChild(inner);
       outer.className = "progress";
       document.body.appendChild(outer);
-      inner.style.width = `${(current + 1) / exercises.length * 100}%`;
+      inner.style.width = `${((current + 1) / exercises.length) * 100}%`;
+    }
+    if (current > 0) {
+      const previous = document.createElement("button");
+      previous.innerText = "❮";
+      previous.addEventListener("click", () => {
+        cancel();
+        show(current - 1);
+      });
+      document.body.appendChild(previous);
+    }
+    const repeat = document.createElement("button");
+    repeat.innerText = "⭯";
+    repeat.addEventListener("click", () => {
+      cancel();
+      show(current);
+    });
+    document.body.appendChild(repeat);
+    if (current < exercises.length) {
+      const next = document.createElement("button");
+      next.innerText = "❯";
+      next.addEventListener("click", () => {
+        cancel();
+        show(current + 1);
+      });
+      document.body.appendChild(next);
     }
   }
   show(0);
 }
 
-function showStopwatch(finished: () => void) {
+function showStopwatch(finished: () => void): () => void {
   const display = document.createElement("p");
   display.innerText = "0";
   let handle: number | null = null;
@@ -319,9 +526,18 @@ function showStopwatch(finished: () => void) {
   });
   document.body.appendChild(display);
   handle = window.setInterval(tick, 100);
+  return () => {
+    if (handle != null) {
+      window.clearInterval(handle);
+    }
+  };
 }
 
-function showTimer(timeout: number, colour: string, finished: () => void) {
+function showTimer(
+  timeout: number,
+  colour: string,
+  finished: () => void
+): () => void {
   const display = document.createElement("p");
   const length = Math.ceil(Math.log10(timeout));
   display.innerText = `${"0".repeat(length)} / ${timeout}`;
@@ -367,4 +583,9 @@ function showTimer(timeout: number, colour: string, finished: () => void) {
   });
   document.body.appendChild(display);
   handle = window.setInterval(tick, 100);
+  return () => {
+    if (handle != null) {
+      window.clearInterval(handle);
+    }
+  };
 }
