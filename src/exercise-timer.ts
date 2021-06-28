@@ -256,16 +256,16 @@ const programmes: { [s: string]: RootExcercise[] } = {
     },
     {
       type: "superset",
-      repeat: 4,
+      repeat: 6,
       activities: [
-        { type: "work", name: "Front Squat (4; 6-1-x-1)" },
+        { type: "work", name: "Front Squat (4; 6-1-X-1)" },
         { type: "rest", time: 90 },
       ],
     },
 
     {
       type: "superset",
-      repeat: 6,
+      repeat: 4,
       activities: [
         { type: "work", name: "Elevated Reverse Lunge (6-8; 3-1-1-0)" },
         { type: "rest", time: 60 },
@@ -299,7 +299,7 @@ const programmes: { [s: string]: RootExcercise[] } = {
       type: "superset",
       repeat: 6,
       activities: [
-        { type: "work", name: "Pike Pushup Press (2; 4-1-x-1)" },
+        { type: "work", name: "Pike Pushup Press (2; 4-1-X-1)" },
         { type: "rest", time: 60 },
         { type: "work", name: "Wide Grip Pullup (2; X-X-X-X)" },
         { type: "rest", time: 60 },
@@ -310,7 +310,7 @@ const programmes: { [s: string]: RootExcercise[] } = {
       type: "superset",
       repeat: 4,
       activities: [
-        { type: "work", name: "Single Lateral Raise (6-8; 4-0-4-1)" },
+        { type: "work", name: "Side Lateral Raise (6-8; 4-0-4-1)" },
         { type: "rest", time: 45 },
         { type: "work", name: "Dual Arm DB Pullover (10-12; Medium)" },
         { type: "rest", time: 45 },
