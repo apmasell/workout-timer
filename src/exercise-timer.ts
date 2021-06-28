@@ -459,7 +459,7 @@ function runProgramme(exercises: SimpleExercise[]) {
             );
           } else {
             const next = document.createElement("button");
-            next.innerText = "Next";
+            next.innerText = "Continue ❯";
             next.addEventListener("click", () => show(current + 1));
             document.body.appendChild(next);
           }
@@ -478,7 +478,7 @@ function runProgramme(exercises: SimpleExercise[]) {
     }
     if (current > 0) {
       const previous = document.createElement("button");
-      previous.innerText = "❮";
+      previous.innerText = "❮❮ Skip Back";
       previous.addEventListener("click", () => {
         cancel();
         show(current - 1);
@@ -486,7 +486,7 @@ function runProgramme(exercises: SimpleExercise[]) {
       document.body.appendChild(previous);
     }
     const repeat = document.createElement("button");
-    repeat.innerText = "⭯";
+    repeat.innerText = "⭯ Repeat Step";
     repeat.addEventListener("click", () => {
       cancel();
       show(current);
@@ -494,7 +494,7 @@ function runProgramme(exercises: SimpleExercise[]) {
     document.body.appendChild(repeat);
     if (current < exercises.length) {
       const next = document.createElement("button");
-      next.innerText = "❯";
+      next.innerText = "Skip Ahead ❯❯";
       next.addEventListener("click", () => {
         cancel();
         show(current + 1);

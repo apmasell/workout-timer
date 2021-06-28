@@ -5,7 +5,7 @@
     <title>Exercise Timer</title>
     <style type="text/css">
       body { font-family:Iwona, sans-serif; }
-      .progress { width: 100%; margin: 1em; }
+      .progress { padding: 1em; }
       .progress > div { height: 2ex; height: 100px; border-radius: 1ex; }
       h1 { text-align: center; font-size: 48pt; }
       p { text-align: center; font-size: 20pt; }
