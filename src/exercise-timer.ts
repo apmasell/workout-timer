@@ -380,6 +380,174 @@ const programmes: { [s: string]: RootExcercise[] } = {
       ],
     },
   ],
+  "Will Hypertrophy2 1 Upper": [
+    { type: "work", name: "Foam Roll Upper Back" },
+    { type: "work", name: "Thoracic Extensions and Thoracic Rotations" },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "Down Dog" },
+    { type: "work", name: "Side Plank" },
+    { type: "work", name: "Dead Bug Variations" },
+    {
+      type: "superset",
+      repeat: 5,
+      activities: [
+        { type: "work", name: "Push Up - Elevated/Eccentric (5; 8-0-X-0)" },
+        { type: "rest", time: 75 },
+        { type: "work", name: "Powell Raise (10-12; 3-0-1-0)" },
+        { type: "rest", time: 75 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "Single Arm Arnold Press (Half-kneeling; 6-8; 3-0-X-2)",
+        },
+        { type: "rest", time: 45 },
+        { type: "work", name: "Rocky Chins (2 RIR)" },
+        { type: "rest", time: 45 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "1¼ DB Skull Crushers (6-8; 3-0-2-0)" },
+        { type: "rest", time: 45 },
+        { type: "work", name: "Single Arm Trap 3 Raises (6-8; 3-0-1-3)" },
+        { type: "rest", time: 45 },
+      ],
+    },
+  ],
+  "Will Hypertrophy2 1 Lower": [
+    { type: "work", name: "Foam Roll Upper Back" },
+    { type: "work", name: "Thoracic Extensions and Rotations" },
+    { type: "work", name: "90/90 Stretch" },
+    { type: "work", name: "Half-Kneeling Hip Flexor Stretch" },
+    { type: "work", name: "Single Leg RDL" },
+    { type: "work", name: "Hip Airplane" },
+    {
+      type: "superset",
+      repeat: 5,
+      activities: [
+        { type: "work", name: "Sissy Squat with Goblet Hold (5; 8-0-X-0)" },
+        { type: "rest", time: 75 },
+        { type: "work", name: "Towel Hamstring Curl (10-12; 3-0-1-0)" },
+        { type: "rest", time: 75 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "Front Foot Elevated Split Squats (6-8; 3-2-X-0)",
+        },
+        { type: "rest", time: 45 },
+        { type: "work", name: "Hip Bridge March", time: 40 },
+        { type: "rest", time: 45 },
+      ],
+    },
+
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Reverse Nordic Curl (6-8)" },
+        { type: "rest", time: 45 },
+        { type: "work", name: "Tibia Raise (A)" },
+        { type: "rest", time: 45 },
+      ],
+    },
+  ],
+  "Will Hypertrophy2 2 Upper": [
+    { type: "work", name: "Foam Roll Upper Back" },
+    { type: "work", name: "Thoracic Extensions and Thoracic Rotations" },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "Down Dog" },
+    { type: "work", name: "Side Plank" },
+    { type: "work", name: "Dead Bug Variations" },
+    {
+      type: "superset",
+      repeat: 5,
+      activities: [
+        { type: "work", name: "Rack Chin (5; 4-0-X-0)" },
+        { type: "rest", time: 75 },
+        {
+          type: "work",
+          name: "Low Elevated Z Press - Single Arm DB (10-12; 3-0-1-0)",
+        },
+        { type: "rest", time: 75 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "Dual Arm DB Pullover - Neutral Grip (6-8; 3-1-1-0)",
+        },
+        { type: "rest", time: 45 },
+        { type: "work", name: "Cable Woodchopper (12-15; 2-0-2-0)" },
+        { type: "rest", time: 45 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "Single Arm Overhead Cable Extension (10-12; 3-0-1-0)",
+        },
+        { type: "rest", time: 45 },
+        { type: "work", name: "Supported Reverse DB Fly (10-12; 2-0-2-0)" },
+        { type: "rest", time: 45 },
+      ],
+    },
+  ],
+  "Will Hypertrophy2 2 Lower": [
+    { type: "work", name: "Foam Roll Upper Back" },
+    { type: "work", name: "Thoracic Extensions and Rotations" },
+    { type: "work", name: "90/90 Stretch" },
+    { type: "work", name: "Half-Kneeling Hip Flexor Stretch" },
+    { type: "work", name: "Single Leg RDL" },
+    { type: "work", name: "Hip Airplane" },
+    {
+      type: "superset",
+      repeat: 5,
+      activities: [
+        { type: "work", name: "Back Squat to Box (5; 8-0-X-0)" },
+        { type: "rest", time: 75 },
+        { type: "work", name: "2-Point Blank (4-6)" },
+        { type: "rest", time: 75 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Reverse Hyperextension (6-8; 3-0-1-1)" },
+        { type: "rest", time: 45 },
+        { type: "work", name: "Walking Lunge (6-8)" },
+        { type: "rest", time: 45 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Hamstring Walkouts", time: 40 },
+        { type: "rest", time: 45 },
+        { type: "work", name: "Tibia Raises (A)" },
+        { type: "rest", time: 45 },
+      ],
+    },
+  ],
 };
 
 function showProgrammes() {
