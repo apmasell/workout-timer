@@ -382,47 +382,49 @@ const programmes: { [s: string]: RootExcercise[] } = {
   ],
 };
 
-for (const [name, exercises] of Object.entries(programmes).sort((a, b) =>
-  a[0].localeCompare(b[0])
-)) {
-  const selector = document.createElement("button");
-  selector.innerText = name;
-  selector.addEventListener("click", () =>
-    runProgramme(
-      exercises.flatMap((e) => {
-        if (e.type == "superset") {
-          const result: SimpleExercise[] = [];
-          for (let i = 0; i < e.repeat; i++) {
-            result.push(
-              ...e.activities.map((a) => {
-                switch (a.type) {
-                  case "rest":
-                    return a;
-                  case "work":
-                    return {
-                      type: "work" as const,
-                      time: a.time,
-                      name: `${a.name} [${i + 1}/${e.repeat}]`,
-                    };
-                  case "stopwatch":
-                    return {
-                      type: "stopwatch" as const,
-                      name: `${a.name} [${i + 1}/${e.repeat}]`,
-                    };
-                }
-              })
-            );
-          }
+function showProgrammes() {
+  for (const [name, exercises] of Object.entries(programmes).sort((a, b) =>
+    a[0].localeCompare(b[0])
+  )) {
+    const selector = document.createElement("button");
+    selector.innerText = name;
+    selector.addEventListener("click", () =>
+      runProgramme(
+        exercises.flatMap((e) => {
+          if (e.type == "superset") {
+            const result: SimpleExercise[] = [];
+            for (let i = 0; i < e.repeat; i++) {
+              result.push(
+                ...e.activities.map((a) => {
+                  switch (a.type) {
+                    case "rest":
+                      return a;
+                    case "work":
+                      return {
+                        type: "work" as const,
+                        time: a.time,
+                        name: `${a.name} [${i + 1}/${e.repeat}]`,
+                      };
+                    case "stopwatch":
+                      return {
+                        type: "stopwatch" as const,
+                        name: `${a.name} [${i + 1}/${e.repeat}]`,
+                      };
+                  }
+                })
+              );
+            }
 
-          return result;
-        } else {
-          return [e];
-        }
-      })
-    )
-  );
-  document.body.appendChild(selector);
-  document.body.appendChild(document.createTextNode(" "));
+            return result;
+          } else {
+            return [e];
+          }
+        })
+      )
+    );
+    document.body.appendChild(selector);
+    document.body.appendChild(document.createTextNode(" "));
+  }
 }
 
 function runProgramme(exercises: SimpleExercise[]) {
@@ -492,6 +494,16 @@ function runProgramme(exercises: SimpleExercise[]) {
       show(current);
     });
     document.body.appendChild(repeat);
+    const menu = document.createElement("button");
+    menu.innerText = "☰ Menu";
+    menu.addEventListener("click", () => {
+      cancel();
+      while (document.body.hasChildNodes()) {
+        document.body.removeChild(document.body.lastChild!);
+      }
+      showProgrammes();
+    });
+    document.body.appendChild(menu);
     if (current < exercises.length) {
       const next = document.createElement("button");
       next.innerText = "Skip Ahead ❯❯";
@@ -589,3 +601,5 @@ function showTimer(
     }
   };
 }
+
+showProgrammes();
