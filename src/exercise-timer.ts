@@ -548,6 +548,58 @@ const programmes: { [s: string]: RootExcercise[] } = {
       ],
     },
   ],
+  "Jeff Arm Hypertrophy": [
+    { type: "work", name: "Nerve glides" },
+    { type: "work", name: "Band circles" },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Close Grip Bench (6-8; 2-1-1-1)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Preacher Curl (12-15; 2-0-2-0)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Standing Barbell Curl (6-8; 2-0-1-0" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Bayseian Bicep Curl (12-15; 2-0-1-0" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Tricep Pressdown (10-12; 2-0-1-0" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "DB Neutral Grip Press (12-15; 2-0-1-0" },
+        { type: "rest", time: 60 },
+      ],
+    },
+  ],
 };
 
 function showProgrammes() {
