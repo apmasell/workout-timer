@@ -387,6 +387,7 @@ const programmes: { [s: string]: RootExcercise[] } = {
     { type: "work", name: "Down Dog" },
     { type: "work", name: "Side Plank" },
     { type: "work", name: "Dead Bug Variations" },
+    { type: "work", name: "Train tracks" },
     {
       type: "superset",
       repeat: 5,
@@ -406,7 +407,7 @@ const programmes: { [s: string]: RootExcercise[] } = {
           name: "Single Arm Arnold Press (Half-kneeling; 6-8; 3-0-X-2)",
         },
         { type: "rest", time: 45 },
-        { type: "work", name: "Rocky Chins (2 RIR)" },
+        { type: "work", name: "Rocky Chins Using Cable (2 RIR)" },
         { type: "rest", time: 45 },
       ],
     },
@@ -425,7 +426,7 @@ const programmes: { [s: string]: RootExcercise[] } = {
     { type: "work", name: "Foam Roll Upper Back" },
     { type: "work", name: "Thoracic Extensions and Rotations" },
     { type: "work", name: "90/90 Stretch" },
-    { type: "work", name: "Half-Kneeling Hip Flexor Stretch" },
+    { type: "work", name: "Half-Kneeling Hip Flexor Stretch on Wall" },
     { type: "work", name: "Single Leg RDL" },
     { type: "work", name: "Hip Airplane" },
     {
@@ -470,6 +471,7 @@ const programmes: { [s: string]: RootExcercise[] } = {
     { type: "work", name: "Down Dog" },
     { type: "work", name: "Side Plank" },
     { type: "work", name: "Dead Bug Variations" },
+    { type: "work", name: "Train tracks" },
     {
       type: "superset",
       repeat: 5,
@@ -514,7 +516,7 @@ const programmes: { [s: string]: RootExcercise[] } = {
     { type: "work", name: "Foam Roll Upper Back" },
     { type: "work", name: "Thoracic Extensions and Rotations" },
     { type: "work", name: "90/90 Stretch" },
-    { type: "work", name: "Half-Kneeling Hip Flexor Stretch" },
+    { type: "work", name: "Half-Kneeling Hip Flexor Stretch on Wall" },
     { type: "work", name: "Single Leg RDL" },
     { type: "work", name: "Hip Airplane" },
     {
@@ -548,6 +550,73 @@ const programmes: { [s: string]: RootExcercise[] } = {
       ],
     },
   ],
+  "Jeff+Will Arm Hypertrophy": [
+    { type: "work", name: "Nerve glides" },
+    { type: "work", name: "Band circles" },
+    { type: "work", name: "Train tracks" },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Close Grip Bench (6-8; 2-1-1-1)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        {
+          type: "work",
+          name: "Unilateral Cable Bicep Curl in Shortened Position (12-15; 2-0-2-0)",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "Wide Grip Standing Barbell Curl Against Wall (10-12; 2-0-1-0)",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Bayseian Bicep Curl (12-15; 2-0-1-0)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Tricep Pressdown (10-12; 2-0-1-0)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "DB Neutral Grip Press (12-15; 2-0-1-0)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Elevated Shoulder Isometric Walks", time: 40 },
+        { type: "rest", time: 60 },
+      ],
+    },
+  ],
   "Jeff Arm Hypertrophy": [
     { type: "work", name: "Nerve glides" },
     { type: "work", name: "Band circles" },
@@ -571,7 +640,7 @@ const programmes: { [s: string]: RootExcercise[] } = {
       type: "superset",
       repeat: 4,
       activities: [
-        { type: "work", name: "Standing Barbell Curl (6-8; 2-0-1-0" },
+        { type: "work", name: "Standing Barbell Curl (6-8; 2-0-1-0)" },
         { type: "rest", time: 60 },
       ],
     },
@@ -579,7 +648,7 @@ const programmes: { [s: string]: RootExcercise[] } = {
       type: "superset",
       repeat: 3,
       activities: [
-        { type: "work", name: "Bayseian Bicep Curl (12-15; 2-0-1-0" },
+        { type: "work", name: "Bayseian Bicep Curl (12-15; 2-0-1-0)" },
         { type: "rest", time: 60 },
       ],
     },
@@ -587,7 +656,7 @@ const programmes: { [s: string]: RootExcercise[] } = {
       type: "superset",
       repeat: 4,
       activities: [
-        { type: "work", name: "Tricep Pressdown (10-12; 2-0-1-0" },
+        { type: "work", name: "Tricep Pressdown (10-12; 2-0-1-0)" },
         { type: "rest", time: 60 },
       ],
     },
@@ -595,7 +664,7 @@ const programmes: { [s: string]: RootExcercise[] } = {
       type: "superset",
       repeat: 2,
       activities: [
-        { type: "work", name: "DB Neutral Grip Press (12-15; 2-0-1-0" },
+        { type: "work", name: "DB Neutral Grip Press (12-15; 2-0-1-0)" },
         { type: "rest", time: 60 },
       ],
     },
