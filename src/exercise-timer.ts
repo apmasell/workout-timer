@@ -708,15 +708,48 @@ function showProgrammes() {
           } else {
             return [e];
           }
-        })
+        }),
+        remaining(exercises)
       )
     );
     document.body.appendChild(selector);
     document.body.appendChild(document.createTextNode(" "));
   }
 }
+interface Remaining {
+  index: number;
+  name: string;
+}
+function remaining(exercises: RootExcercise[]): Remaining[] {
+  const results: Remaining[] = [];
+  let index = 0;
+  for (const exercise of exercises) {
+    switch (exercise.type) {
+      case "work":
+      case "stopwatch":
+        results.push({ index, name: exercise.name });
+      case "rest":
+        index++;
+        break;
+      case "superset":
+        for (const child of exercise.activities) {
+          switch (child.type) {
+            case "work":
+            case "stopwatch":
+              results.push({ index, name: child.name });
+            case "rest":
+              index++;
+              break;
+          }
+        }
+        index += exercise.activities.length * (exercise.repeat - 1);
+    }
+  }
 
-function runProgramme(exercises: SimpleExercise[]) {
+  return results;
+}
+
+function runProgramme(exercises: SimpleExercise[], remaining: Remaining[]) {
   while (
     exercises.length > 0 &&
     exercises[exercises.length - 1].type == "rest"
@@ -801,6 +834,11 @@ function runProgramme(exercises: SimpleExercise[]) {
         show(current + 1);
       });
       document.body.appendChild(next);
+    }
+    for (const { name } of remaining.filter(({ index }) => index > current)) {
+      const upcoming = document.createElement("p");
+      upcoming.innerText = name;
+      document.body.appendChild(upcoming);
     }
   }
   show(0);
