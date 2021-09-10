@@ -387,7 +387,19 @@ const programmes: { [s: string]: RootExcercise[] } = {
     { type: "work", name: "Down Dog" },
     { type: "work", name: "Side Plank" },
     { type: "work", name: "Dead Bug Variations" },
-    { type: "work", name: "Train tracks" },
+    { type: "work", name: "Band Shoulder Stretch (Facing Away)" },
+    { type: "work", name: "Band Pull with Full Rotation" },
+    { type: "work", name: "Band Pull with Shoulder Depressions" },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Pike Beast with Elevation and Saw (5)" },
+        { type: "rest", time: 30 },
+        { type: "work", name: "Train Tracks" },
+        { type: "rest", time: 30 },
+      ],
+    },
     {
       type: "superset",
       repeat: 5,
@@ -471,7 +483,19 @@ const programmes: { [s: string]: RootExcercise[] } = {
     { type: "work", name: "Down Dog" },
     { type: "work", name: "Side Plank" },
     { type: "work", name: "Dead Bug Variations" },
-    { type: "work", name: "Train tracks" },
+    { type: "work", name: "Band Shoulder Stretch (Facing Away)" },
+    { type: "work", name: "Band Pull with Full Rotation" },
+    { type: "work", name: "Band Pull with Shoulder Depressions" },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Wall Pushes with Elevations" },
+        { type: "rest", time: 30 },
+        { type: "work", name: "Train Tracks" },
+        { type: "rest", time: 30 },
+      ],
+    },
     {
       type: "superset",
       repeat: 5,
@@ -553,7 +577,19 @@ const programmes: { [s: string]: RootExcercise[] } = {
   "Jeff+Will Arm Hypertrophy": [
     { type: "work", name: "Nerve glides" },
     { type: "work", name: "Band circles" },
-    { type: "work", name: "Train tracks" },
+    { type: "work", name: "Band Shoulder Stretch (Facing Away)" },
+    { type: "work", name: "Band Pull with Full Rotation" },
+    { type: "work", name: "Band Pull with Shoulder Depressions" },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Wall Pushes with Elevations" },
+        { type: "rest", time: 30 },
+        { type: "work", name: "Train Tracks" },
+        { type: "rest", time: 30 },
+      ],
+    },
     {
       type: "superset",
       repeat: 3,
@@ -564,7 +600,7 @@ const programmes: { [s: string]: RootExcercise[] } = {
     },
     {
       type: "superset",
-      repeat: 2,
+      repeat: 4,
       activities: [
         {
           type: "work",
@@ -596,15 +632,21 @@ const programmes: { [s: string]: RootExcercise[] } = {
       type: "superset",
       repeat: 4,
       activities: [
-        { type: "work", name: "Tricep Pressdown (10-12; 2-0-1-0)" },
+        {
+          type: "work",
+          name: "Bent-over Tricep Cable Pressdown (10-12; 2-0-X-0)",
+        },
         { type: "rest", time: 60 },
       ],
     },
     {
       type: "superset",
-      repeat: 2,
+      repeat: 4,
       activities: [
-        { type: "work", name: "DB Neutral Grip Press (12-15; 2-0-1-0)" },
+        {
+          type: "work",
+          name: "Tricep Behind-the-head Cable Extension (12-15; 2-0-1-0)",
+        },
         { type: "rest", time: 60 },
       ],
     },
@@ -666,6 +708,165 @@ const programmes: { [s: string]: RootExcercise[] } = {
       activities: [
         { type: "work", name: "DB Neutral Grip Press (12-15; 2-0-1-0)" },
         { type: "rest", time: 60 },
+      ],
+    },
+  ],
+  "GVT 1": [
+    { type: "work", name: "Foam Roll Back" },
+    { type: "work", name: "Thoracic Extension and Rotations" },
+    { type: "work", name: "90/90 Stretch" },
+    { type: "work", name: "Half-Kneeling Hip Flexor Stretch" },
+    { type: "work", name: "Single Leg RDL" },
+    { type: "work", name: "Hip Airplane" },
+    { type: "work", name: "Wall Leaning Tibia Raises" },
+    { type: "work", name: "Seated Hamstring Stretch", time: 120 },
+    { type: "rest", time: 15 },
+    { type: "work", name: "Vertical Wall Hamstring Stretch", time: 120 },
+    { type: "rest", time: 15 },
+    { type: "work", name: "Hamstring Strech Kicks (25)" },
+    {
+      type: "superset",
+      repeat: 10,
+      activities: [
+        { type: "work", name: "Rear Elevated Split Squat (10)" },
+        { type: "rest", time: 60 },
+        { type: "work", name: "Hamstring Slide (10)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Snatch Grip RDL (6-8)" },
+        { type: "rest", time: 45 },
+        { type: "work", name: "Protracted Plank", time: 45 },
+        { type: "rest", time: 45 },
+      ],
+    },
+  ],
+
+  "GVT 2": [
+    { type: "work", name: "Foam Roll Back" },
+    { type: "work", name: "Thoracic Extension and Rotations" },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "Down Dog" },
+    { type: "work", name: "Side Plank" },
+    { type: "work", name: "Dead Bug with Band" },
+    { type: "work", name: "Band Shoulder Stretch (Facing Away)" },
+    { type: "work", name: "Band Pull with Full Rotation" },
+    { type: "work", name: "Band Pull with Shoulder Depressions" },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Wall Pushes with Elevations" },
+        { type: "rest", time: 30 },
+        { type: "work", name: "Train Tracks" },
+        { type: "rest", time: 30 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 10,
+      activities: [
+        { type: "work", name: "Neutral Grip DB Press with Low Incline (10)" },
+        { type: "rest", time: 60 },
+        { type: "work", name: "High Cable Bicep Curl (10)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Dumbell Pullover (6-8)" },
+        { type: "rest", time: 45 },
+        { type: "work", name: "Unsupported Seated Dual Bicep Curl (10-12)" },
+        { type: "rest", time: 45 },
+      ],
+    },
+  ],
+
+  "GVT 3": [
+    { type: "work", name: "Foam Roll Back" },
+    { type: "work", name: "Thoracic Extension and Rotations" },
+    { type: "work", name: "90/90 Stretch" },
+    { type: "work", name: "Half-Kneeling Hip Flexor Stretch" },
+    { type: "work", name: "Single Leg RDL" },
+    { type: "work", name: "Hip Airplane" },
+    { type: "work", name: "Wall Leaning Tibia Raises" },
+    { type: "work", name: "Seated Hamstring Stretch", time: 120 },
+    { type: "rest", time: 15 },
+    { type: "work", name: "Vertical Wall Hamstring Stretch", time: 120 },
+    { type: "rest", time: 15 },
+    { type: "work", name: "Hamstring Strech Kicks (25)" },
+    {
+      type: "superset",
+      repeat: 10,
+      activities: [
+        { type: "work", name: "Seated Good Morning (10)" },
+        { type: "rest", time: 60 },
+        { type: "work", name: "Reverse Nordic Curl (10)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Supinated Barbell Row (6-8)" },
+        { type: "rest", time: 45 },
+        { type: "work", name: "Anti-rotation with Lunge Isometric (Left)", time: 45 },
+        { type: "rest", time: 10 },
+        { type: "work", name: "Anti-rotation with Lunge Isometric (Right)", time: 45 },
+        { type: "rest", time: 45 },
+      ],
+    },
+  ],
+
+  "GVT 4": [
+    { type: "work", name: "Foam Roll Back" },
+    { type: "work", name: "Thoracic Extension and Rotations" },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "Down Dog" },
+    { type: "work", name: "Side Plank" },
+    { type: "work", name: "Dead Bug with Band" },
+    { type: "work", name: "Band Shoulder Stretch (Facing Away)" },
+    { type: "work", name: "Band Pull with Full Rotation" },
+    { type: "work", name: "Band Pull with Shoulder Depressions" },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Wall Pushes with Elevations" },
+        { type: "rest", time: 30 },
+        { type: "work", name: "Train Tracks" },
+        { type: "rest", time: 30 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 10,
+      activities: [
+        { type: "work", name: "Z Press with Neutral Grip on Yoga Block (10)" },
+        { type: "rest", time: 60 },
+        { type: "work", name: "DB Side Laterals (10)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Barbell Floor Press (6-8)" },
+        { type: "rest", time: 45 },
+        { type: "work", name: "Banded Facepull with External Rotation(10-12)" },
+        { type: "rest", time: 45 },
       ],
     },
   ],
