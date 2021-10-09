@@ -6,6 +6,7 @@ interface Exercise {
   type: "work";
   time?: number;
   name: string;
+  link?: string;
 }
 
 interface Rest {
@@ -16,6 +17,7 @@ interface Rest {
 interface Stopwatch {
   type: "stopwatch";
   name: string;
+  link?: string;
 }
 
 interface Superset {
@@ -893,6 +895,7 @@ function showProgrammes() {
                       return {
                         type: "work" as const,
                         time: a.time,
+                        link: a.link,
                         name: `${a.name} [${i + 1}/${e.repeat}]`,
                       };
                     case "stopwatch":
@@ -920,6 +923,7 @@ function showProgrammes() {
 interface Remaining {
   index: number;
   name: string;
+  link?: string;
 }
 function remaining(exercises: RootExcercise[]): Remaining[] {
   const results: Remaining[] = [];
@@ -928,7 +932,7 @@ function remaining(exercises: RootExcercise[]): Remaining[] {
     switch (exercise.type) {
       case "work":
       case "stopwatch":
-        results.push({ index, name: exercise.name });
+        results.push({ index, name: exercise.name, link: exercise.link });
       case "rest":
         index++;
         break;
@@ -937,7 +941,7 @@ function remaining(exercises: RootExcercise[]): Remaining[] {
           switch (child.type) {
             case "work":
             case "stopwatch":
-              results.push({ index, name: child.name });
+              results.push({ index, name: child.name, link: child.link });
             case "rest":
               index++;
               break;
@@ -978,6 +982,13 @@ function runProgramme(exercises: SimpleExercise[], remaining: Remaining[]) {
           break;
         case "work":
           text.innerText = exercise.name;
+          if (exercise.link) {
+            const link = document.createElement("a");
+            link.href = exercise.link;
+            link.target = "_blank";
+            link.innerHTML = "🔗";
+            text.appendChild(link);
+          }
           if (exercise.time) {
             cancel = showTimer(exercise.time, "#e63946", () =>
               show(current + 1)
@@ -991,6 +1002,13 @@ function runProgramme(exercises: SimpleExercise[], remaining: Remaining[]) {
           break;
         case "stopwatch":
           text.innerText = exercise.name;
+          if (exercise.link) {
+            const link = document.createElement("a");
+            link.href = exercise.link;
+            link.target = "_blank";
+            link.innerHTML = "🔗";
+            text.appendChild(link);
+          }
           cancel = showStopwatch(() => show(current + 1));
       }
       const inner = document.createElement("div");
@@ -1036,9 +1054,19 @@ function runProgramme(exercises: SimpleExercise[], remaining: Remaining[]) {
       });
       document.body.appendChild(next);
     }
-    for (const { name } of remaining.filter(({ index }) => index > current)) {
+    for (const { name, link } of remaining.filter(
+      ({ index }) => index > current
+    )) {
       const upcoming = document.createElement("p");
       upcoming.innerText = name;
+      if (link) {
+        const linkNode = document.createElement("a");
+        linkNode.href = link;
+        linkNode.target = "_blank";
+        linkNode.innerHTML = "🔗";
+        upcoming.appendChild(linkNode);
+      }
+
       document.body.appendChild(upcoming);
     }
   }
