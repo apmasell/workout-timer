@@ -880,6 +880,175 @@ const programmes: { [s: string]: RootExcercise[] } = {
       ],
     },
   ],
+  "8×8 1": [
+    { type: "work", name: "Upper Body Rotation" },
+    { type: "work", name: "Wall Hamstring Stretch", time: 90 },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "Down Dog" },
+    { type: "work", name: "Side Plank" },
+    { type: "work", name: "Stationary Lunge Stretch w/ Arms Elevated" },
+    {
+      type: "superset",
+      repeat: 8,
+      activities: [
+        { type: "work", name: "Flat Bench Press (8; Slow Eccentric)" },
+        { type: "rest", time: 60 },
+        {
+          type: "work",
+          name: "External Rotation and press w/ light band (8; Control)",
+          link: "https://youtu.be/NIK0aJDO7Pk",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "Single Arm Cable Extension - OH (10-12;  Medium)",
+          link: "https://youtu.be/3s-kqp7Qd3U",
+        },
+        { type: "rest", time: 45 },
+        {
+          type: "work",
+          name: "Bent Over DB Fly (10-12; Medium)",
+          link: "https://youtu.be/lPt0GqwaqEw",
+        },
+        { type: "rest", time: 45 },
+      ],
+    },
+  ],
+  "8×8 2": [
+    { type: "work", name: "Upper & Lower Body Rotation" },
+    { type: "work", name: "Wall Hamstring Stretch", time: 90 },
+    { type: "rest", time: 15 },
+    { type: "work", name: "Lying Wall Hamstring Stretch", time: 90 },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "BW Calf Raises (25)" },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "BW Split Squat (5)" },
+        { type: "work", name: "Single Leg RDL (5)" },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 8,
+      activities: [
+        {
+          type: "work",
+          name: "Barbell RDL (8; Slow Eccentric; Toes Slightly Elevated)",
+        },
+        { type: "rest", time: 60 },
+        {
+          type: "work",
+          name: "Single Knee Raise - Hanging (16; Control)",
+          link: "https://youtu.be/Cfq7ZAkI7dE",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "Barbell Hip Bridges (10-12; Medium)",
+          link: "https://youtu.be/5S8SApGU_Lk",
+        },
+        { type: "rest", time: 45 },
+        { type: "work", name: "Reverse Lunge - Goblet (10-12; Medium)" },
+        { type: "rest", time: 45 },
+      ],
+    },
+  ],
+  "8×8 3": [
+    { type: "work", name: "Upper Body Rotation" },
+    { type: "work", name: "Wall Hamstring Stretch", time: 90 },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "Down Dog" },
+    { type: "work", name: "Side Plank" },
+    { type: "work", name: "Stationary Lunge Stretch w/ Arms Elevated" },
+    {
+      type: "superset",
+      repeat: 8,
+      activities: [
+        {
+          type: "work",
+          name: "Dual DB Row - 30° Incline Bench (8; Slow Eccentric)",
+        },
+        { type: "rest", time: 60 },
+        {
+          type: "work",
+          name: "Serratus Press (8; Control Tempo)",
+          link: "https://youtu.be/p-fjD-vByH0",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "Incline DB Curl (10-12; Medium)",
+          link: "https://youtu.be/sTY8uNkb7S8",
+        },
+        { type: "rest", time: 45 },
+        {
+          type: "work",
+          name: "Cable Trap 3 Raise (10-12; Medium)",
+          link: "https://youtu.be/cgJpRxqhwzE",
+        },
+        { type: "rest", time: 45 },
+      ],
+    },
+  ],
+  "8×8 4": [
+    { type: "work", name: "Upper & Lower Body Rotation" },
+    { type: "work", name: "Wall Hamstring Stretch", time: 90 },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "BW Calf Raises (25)" },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "BW Split Squat (5)" },
+        { type: "work", name: "Single Leg RDL (5)" },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 8,
+      activities: [
+        { type: "work", name: "Back Squat (8; Slow Eccentric)" },
+        { type: "rest", time: 60 },
+        {
+          type: "work",
+          name: "Half Kneeling Cable Rotation (8; Control)",
+          link: "https://youtu.be/qnx_tHFkD0k",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Walking Lunge (10-12; Medium)" },
+        { type: "rest", time: 45 },
+
+        { type: "work", name: "Reverse Nordic Curl (A)" },
+        { type: "rest", time: 45 },
+      ],
+    },
+  ],
 };
 
 function showProgrammes() {
