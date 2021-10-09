@@ -626,7 +626,7 @@ const programmes: { [s: string]: RootExcercise[] } = {
       type: "superset",
       repeat: 3,
       activities: [
-        { type: "work", name: "Bayseian Bicep Curl (12-15; 2-0-1-0)" },
+        { type: "work", name: "Bayesian Bicep Curl (12-15; 2-0-1-0)" },
         { type: "rest", time: 60 },
       ],
     },
@@ -692,7 +692,7 @@ const programmes: { [s: string]: RootExcercise[] } = {
       type: "superset",
       repeat: 3,
       activities: [
-        { type: "work", name: "Bayseian Bicep Curl (12-15; 2-0-1-0)" },
+        { type: "work", name: "Bayesian Bicep Curl (12-15; 2-0-1-0)" },
         { type: "rest", time: 60 },
       ],
     },
@@ -822,9 +822,17 @@ const programmes: { [s: string]: RootExcercise[] } = {
       activities: [
         { type: "work", name: "Supinated Barbell Row (6-8)" },
         { type: "rest", time: 45 },
-        { type: "work", name: "Anti-rotation with Lunge Isometric (Left)", time: 45 },
+        {
+          type: "work",
+          name: "Anti-rotation with Lunge Isometric (Left)",
+          time: 45,
+        },
         { type: "rest", time: 10 },
-        { type: "work", name: "Anti-rotation with Lunge Isometric (Right)", time: 45 },
+        {
+          type: "work",
+          name: "Anti-rotation with Lunge Isometric (Right)",
+          time: 45,
+        },
         { type: "rest", time: 45 },
       ],
     },
