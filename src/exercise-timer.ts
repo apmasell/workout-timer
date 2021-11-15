@@ -12,6 +12,7 @@ interface Exercise {
 interface Rest {
   type: "rest";
   time: number;
+  grace?: number;
 }
 
 interface Stopwatch {
@@ -1155,7 +1156,9 @@ function runProgramme(exercises: SimpleExercise[], remaining: Remaining[]) {
       switch (exercise.type) {
         case "rest":
           text.innerText = "Rest";
-          cancel = showTimer(exercise.time, "#1d3557", () => show(current + 1));
+          cancel = showTimer(exercise.time, "#1d3557", exercise.grace, () =>
+            show(current + 1)
+          );
           break;
         case "work":
           text.innerText = exercise.name;
@@ -1167,7 +1170,7 @@ function runProgramme(exercises: SimpleExercise[], remaining: Remaining[]) {
             text.appendChild(link);
           }
           if (exercise.time) {
-            cancel = showTimer(exercise.time, "#e63946", () =>
+            cancel = showTimer(exercise.time, "#e63946", undefined, () =>
               show(current + 1)
             );
           } else {
@@ -1279,10 +1282,12 @@ function showStopwatch(finished: () => void): () => void {
 }
 
 function showTimer(
-  timeout: number,
+  defaultTime: number,
   colour: string,
+  upgradeTime: number | undefined,
   finished: () => void
 ): () => void {
+  let timeout = defaultTime;
   const display = document.createElement("p");
   const length = Math.ceil(Math.log10(timeout));
   display.innerText = `${"0".repeat(length)} / ${timeout}`;
@@ -1327,6 +1332,15 @@ function showTimer(
     }
   });
   document.body.appendChild(display);
+  if (upgradeTime) {
+    const tired = document.createElement("button");
+    tired.innerText = "Please, I'm tired";
+
+    document.body.appendChild(tired);
+    tired.addEventListener("click", () => {
+      timeout = upgradeTime;
+    });
+  }
   handle = window.setInterval(tick, 100);
   return () => {
     if (handle != null) {
