@@ -1050,6 +1050,348 @@ const programmes: { [s: string]: RootExcercise[] } = {
       ],
     },
   ],
+  "Westside 1.1": [
+    { type: "work", name: "Nerve Glides" },
+    { type: "work", name: "Foam Roll Upper Back" },
+    { type: "work", name: "Thoracic Extensions & Thoracic Rotations" },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "Down Dog" },
+    { type: "work", name: "Side Plank" },
+    { type: "work", name: "Dead Bug Variations" },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "rest", time: 5 },
+        {
+          type: "work",
+          name: "Bench Press Isometric",
+          time: 6,
+          link: "https://youtu.be/EEusR5Ts9tE",
+        },
+        { type: "rest", time: 30 },
+        { type: "work", name: "Paused Bench Press (3-5; 3s on chest)" },
+        { type: "rest", time: 115 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "DB Row (12-15)",
+          link: "https://youtu.be/mfpWbvBX3FM",
+        },
+        { type: "rest", time: 75 },
+        {
+          type: "work",
+          name: "Rolling DB Skull Crushers (12-15)",
+          link: "https://youtu.be/Vbv1IIhePH4",
+        },
+        { type: "rest", time: 75 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        {
+          type: "work",
+          name: "Face Pull (12-15)",
+          link: "https://youtu.be/owJjmr07C_4",
+        },
+        { type: "rest", time: 45 },
+        {
+          type: "work",
+          name: "Reverse Grip Curl (3-0-1-3; 6-8)",
+          link: "https://youtu.be/CIGPx1bx0Hs",
+        },
+        { type: "rest", time: 45 },
+      ],
+    },
+  ],
+  "Westside 1.2": [
+    { type: "work", name: "Foam Roll Upper Back" },
+    { type: "work", name: "Thoracic Extensions & Thoracic Rotations" },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "Down Dog" },
+    { type: "work", name: "Side Plank" },
+    { type: "work", name: "Dead Bug Variations" },
+    {
+      type: "superset",
+      repeat: 8,
+      activities: [
+        {
+          type: "work",
+          name: "Banded Bench Press (3)",
+          link: "https://youtu.be/nJEtbI6PpxE",
+        },
+        { type: "rest", time: 30, grace: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        {
+          type: "work",
+          name: "Bent Over DB Fly (8-10)",
+          link: "https://youtu.be/lPt0GqwaqEw",
+        },
+        { type: "rest", time: 60 },
+        { type: "work", name: "Barbell OHP (8-10)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        {
+          type: "work",
+          name: "Supinated Band Pull Aparts (12-15)",
+          link: "https://youtu.be/mHWlgqPvyxI",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+  ],
+  "Westside 1.3": [
+    { type: "work", name: "Foam Roll Upper Back" },
+    { type: "work", name: "Thoracic Extensions & Thoracic Rotations" },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "Down Dog" },
+    { type: "work", name: "Side Plank" },
+    { type: "work", name: "Dead Bug Variations" },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "rest", time: 5 },
+        {
+          type: "work",
+          name: "Nordic Isometric",
+          time: 6,
+          link: "https://youtu.be/wBybuUNDIPw",
+        },
+        { type: "rest", time: 30 },
+        {
+          type: "work",
+          name: "Paused Good Morning (3-5; 1s pause)",
+        },
+        { type: "rest", time: 115 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "Hamstring Walk Outs on roller (A)",
+          link: "https://youtu.be/Gyl8qhPuyhk",
+        },
+        { type: "rest", time: 75 },
+        {
+          type: "work",
+          name: "Garhammer Raise (A)",
+          link: "https://youtu.be/bXOaw2yc6nk",
+        },
+        { type: "rest", time: 75 },
+      ],
+    },
+  ],
+  "Westside 1.4": [
+    { type: "work", name: "Foam Roll Upper Back" },
+    { type: "work", name: "Thoracic Extensions & Thoracic Rotations" },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "Down Dog" },
+    { type: "work", name: "Side Plank" },
+    { type: "work", name: "Dead Bug Variations" },
+    {
+      type: "superset",
+      repeat: 8,
+      activities: [
+        {
+          type: "work",
+          name: "Banded Barbell RDL (3)",
+          link: "https://youtu.be/A0nlkHJqmew",
+        },
+        { type: "rest", time: 30, grace: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        {
+          type: "work",
+          name: "Seated Good Morning (8-10)",
+          link: "https://youtu.be/ScBgwqMrv3Q",
+        },
+        { type: "rest", time: 60 },
+        {
+          type: "work",
+          name: "Hamstring Slides (8-10)",
+          link: "https://youtu.be/aZTm8eqFB0I",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        {
+          type: "work",
+          name: "Tibia Toe Raises (25+)",
+          link: "https://youtu.be/OPEuhclsTUQ",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+  ],
+  "Westside 1.5": [
+    {
+      type: "work",
+      name: "Foam Roll Upper Back",
+    },
+
+    {
+      type: "work",
+      name: "Thoracic Extensions & Thoracic Rotations",
+    },
+
+    {
+      type: "work",
+      name: "Cat Cow",
+    },
+
+    {
+      type: "work",
+      name: "Down Dog",
+    },
+
+    {
+      type: "work",
+      name: "Side Plank",
+    },
+
+    {
+      type: "work",
+      name: "Dead Bug Variations",
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "rest", time: 5 },
+        { type: "work", name: "Squat Isometric", time: 6 },
+        { type: "rest", time: 30 },
+        { type: "work", name: "Paused Back Squat (3-5; 3s at bottom)" },
+        { type: "rest", time: 115 },
+      ],
+    },
+
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "Bulgarian Split Squat (12-15)",
+          link: "https://youtu.be/I1Ee3M6SDgQ",
+        },
+        { type: "rest", time: 75 },
+      ],
+    },
+
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "Reverse Nordic Curl (8-10)",
+          link: "https://youtu.be/Vbv1IIhePH4",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+  ],
+  "Westside 1.6": [
+    {
+      type: "work",
+      name: "Foam Roll Upper Back",
+    },
+
+    {
+      type: "work",
+      name: "Thoracic Extensions & Thoracic Rotations",
+    },
+
+    {
+      type: "work",
+      name: "Cat Cow",
+    },
+
+    {
+      type: "work",
+      name: "Down Dog",
+    },
+
+    {
+      type: "work",
+      name: "Side Plank",
+    },
+
+    {
+      type: "work",
+      name: "Dead Bug Variations",
+    },
+    {
+      type: "superset",
+      repeat: 8,
+      activities: [
+        {
+          type: "work",
+          name: "Back Squat (3)",
+        },
+        { type: "rest", time: 30, grace: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        {
+          type: "work",
+          name: "Poliquin Step Up (12-15)",
+          link: "https://youtu.be/AbjXzX0CVhU",
+        },
+        { type: "rest", time: 60 },
+        {
+          type: "work",
+          name: "Sigle Leg RDL (12-15)",
+          link: "https://youtu.be/dEpUhcbEUGA",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        {
+          type: "work",
+          name: "Dead Bug Variation (10-20)",
+          link: "https://youtu.be/wCwn7-Z-XjE",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+  ],
 };
 
 function showProgrammes() {
