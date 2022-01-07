@@ -1392,6 +1392,204 @@ const programmes: { [s: string]: RootExcercise[] } = {
       ],
     },
   ],
+  "Strength Endurance 1.1": [
+    { type: "work", name: "Foam Roll Upper Back" },
+    { type: "work", name: "Thoracic Extensions & Thoracic Rotations" },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "Down Dog" },
+    { type: "work", name: "Side Plank" },
+    { type: "work", name: "Dead Bug Variations" },
+    {
+      type: "superset",
+      repeat: 6,
+      activities: [
+        { type: "work", name: "Bench Press (2)" },
+        { type: "rest", time: 3 * 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "DB Unsupported OHP (6-8)",
+          link: "https://youtu.be/gUw4EsRTxvQ",
+        },
+        { type: "rest", time: 60 },
+        {
+          type: "work",
+          name: "Single Arm Cable Row (12-15; Standing)",
+          link: "https://youtu.be/-WwdXO0IC0o",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "DB Skull Crushers (6-8)" },
+        { type: "rest", time: 60 },
+        {
+          type: "work",
+          name: "Powell Raise (12-15; Floor)",
+          link: "https://youtu.be/uzFTTZEosgg",
+        },
+        { type: "rest", time: 45 },
+      ],
+    },
+  ],
+  "Strength Endurance 1.2": [
+    { type: "work", name: "Foam Roll Upper Back" },
+    { type: "work", name: "Thoracic Extensions & Thoracic Rotations" },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "Down Dog" },
+    { type: "work", name: "Side Plank" },
+    { type: "work", name: "Dead Bug Variations" },
+    { type: "work", name: "Seated Hamstring Stretch", time: 60 },
+    { type: "rest", time: 15 },
+    { type: "work", name: "Vertical Wall Hamstring Stretch", time: 60 },
+    { type: "rest", time: 15 },
+    {
+      type: "superset",
+      repeat: 6,
+      activities: [
+        {
+          type: "work",
+          name: "Snatch-grip Deadlift (2; Concentric Pause at Low Shin)",
+        },
+        { type: "rest", time: 3 * 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Eccentric DB RDL (6-8; 4s Eccentric)" },
+        { type: "rest", time: 60 },
+        {
+          type: "work",
+          name: "Single Arm Arc Row (12-15)",
+          link: "https://youtu.be/0WeJDM5ZwwE",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Barbell Hip Bridge (6-8)" },
+        { type: "rest", time: 60 },
+        { type: "work", name: "Tibia Raises (A)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+  ],
+  "Strength Endurance 1.3": [
+    { type: "work", name: "Foam Roll Upper Back" },
+    { type: "work", name: "Thoracic Extensions & Thoracic Rotations" },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "Down Dog" },
+    { type: "work", name: "Side Plank" },
+    { type: "work", name: "Dead Bug Variations" },
+    {
+      type: "superset",
+      repeat: 6,
+      activities: [
+        { type: "work", name: "Barbell OHP (2)" },
+        { type: "rest", time: 3 * 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "DB Seated Cuban Press (6-8)",
+          link: "https://youtu.be/TwF-75hvDgk",
+        },
+        { type: "rest", time: 60 },
+        {
+          type: "work",
+          name: "DB Row (8-10; Supinating)",
+          link: "https://youtu.be/mfpWbvBX3FM",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Push Up (6-8)" },
+        { type: "rest", time: 60 },
+
+        {
+          type: "work",
+          name: "Woodchopper (12; high to low)",
+          link: "https://youtu.be/AuDE1MTSEZM",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+  ],
+  "Strength Endurance 1.4": [
+    { type: "work", name: "Foam Roll Upper Back" },
+    { type: "work", name: "Thoracic Extensions & Thoracic Rotations" },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "Down Dog" },
+    { type: "work", name: "Side Plank" },
+    { type: "work", name: "Dead Bug Variations" },
+    {
+      type: "superset",
+      repeat: 6,
+      activities: [
+        { type: "work", name: "Back Squat (2)" },
+        { type: "rest", time: 3 * 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "Low Cable Split Squat (6-8)",
+          link: "https://youtu.be/AEsgXtOZdp8",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        { type: "work", name: "Towel Hamstring Curl (15-20)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        {
+          type: "stopwatch",
+          name: "Copenhagen Plank (Left)",
+          link: "https://youtu.be/HqER3kfFg7Y",
+        },
+        { type: "rest", time: 30 },
+        {
+          type: "stopwatch",
+          name: "Copenhagen Plank (Right)",
+          link: "https://youtu.be/HqER3kfFg7Y",
+        },
+        { type: "rest", time: 30 },
+      ],
+    },
+  ],
 };
 
 function showProgrammes() {
