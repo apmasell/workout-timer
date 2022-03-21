@@ -1590,6 +1590,366 @@ const programmes: { [s: string]: RootExcercise[] } = {
       ],
     },
   ],
+  "Jeff's Comeback Programme 1 Lower": [
+    { type: "work", name: "Nerve glides" },
+    { type: "work", name: "Foam Roll Upper Back" },
+    { type: "work", name: "Thoracic Extensions & Thoracic Rotations" },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "Down Dog" },
+    { type: "work", name: "Side Plank" },
+    { type: "work", name: "Dead Bug Variations" },
+    { type: "work", name: "Neck Push", time: 60 },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Armpit Stare", time: 60 },
+        { type: "work", name: "Star Stare", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Warm-up Back Squat (5)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Back Squat (5)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Step Ups (6)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Warm-up Nordic Leg Curl (10-12)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Standing Calf Raise (12-15)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 1,
+      activities: [
+        { type: "work", name: "Warm-up Shoulder Shrug (8-10)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Shoulder Shrug (8-10)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Cable Crunch (12-15)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+  ],
+  "Jeff's Comeback Programme 1 Upper": [
+    { type: "work", name: "Nerve glides" },
+    { type: "work", name: "Foam Roll Upper Back" },
+    { type: "work", name: "Thoracic Extensions & Thoracic Rotations" },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "Down Dog" },
+    { type: "work", name: "Side Plank" },
+    { type: "work", name: "Dead Bug Variations" },
+    { type: "work", name: "Neck Push", time: 60 },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Armpit Stare", time: 60 },
+        { type: "work", name: "Star Stare", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Warm-up Bench Press (5)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Bench Press (5)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Warm-up Lat Pulldown (10-12)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Lat Pulldown (10-12)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 1,
+      activities: [
+        { type: "work", name: "Warm-up Cable Crossover (10-12)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Cable Crossover (10-12)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 1,
+      activities: [
+        { type: "work", name: "Warm-up Seated Cable Row (12-15)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Seated Cable Row (12-15)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 1,
+      activities: [
+        { type: "work", name: "Warm-up Egyptian Lateral Raise (10-12)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Egyptian Lateral Raise (10-12)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "EZ-Bar Bicep Curl (8-10)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 1,
+      activities: [
+        { type: "work", name: "Dumbell Skull Crusher (10-12)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+  ],
+  "Jeff's Comeback Programme 2 Lower": [
+    { type: "work", name: "Nerve glides" },
+    { type: "work", name: "Foam Roll Upper Back" },
+    { type: "work", name: "Thoracic Extensions & Thoracic Rotations" },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "Down Dog" },
+    { type: "work", name: "Side Plank" },
+    { type: "work", name: "Dead Bug Variations" },
+    { type: "work", name: "Neck Push", time: 60 },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Armpit Stare", time: 60 },
+        { type: "work", name: "Star Stare", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Warm-up Deadlift (4)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Deadlift 4" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Towel Slide (12-15)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Leg Extension (10-12)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 1,
+      activities: [
+        { type: "work", name: "Seated Calf Raise (15-20)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Warm-up Seated Calf Raise (15-20)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Hanging Leg Raise (6-10)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+  ],
+  "Jeff's Comeback Programme 2 Upper": [
+    { type: "work", name: "Nerve glides" },
+    { type: "work", name: "Foam Roll Upper Back" },
+    { type: "work", name: "Thoracic Extensions & Thoracic Rotations" },
+    { type: "work", name: "Cat Cow" },
+    { type: "work", name: "Down Dog" },
+    { type: "work", name: "Side Plank" },
+    { type: "work", name: "Dead Bug Variations" },
+    { type: "work", name: "Neck Push", time: 60 },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Armpit Stare", time: 60 },
+        { type: "work", name: "Star Stare", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Pull Up (6-8)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Warm-up Overhead Press (4)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Overhead Press (4)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 1,
+      activities: [
+        { type: "work", name: "Warm-up Chest-Supported Row (10-12)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Chest-Supported Row (10-12)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 1,
+      activities: [
+        { type: "work", name: "Warm-up Inclined Dumbell Press (8-10)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Inclined Dumbell Press (8-10)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Facepull (12-15)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Hammer Curl (8-10)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+  ],
 };
 
 function showProgrammes() {
