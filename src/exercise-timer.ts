@@ -1662,7 +1662,7 @@ const programmes: ProgrammeMenu = {
         type: "superset",
         repeat: 3,
         activities: [
-          { type: "work", name: "Warm-up Nordic Leg Curl (10-12)" },
+          { type: "work", name: "Nordic Leg Curl (10-12)" },
           { type: "rest", time: 60 },
         ],
       },
@@ -1752,7 +1752,7 @@ const programmes: ProgrammeMenu = {
         type: "superset",
         repeat: 1,
         activities: [
-          { type: "work", name: "Warm-up Cable Crossover (10-12)" },
+          { type: "work", name: "Warm-up Dumbell Fly (10-12)" },
           { type: "rest", time: 60 },
         ],
       },
@@ -1760,7 +1760,7 @@ const programmes: ProgrammeMenu = {
         type: "superset",
         repeat: 3,
         activities: [
-          { type: "work", name: "Cable Crossover (10-12)" },
+          { type: "work", name: "Dumbell Fly (10-12)" },
           { type: "rest", time: 60 },
         ],
       },
@@ -1768,7 +1768,7 @@ const programmes: ProgrammeMenu = {
         type: "superset",
         repeat: 1,
         activities: [
-          { type: "work", name: "Warm-up Seated Cable Row (12-15)" },
+          { type: "work", name: "Warm-up Bent-over Barbell Row (12-15)" },
           { type: "rest", time: 60 },
         ],
       },
@@ -1776,7 +1776,7 @@ const programmes: ProgrammeMenu = {
         type: "superset",
         repeat: 2,
         activities: [
-          { type: "work", name: "Seated Cable Row (12-15)" },
+          { type: "work", name: "Bent-over Barbell Row (12-15)" },
           { type: "rest", time: 60 },
         ],
       },
@@ -1784,7 +1784,7 @@ const programmes: ProgrammeMenu = {
         type: "superset",
         repeat: 1,
         activities: [
-          { type: "work", name: "Warm-up Egyptian Lateral Raise (10-12)" },
+          { type: "work", name: "Warm-up Plate Lateral Raise (10-12)" },
           { type: "rest", time: 60 },
         ],
       },
@@ -1792,7 +1792,7 @@ const programmes: ProgrammeMenu = {
         type: "superset",
         repeat: 2,
         activities: [
-          { type: "work", name: "Egyptian Lateral Raise (10-12)" },
+          { type: "work", name: "Plate Lateral Raise (10-12)" },
           { type: "rest", time: 60 },
         ],
       },
@@ -1842,13 +1842,13 @@ const programmes: ProgrammeMenu = {
         type: "superset",
         repeat: 2,
         activities: [
-          { type: "work", name: "Deadlift 4" },
+          { type: "work", name: "Deadlift (4)" },
           { type: "rest", time: 60 },
         ],
       },
       {
         type: "superset",
-        repeat: 2,
+        repeat: 3,
         activities: [
           { type: "work", name: "Towel Slide (12-15)" },
           { type: "rest", time: 60 },
@@ -1856,17 +1856,9 @@ const programmes: ProgrammeMenu = {
       },
       {
         type: "superset",
-        repeat: 2,
-        activities: [
-          { type: "work", name: "Leg Extension (10-12)" },
-          { type: "rest", time: 60 },
-        ],
-      },
-      {
-        type: "superset",
         repeat: 1,
         activities: [
-          { type: "work", name: "Seated Calf Raise (15-20)" },
+          { type: "work", name: "Warm-up Seated Calf Raise (15-20)" },
           { type: "rest", time: 60 },
         ],
       },
@@ -1874,7 +1866,7 @@ const programmes: ProgrammeMenu = {
         type: "superset",
         repeat: 2,
         activities: [
-          { type: "work", name: "Warm-up Seated Calf Raise (15-20)" },
+          { type: "work", name: "Seated Calf Raise (15-20)" },
           { type: "rest", time: 60 },
         ],
       },
