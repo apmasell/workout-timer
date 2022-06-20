@@ -2081,6 +2081,38 @@ function runProgramme(exercises: SimpleExercise[], remaining: Remaining[]) {
     }
     beep.play();
     let cancel: () => void = () => {};
+    if (current > 0) {
+      const previous = document.createElement("button");
+      previous.innerText = "❮❮ Skip Back";
+      previous.addEventListener("click", () => {
+        cancel();
+        show(current - 1);
+      });
+      document.body.appendChild(previous);
+    }
+    const repeat = document.createElement("button");
+    repeat.innerText = "⭯ Repeat Step";
+    repeat.addEventListener("click", () => {
+      cancel();
+      show(current);
+    });
+    document.body.appendChild(repeat);
+    const menu = document.createElement("button");
+    menu.innerText = "☰ Menu";
+    menu.addEventListener("click", () => {
+      cancel();
+      showProgrammes(programmes);
+    });
+    document.body.appendChild(menu);
+    if (current < exercises.length) {
+      const next = document.createElement("button");
+      next.innerText = "Skip Ahead ❯❯";
+      next.addEventListener("click", () => {
+        cancel();
+        show(current + 1);
+      });
+      document.body.appendChild(next);
+    }
     if (current >= exercises.length) {
       const text = document.createElement("h1");
       text.innerText = "DONE!!!";
@@ -2134,38 +2166,6 @@ function runProgramme(exercises: SimpleExercise[], remaining: Remaining[]) {
       outer.className = "progress";
       document.body.appendChild(outer);
       inner.style.width = `${((current + 1) / exercises.length) * 100}%`;
-    }
-    if (current > 0) {
-      const previous = document.createElement("button");
-      previous.innerText = "❮❮ Skip Back";
-      previous.addEventListener("click", () => {
-        cancel();
-        show(current - 1);
-      });
-      document.body.appendChild(previous);
-    }
-    const repeat = document.createElement("button");
-    repeat.innerText = "⭯ Repeat Step";
-    repeat.addEventListener("click", () => {
-      cancel();
-      show(current);
-    });
-    document.body.appendChild(repeat);
-    const menu = document.createElement("button");
-    menu.innerText = "☰ Menu";
-    menu.addEventListener("click", () => {
-      cancel();
-      showProgrammes(programmes);
-    });
-    document.body.appendChild(menu);
-    if (current < exercises.length) {
-      const next = document.createElement("button");
-      next.innerText = "Skip Ahead ❯❯";
-      next.addEventListener("click", () => {
-        cancel();
-        show(current + 1);
-      });
-      document.body.appendChild(next);
     }
     for (const { name, link } of remaining.filter(
       ({ index }) => index > current
