@@ -2032,12 +2032,17 @@ interface Remaining {
 }
 function remaining(exercises: RootExcercise[]): Remaining[] {
   const results: Remaining[] = [];
+  const seen = new Set<string>();
   let index = 0;
   for (const exercise of exercises) {
     switch (exercise.type) {
       case "work":
       case "stopwatch":
-        results.push({ index, name: exercise.name, link: exercise.link });
+        const n = exercise.name.split("(")[0].trim();
+        if (!seen.has(n)) {
+          seen.add(n);
+          results.push({ index, name: n, link: exercise.link });
+        }
       case "rest":
         index++;
         break;
@@ -2046,7 +2051,11 @@ function remaining(exercises: RootExcercise[]): Remaining[] {
           switch (child.type) {
             case "work":
             case "stopwatch":
-              results.push({ index, name: child.name, link: child.link });
+              const n = child.name.split("(")[0].trim();
+              if (!seen.has(n)) {
+                seen.add(n);
+                results.push({ index, name: n, link: child.link });
+              }
             case "rest":
               index++;
               break;
