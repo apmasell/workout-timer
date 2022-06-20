@@ -2523,6 +2523,8 @@ function showTimer(
 ): () => void {
   let timeout = defaultTime;
   const display = document.createElement("p");
+  const pauseButton = document.createElement("button");
+  pauseButton.innerText = "Play/Pause";
   const length = Math.ceil(Math.log10(timeout));
   display.innerText = `${"0".repeat(length)} / ${timeout}`;
   let handle: number | null = null;
@@ -2555,7 +2557,7 @@ function showTimer(
       )}%`;
     }
   }
-  display.addEventListener("click", () => {
+  pauseButton.addEventListener("click", () => {
     if (handle == null) {
       last = new Date();
       handle = window.setInterval(tick, 100);
@@ -2566,6 +2568,7 @@ function showTimer(
     }
   });
   document.body.appendChild(display);
+  document.body.appendChild(pauseButton);
   if (upgradeTime) {
     const tired = document.createElement("button");
     tired.innerText = "Please, I'm tired";
