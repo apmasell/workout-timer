@@ -34,6 +34,53 @@ type Programme = ProgrammeMenu | RootExcercise[];
 type ProgrammeMenu = { [s: string]: Programme };
 
 const programmes: ProgrammeMenu = {
+  "Warm-up": {
+    Upper: [
+      { type: "work", name: "Nerve glides" },
+      { type: "work", name: "Foam roll back" },
+      { type: "work", name: "Dead Hang", time: 60 },
+      { type: "work", name: "Thoracic extensions & rotations" },
+      { type: "work", name: "Hold DB for Pec Minor (Left)", time: 45 },
+      { type: "rest", time: 15 },
+      { type: "work", name: "Hold DB for Pec Minor (Right)", time: 45 },
+      { type: "work", name: "Band pulls" },
+      { type: "work", name: "Train Tracks" },
+      { type: "work", name: "Neck Push", time: 60 },
+      {
+        type: "superset",
+        repeat: 2,
+        activities: [
+          { type: "work", name: "Armpit Stare", time: 60 },
+          { type: "work", name: "Star Stare", time: 60 },
+        ],
+      },
+    ],
+    Lower: [
+      { type: "work", name: "Foam roll back" },
+      { type: "work", name: "Massage feet" },
+      { type: "work", name: "Thoracic extensions & rotations" },
+      { type: "work", name: "Vertical Wall Hamstring stretch", time: 90 },
+      { type: "rest", time: 15 },
+      { type: "work", name: "Frog stretch", time: 60 },
+      { type: "rest", time: 15 },
+      {
+        type: "work",
+        name: "Hip flexor stretch standing over yoga block with side lunges",
+        time: 120,
+      },
+      { type: "work", name: "Deep squat", time: 90 },
+      { type: "work", name: "Floating Heel Split Squats (5)" },
+      { type: "work", name: "Neck Push", time: 60 },
+      {
+        type: "superset",
+        repeat: 2,
+        activities: [
+          { type: "work", name: "Armpit Stare", time: 60 },
+          { type: "work", name: "Star Stare", time: 60 },
+        ],
+      },
+    ],
+  },
   Tabata: [
     {
       type: "superset",
@@ -1966,6 +2013,260 @@ const programmes: ProgrammeMenu = {
         activities: [
           { type: "work", name: "Hammer Curl (8-10)" },
           { type: "rest", time: 60 },
+        ],
+      },
+    ],
+  },
+  Reset: {
+    "Day 1 (Lower)": [
+      { type: "work", name: "Low Front Foot Eleveated Split Squat (12)" },
+      { type: "rest", time: 60 },
+      { type: "work", name: "Low Front Foot Eleveated Split Squat (12)" },
+      { type: "rest", time: 60 },
+      { type: "work", name: "Low Front Foot Eleveated Split Squat (10)" },
+      { type: "rest", time: 60 },
+      { type: "work", name: "Low Front Foot Eleveated Split Squat (8)" },
+      { type: "rest", time: 60 },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Zercher Squat (3-3-X-0; 3)" },
+          { type: "rest", time: 15 },
+          { type: "work", name: "Zercher Squat (3-3-X-0; 3)" },
+          { type: "rest", time: 15 },
+          { type: "work", name: "Zercher Squat (3-3-X-0; 2)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Split Stance Deadlift (12-15)",
+            link: "https://youtu.be/kJX3GTJ8TOc",
+          },
+          { type: "rest", time: 45 },
+          {
+            type: "work",
+            name: "Side Lunge - Dynamic Stretch",
+            time: 60,
+            link: "https://youtu.be/zejTuBTEkfY",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Single Leg Hip Bridge (1-5-2-0; 6-8)",
+            link: "https://youtu.be/sLq-xEPIVpk",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+
+    "Day 2 (Upper)": [
+      {
+        type: "work",
+        name: "Single Arm DB Row (Elbow Out; 12)",
+        link: "https://youtu.be/4rI_UaFPhMY",
+      },
+      { type: "rest", time: 60 },
+      {
+        type: "work",
+        name: "Single Arm DB Row (Elbow Out; 10)",
+        link: "https://youtu.be/4rI_UaFPhMY",
+      },
+      { type: "rest", time: 60 },
+      {
+        type: "work",
+        name: "Single Arm DB Row (Elbow Out; 8)",
+        link: "https://youtu.be/4rI_UaFPhMY",
+      },
+      { type: "rest", time: 60 },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Pike Push Up (5)",
+            link: "https://youtu.be/sposDXWEB0A",
+          },
+          { type: "rest", time: 15 },
+          {
+            type: "work",
+            name: "Pike Push Up (3)",
+            link: "https://youtu.be/sposDXWEB0A",
+          },
+          { type: "rest", time: 15 },
+          {
+            type: "work",
+            name: "Pike Push Up (2)",
+            link: "https://youtu.be/sposDXWEB0A",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          { type: "work", name: "Bench Press (5)" },
+          { type: "rest", time: 45 },
+          {
+            type: "work",
+            name: "Shoulder Extension (Mobility)",
+            time: 60,
+            link: "https://youtu.be/pLawSmOJTBw",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "DB External Rotation (Elbow on Knee; 8-10)",
+            link: "https://youtu.be/EAbDldSYUzU",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+    "Day 3 (Lower)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Towel Hamstring Curl (5)" },
+          { type: "rest", time: 15 },
+          { type: "work", name: "Towel Hamstring Curl (5)" },
+          { type: "rest", time: 15 },
+          { type: "work", name: "Towel Hamstring Curl (5)" },
+          { type: "rest", time: 15 },
+          { type: "work", name: "Towel Hamstring Curl (5)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      { type: "work", name: "Snatch Grip Paused BB RDL (12)" },
+      { type: "rest", time: 60 },
+      { type: "work", name: "Snatch Grip Paused BB RDL (12)" },
+      { type: "rest", time: 60 },
+      { type: "work", name: "Snatch Grip Paused BB RDL (10)" },
+      { type: "rest", time: 60 },
+      { type: "work", name: "Snatch Grip Paused BB RDL (8)" },
+      { type: "rest", time: 60 },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "DB Walking Lunge (30)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Rack-Assisted Sissy Squat",
+            link: "https://youtu.be/Cu2THH1IQDA",
+            time: 60,
+          },
+          { type: "rest", time: 45 },
+          {
+            type: "work",
+            name: "Isometric Hip Bridge (Left)",
+            link: "https://youtu.be/m3E3CXcLSgw",
+            time: 30,
+          },
+          { type: "rest", time: 5 },
+          {
+            type: "work",
+            name: "Isometric Hip Bridge (Right)",
+            link: "https://youtu.be/m3E3CXcLSgw",
+            time: 30,
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+    "Day 4 (Upper)": [
+      { type: "rest", time: 15 },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Table Top Bridge Drill",
+            time: 5,
+            link: "https://youtu.be/_gwA6gGYHAo",
+          },
+          { type: "rest", time: 15 },
+          {
+            type: "work",
+            name: "Table Top Bridge Drill",
+            time: 5,
+            link: "https://youtu.be/_gwA6gGYHAo",
+          },
+          { type: "rest", time: 15 },
+          {
+            type: "work",
+            name: "Table Top Bridge Drill",
+            time: 5,
+            link: "https://youtu.be/_gwA6gGYHAo",
+          },
+          { type: "rest", time: 15 },
+          {
+            type: "work",
+            name: "Table Top Bridge Drill",
+            time: 5,
+            link: "https://youtu.be/_gwA6gGYHAo",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Push Up (5)" },
+          { type: "rest", time: 15 },
+          { type: "work", name: "Push Up (5)" },
+          { type: "rest", time: 15 },
+          { type: "work", name: "Push Up (5)" },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Unsupported Bent-Over DB Row (15-20)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Banded OH Tricep Extension (20)",
+            link: "https://youtu.be/esM_yu_YFHQ",
+          },
+          { type: "rest", time: 45 },
+          {
+            type: "work",
+            name: "Powell Raise (2-0-X-6; 6-8)",
+          },
+          { type: "rest", time: 45 },
         ],
       },
     ],
