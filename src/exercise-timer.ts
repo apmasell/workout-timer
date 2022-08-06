@@ -40,8 +40,9 @@ const programmes: ProgrammeMenu = {
       { type: "work", name: "Foam roll back" },
       { type: "work", name: "Dead Hang", time: 60 },
       { type: "work", name: "Thoracic extensions & rotations" },
+      { type: "rest", time: 5 },
       { type: "work", name: "Hold DB for Pec Minor (Left)", time: 45 },
-      { type: "rest", time: 15 },
+      { type: "rest", time: 5 },
       { type: "work", name: "Hold DB for Pec Minor (Right)", time: 45 },
       { type: "work", name: "Band pulls" },
       { type: "work", name: "Train Tracks" },
@@ -2267,6 +2268,189 @@ const programmes: ProgrammeMenu = {
             name: "Powell Raise (2-0-X-6; 6-8)",
           },
           { type: "rest", time: 45 },
+        ],
+      },
+    ],
+  },
+  "6×6": {
+    "Day 1 (Squats)": [
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          { type: "work", name: "Paused Low-bar Back Squat (6; 3-1-X-1)" },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Stationary Deficit Lunge (8-10; 3-1-1-0)",
+            link: "https://youtu.be/8umEqL9TmJM",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Poliquin Step Up (15-20; 1-0-1-0)",
+            link: "https://youtu.be/AbjXzX0CVhU",
+          },
+
+          { type: "rest", time: 60 },
+        ],
+      },
+
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Side Plank Runners (Left)",
+            time: 30,
+            link: "https://youtu.be/nhmKDaSYYMU",
+          },
+          { type: "rest", time: 30 },
+          {
+            type: "work",
+            name: "Side Plank Runners (Right)",
+            time: 30,
+            link: "https://youtu.be/nhmKDaSYYMU",
+          },
+          { type: "rest", time: 30 },
+        ],
+      },
+    ],
+    "Day 2 (OHP)": [
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          {
+            type: "work",
+            name: "Overhead Press (6; 3-1-X-1; Pause at eye level on eccentric)",
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Dual DB Pullover (6-8; 4-1-X-0; Slight Decline)",
+            link: "about:",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Side Plank Powell Raise (8-10; 3-1-1-0)",
+            link: "https://youtu.be/UoQKGPDt-og",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Reverse Table Top",
+            time: 45,
+            link: "https://youtu.be/H0Od2TfJl6c",
+          },
+          { type: "rest", time: 30 },
+        ],
+      },
+    ],
+
+    "Day 3 (Deadlift)": [
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          { type: "work", name: "Deadlift/RDL (6; 4-0-X-1)" },
+          { type: "rest", time: 120 },
+        ],
+      },
+
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Towel Hamstring Curl (Band feet; 2-0-2-0)",
+            time: 45,
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Side Lunge (15-20; X-X-X-X)",
+            link: "https://youtu.be/HLDhxSqMQyE",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Hip Exernal Rotation (Left)",
+            time: 120,
+            link: "https://youtu.be/3xu7gbC8qnQ",
+          },
+          { type: "rest", time: 5 },
+          {
+            type: "work",
+            name: "Hip Exernal Rotation (Right)",
+            time: 120,
+            link: "https://youtu.be/3xu7gbC8qnQ",
+          },
+          { type: "rest", time: 30 },
+        ],
+      },
+    ],
+
+    "Day 4 (Chest)": [
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          { type: "work", name: "Bench Press (6; 4-0-X-0)" },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Bent Over DB Row (8-10; 2-0-2-0)" },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "DB Fly (8-10; 3-1-1-0; Slight Decline)",
+            link: "https://youtu.be/UoQKGPDt-og",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Shoulder External Rotation - Side Lying (6-8; 4-0-1-1)",
+            link: "https://youtu.be/NcUKNykt9DU",
+          },
+          { type: "rest", time: 30 },
         ],
       },
     ],
