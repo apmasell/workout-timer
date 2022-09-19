@@ -38,9 +38,9 @@ const programmes: ProgrammeMenu = {
     Upper: [
       { type: "work", name: "Nerve glides" },
       { type: "work", name: "Foam roll back" },
-      { type: "work", name: "Dead Hang", time: 60 },
       { type: "work", name: "Thoracic extensions & rotations" },
-      { type: "rest", time: 5 },
+      { type: "work", name: "Dead Hang", time: 60 },
+      { type: "rest", time: 10 },
       { type: "work", name: "Hold DB for Pec Minor (Left)", time: 45 },
       { type: "rest", time: 5 },
       { type: "work", name: "Hold DB for Pec Minor (Right)", time: 45 },
@@ -723,16 +723,6 @@ const programmes: ProgrammeMenu = {
     },
   ],
   "Jeff Arm Hypertrophy": [
-    { type: "work", name: "Nerve glides" },
-    { type: "work", name: "Band circles" },
-    {
-      type: "superset",
-      repeat: 3,
-      activities: [
-        { type: "work", name: "Close Grip Bench (6-8; 2-1-1-1)" },
-        { type: "rest", time: 60 },
-      ],
-    },
     {
       type: "superset",
       repeat: 2,
@@ -2406,7 +2396,7 @@ const programmes: ProgrammeMenu = {
             time: 120,
             link: "https://youtu.be/3xu7gbC8qnQ",
           },
-          { type: "rest", time: 5 },
+          { type: "rest", time: 15 },
           {
             type: "work",
             name: "Hip Exernal Rotation (Right)",
@@ -2451,6 +2441,125 @@ const programmes: ProgrammeMenu = {
             link: "https://youtu.be/NcUKNykt9DU",
           },
           { type: "rest", time: 30 },
+        ],
+      },
+    ],
+  },
+  "7-5-3": {
+    "Day 1 (Squats)": [
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          { type: "work", name: "Back Squat (Low Bar; 7/5/3; 2-0-X-1" },
+          { type: "rest", time: 150 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Front Foot-Elevated Split Squats (8-10; 3-2-2-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Reverse Nordic (8-10; 2-0-2-0)" },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Glute Bridge (6-8; 2-0-X-2)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "Day 2 (OHP)": [
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          { type: "work", name: "Overhead Press (7/5/3; 2-0-X-1)" },
+          { type: "rest", time: 150 },
+          {
+            type: "work",
+            name: "Chin Up (Semi-supinated; Banded; 7/5/3; 2-0-X-1)",
+          },
+          { type: "rest", time: 150 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Reverse DB Fly (15-20; 2-0-2-0)" },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Alternating DB Hammer Curl (8-10; 2-0-2-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "Day 3 (Deadlift)": [
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          { type: "work", name: "Deadlift (Small deficit; 7/5/3; 2-0-X-1)" },
+          { type: "rest", time: 150 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Towel Curls (15-20; 2-0-2-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Single Leg Hip Bridge (8-10; 3-0-X-4)" },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Side Lunge (Alternating; 8-10; 3-0-3-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "Day 4 (Bench)": [
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          {
+            type: "work",
+            name: "Eccentric Paused Bench Press (7/5/3; 2-1-X-0)",
+          },
+          { type: "rest", time: 150 },
+          { type: "work", name: "DB Supinated Row (7/5/3; 2-0-X-1)" },
+          { type: "rest", time: 150 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Inclined Power Raise (10-12; 4-1-X-0)",
+            link: "https://youtu.be/pzk8QGzP43k",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Unrolling DB Fly (10-12; 3-1-X-0)",
+            link: "https://youtu.be/zF8EFGLO6nE",
+          },
+          { type: "rest", time: 60 },
         ],
       },
     ],
