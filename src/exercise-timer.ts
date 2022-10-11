@@ -67,10 +67,11 @@ const programmes: ProgrammeMenu = {
       {
         type: "work",
         name: "Hip flexor stretch standing over yoga block with side lunges",
-        time: 120,
+        time: 60,
       },
       { type: "work", name: "Deep squat", time: 90 },
       { type: "work", name: "Floating Heel Split Squats (5)" },
+      { type: "work", name: "Standing Barefoot Calf Raise (5; Unilateral)" },
       { type: "work", name: "Neck Push", time: 60 },
       {
         type: "superset",
@@ -82,6 +83,29 @@ const programmes: ProgrammeMenu = {
       },
     ],
   },
+  "Gymnast Biceps": [
+        { type: "rest", time: 30 },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "90° Hangs", time: 30 },
+        { type: "rest", time: 60 },
+        { type: "work", name: "Isometric Pushup", time: 30 },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Bar Shuffle", time: 30 },
+        { type: "rest", time: 60 },
+        { type: "work", name: "Maltese on Safties", time: 30 },
+        { type: "rest", time: 60 },
+      ],
+    },
+  ],
   Tabata: [
     {
       type: "superset",
@@ -2540,7 +2564,13 @@ const programmes: ProgrammeMenu = {
             name: "Eccentric Paused Bench Press (7/5/3; 2-1-X-0)",
           },
           { type: "rest", time: 150 },
-          { type: "work", name: "DB Supinated Row (7/5/3; 2-0-X-1)" },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          { type: "work", name: "Meadows Row (7/5/3; 2-0-X-1)" },
           { type: "rest", time: 150 },
         ],
       },
