@@ -83,8 +83,52 @@ const programmes: ProgrammeMenu = {
       },
     ],
   },
+  "Foot Strength": [
+    { type: "work", name: "Range of motion of toes" },
+    {
+      type: "superset",
+      repeat: 12,
+      activities: [
+        { type: "rest", time: 10 },
+        { type: "work", time: 20, name: "Banded Sole Push (Left)" },
+        { type: "rest", time: 10 },
+        { type: "work", time: 20, name: "Banded Sole Push (Right)" },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 12,
+      activities: [
+        { type: "rest", time: 10 },
+        { type: "work", name: "Foot Flex (Straight; 12)" },
+        { type: "work", name: "Foot Flex (Internally Rotated; 12)" },
+        { type: "work", name: "Foot Flex (Externally Rotated; 12)" },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 12,
+      activities: [
+        { type: "rest", time: 10 },
+        { type: "work", time: 20, name: "Towel Scrunch" },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 12,
+      activities: [
+        { type: "rest", time: 10 },
+        { type: "work", name: "Toe Abduction (Banded; 12)" },
+      ],
+    },
+
+    { type: "rest", time: 10 },
+    { type: "work", time: 20, name: "Wall Push (Foot Flat; Left)" },
+    { type: "rest", time: 10 },
+    { type: "work", time: 20, name: "Wall Push (Foot Flat; Right)" },
+  ],
   "Gymnast Biceps": [
-        { type: "rest", time: 30 },
+    { type: "rest", time: 30 },
     {
       type: "superset",
       repeat: 3,
@@ -2590,6 +2634,112 @@ const programmes: ProgrammeMenu = {
             link: "https://youtu.be/zF8EFGLO6nE",
           },
           { type: "rest", time: 60 },
+        ],
+      },
+    ],
+  },
+  Contrast: {
+    "Day 1 (Squats)": [
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          { type: "work", name: "Back Squat (Heavy; 2)" },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Back Squat (Light; 6)" },
+          { type: "rest", time: 3 * 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Dead Bug (Banded; 20)",
+            link: "https://youtu.be/wCwn7-Z-XjE",
+          },
+          { type: "rest", time: 40 },
+          { type: "work", name: "Reverse Nordic (6-8)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "Day 2 (OHP)": [
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          { type: "work", name: "Overhead Press (Heavy; 2)" },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Overhead Press (Light; 6)" },
+          { type: "rest", time: 3 * 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Lat Pulldown (8-10)" },
+          { type: "rest", time: 45 },
+          {
+            type: "work",
+            name: "Powell Raise (Inclined; 8-10)",
+            link: "https://youtu.be/pzk8QGzP43k",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+    "Day 3 (Deadlift)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Banded Deadlift (3)" },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Glute Drive (6)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "DB Curl (10-12)" },
+          { type: "rest", time: 45 },
+          { type: "stopwatch", name: "Side Plank (Left)" },
+          { type: "rest", time: 15 },
+          { type: "stopwatch", name: "Side Plank (Right)" },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+    "Day 4 (Bench)": [
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          { type: "work", name: "Bench Press (Heavy; 2)" },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Bench Press (Light; 6)" },
+          { type: "rest", time: 3 * 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "DB Skull Crusher (Small Decline; 10-12)" },
+          { type: "rest", time: 45 },
+          { type: "work", name: "DB External Rotation (Knee; 6-8)" },
+          { type: "rest", time: 45 },
         ],
       },
     ],
