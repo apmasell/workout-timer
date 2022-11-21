@@ -2725,6 +2725,104 @@ const programmes: ProgrammeMenu = {
       },
     ],
   },
+  "54321": {
+    "Day 1 (Squat)": [
+      ...[5, 4, 3, 2, 1].flatMap<RootExcercise>((i) => [
+        { type: "work", name: `Back Squat (${i})` },
+        { type: "rest", time: 3 * 60 },
+      ]),
+      {
+        type: "superset",
+        repeat: 5,
+        activities: [{ type: "work", name: "Back Squat (3; 40%)", time: 60 }],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Single Leg Step-up (12-15)" },
+          { type: "rest", time: 40 },
+          {
+            type: "work",
+            name: "Seated Calf Raise (12-15; DBs on Knees; Stay in stretched position)",
+          },
+          { type: "rest", time: 40 },
+        ],
+      },
+    ],
+    "Day 2 (OHP)": [
+      ...[5, 4, 3, 2, 1].flatMap<RootExcercise>((i) => [
+        { type: "work", name: `Overhead Press (${i})` },
+        { type: "rest", time: 3 * 60 },
+      ]),
+      {
+        type: "superset",
+        repeat: 5,
+        activities: [
+          { type: "work", name: "Overhead Press (3; 40%)", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Facepull (12-15)" },
+          { type: "rest", time: 40 },
+          {
+            type: "work",
+            name: "Skull Crusher (12-15; DB 45degree; Touch delt)",
+          },
+          { type: "rest", time: 40 },
+        ],
+      },
+    ],
+    "Day 3 (Deadlift)": [
+      ...[5, 4, 3, 2, 1].flatMap<RootExcercise>((i) => [
+        { type: "work", name: `Deadlift (${i})` },
+        { type: "rest", time: 3 * 60 },
+      ]),
+      {
+        type: "superset",
+        repeat: 5,
+        activities: [{ type: "work", name: "Deadlift (3; 40%)", time: 60 }],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Dead Bug (20; Alternating limbs)" },
+          { type: "rest", time: 40 },
+          {
+            type: "work",
+            name: "Good Morning (12-15; Seated; DB)",
+            link: "https://youtu.be/ScBgwqMrv3Q",
+          },
+          { type: "rest", time: 40 },
+        ],
+      },
+    ],
+    "Day 4 (Chest)": [
+      ...[5, 4, 3, 2, 1].flatMap<RootExcercise>((i) => [
+        { type: "work", name: `Chest Press (${i})` },
+        { type: "rest", time: 3 * 60 },
+      ]),
+      {
+        type: "superset",
+        repeat: 5,
+        activities: [{ type: "work", name: "Chest Press (3; 40%)", time: 60 }],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Lat Pulldown (12-15; Semi-supinated)" },
+          { type: "rest", time: 40 },
+          { type: "work", name: "Bicep Curl (12-15; DB 45degree)" },
+          { type: "rest", time: 40 },
+        ],
+      },
+    ],
+  },
 };
 
 function showProgrammes(programmes: ProgrammeMenu) {
