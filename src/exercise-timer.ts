@@ -85,26 +85,14 @@ const programmes: ProgrammeMenu = {
   },
   "Foot Strength": [
     { type: "work", name: "Range of motion of toes" },
-    {
-      type: "superset",
-      repeat: 12,
-      activities: [
-        { type: "rest", time: 10 },
-        { type: "work", time: 20, name: "Banded Sole Push (Left)" },
-        { type: "rest", time: 10 },
-        { type: "work", time: 20, name: "Banded Sole Push (Right)" },
-      ],
-    },
-    {
-      type: "superset",
-      repeat: 12,
-      activities: [
-        { type: "rest", time: 10 },
-        { type: "work", name: "Foot Flex (Straight; 12)" },
-        { type: "work", name: "Foot Flex (Internally Rotated; 12)" },
-        { type: "work", name: "Foot Flex (Externally Rotated; 12)" },
-      ],
-    },
+    { type: "rest", time: 10 },
+    { type: "work", time: 40, name: "Banded Sole Push (Left)" },
+    { type: "rest", time: 10 },
+    { type: "work", time: 40, name: "Banded Sole Push (Right)" },
+    { type: "rest", time: 10 },
+    { type: "work", name: "Foot Flex (Straight; 12)" },
+    { type: "work", name: "Foot Flex (Internally Rotated; 12)" },
+    { type: "work", name: "Foot Flex (Externally Rotated; 12)" },
     {
       type: "superset",
       repeat: 12,
@@ -113,15 +101,8 @@ const programmes: ProgrammeMenu = {
         { type: "work", time: 20, name: "Towel Scrunch" },
       ],
     },
-    {
-      type: "superset",
-      repeat: 12,
-      activities: [
-        { type: "rest", time: 10 },
-        { type: "work", name: "Toe Abduction (Banded; 12)" },
-      ],
-    },
-
+    { type: "rest", time: 10 },
+    { type: "work", name: "Toe Abduction (Banded; 12)" },
     { type: "rest", time: 10 },
     { type: "work", time: 20, name: "Wall Push (Foot Flat; Left)" },
     { type: "rest", time: 10 },
