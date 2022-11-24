@@ -46,15 +46,6 @@ const programmes: ProgrammeMenu = {
       { type: "work", name: "Hold DB for Pec Minor (Right)", time: 45 },
       { type: "work", name: "Band pulls" },
       { type: "work", name: "Train Tracks" },
-      { type: "work", name: "Neck Push", time: 60 },
-      {
-        type: "superset",
-        repeat: 2,
-        activities: [
-          { type: "work", name: "Armpit Stare", time: 60 },
-          { type: "work", name: "Star Stare", time: 60 },
-        ],
-      },
     ],
     Lower: [
       { type: "work", name: "Foam roll back" },
@@ -72,17 +63,15 @@ const programmes: ProgrammeMenu = {
       { type: "work", name: "Deep squat", time: 90 },
       { type: "work", name: "Floating Heel Split Squats (5)" },
       { type: "work", name: "Standing Barefoot Calf Raise (5; Unilateral)" },
-      { type: "work", name: "Neck Push", time: 60 },
-      {
-        type: "superset",
-        repeat: 2,
-        activities: [
-          { type: "work", name: "Armpit Stare", time: 60 },
-          { type: "work", name: "Star Stare", time: 60 },
-        ],
-      },
     ],
   },
+  "Jaw & Neck": [
+    { type: "work", name: "Cervical extension+retraction (8-10)" },
+    ...["Left", "Right"].map<RootExcercise>((side) => ({
+      type: "work",
+      name: `Cervical rotation (8-10; ${side})`,
+    })),
+  ],
   "Foot Strength": [
     { type: "work", name: "Range of motion of toes" },
     { type: "rest", time: 10 },
