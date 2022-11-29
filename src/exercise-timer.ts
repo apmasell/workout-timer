@@ -676,29 +676,6 @@ const programmes: ProgrammeMenu = {
     ],
   },
   "Jeff+Will Arm Hypertrophy": [
-    { type: "work", name: "Nerve glides" },
-    { type: "work", name: "Band circles" },
-    { type: "work", name: "Band Shoulder Stretch (Facing Away)" },
-    { type: "work", name: "Band Pull with Full Rotation" },
-    { type: "work", name: "Band Pull with Shoulder Depressions" },
-    {
-      type: "superset",
-      repeat: 3,
-      activities: [
-        { type: "work", name: "Wall Pushes with Elevations" },
-        { type: "rest", time: 30 },
-        { type: "work", name: "Train Tracks" },
-        { type: "rest", time: 30 },
-      ],
-    },
-    {
-      type: "superset",
-      repeat: 3,
-      activities: [
-        { type: "work", name: "Close Grip Bench (6-8; 2-1-1-1)" },
-        { type: "rest", time: 60 },
-      ],
-    },
     {
       type: "superset",
       repeat: 4,
