@@ -2900,15 +2900,6 @@ function runProgramme(exercises: SimpleExercise[], remaining: Remaining[]) {
     }
     beep.play();
     let cancel: () => void = () => {};
-    if (current > 0) {
-      const previous = document.createElement("button");
-      previous.innerText = "❮❮ Skip Back";
-      previous.addEventListener("click", () => {
-        cancel();
-        show(current - 1);
-      });
-      document.body.appendChild(previous);
-    }
     const repeat = document.createElement("button");
     repeat.innerText = "⭯ Repeat Step";
     repeat.addEventListener("click", () => {
@@ -2923,6 +2914,15 @@ function runProgramme(exercises: SimpleExercise[], remaining: Remaining[]) {
       showProgrammes(programmes);
     });
     document.body.appendChild(menu);
+    if (current > 0) {
+      const previous = document.createElement("button");
+      previous.innerText = "❮❮ Skip Back";
+      previous.addEventListener("click", () => {
+        cancel();
+        show(current - 1);
+      });
+      document.body.appendChild(previous);
+    }
     if (current < exercises.length) {
       const next = document.createElement("button");
       next.innerText = "Skip Ahead ❯❯";
