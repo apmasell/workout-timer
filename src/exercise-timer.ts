@@ -2975,6 +2975,13 @@ function runProgramme(exercises: SimpleExercise[], remaining: Remaining[]) {
       const text = document.createElement("h1");
       text.innerText = "DONE!!!";
       document.body.appendChild(text);
+      const again = document.createElement("button");
+      again.innerText = "Again";
+      again.addEventListener("click", () => {
+        cancel();
+        show(0);
+      });
+      document.body.appendChild(again);
     } else {
       const text = document.createElement("h1");
       document.body.appendChild(text);
