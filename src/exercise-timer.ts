@@ -2963,7 +2963,7 @@ const programmes: ProgrammeMenu = {
         activities: [
           {
             type: "work",
-            name: "Overhead Press (BB; Yielding Isometric Mechanical Disadvantage; 6; 4-0-2-0)",
+            name: "Overhead Press (BB; 2-3; 4-0-2-0)",
           },
           { type: "rest", time: 90 },
           { type: "work", name: "Chin-up (Supinated; 6; 4-0-2-0)" },
@@ -2986,7 +2986,7 @@ const programmes: ProgrammeMenu = {
         activities: [
           { type: "work", name: "Decline DB Skull Crushers (12; 3-0-1-0)" },
           { type: "rest", time: 45 },
-          { type: "work", name: "Seated DB Curl (12; 3-0-1-0)" },
+          { type: "work", name: "Standing DB Curl (12; 3-0-1-0)" },
           { type: "rest", time: 45 },
         ],
       },
@@ -2996,7 +2996,7 @@ const programmes: ProgrammeMenu = {
         type: "superset",
         repeat: 4,
         activities: [
-          { type: "work", name: "Front Squat (8; 4-0-X-0)" },
+          { type: "work", name: "Front Squat (2-3; 4-0-X-0)" },
           { type: "rest", time: 90 },
         ],
       },
@@ -3004,7 +3004,7 @@ const programmes: ProgrammeMenu = {
         type: "superset",
         repeat: 4,
         activities: [
-          { type: "work", name: "Pin Squat (Mid-height; 8; 3-0-1-0)" },
+          { type: "work", name: "Pin Squat (Mid-height; 6; 3-0-1-0)" },
           { type: "rest", time: 90 },
         ],
       },
@@ -3012,9 +3012,9 @@ const programmes: ProgrammeMenu = {
         type: "superset",
         repeat: 3,
         activities: [
-          { type: "work", name: "Front Step-up (15; 3-0-1-0)" },
+          { type: "work", name: "Reverse Nordics (10-12; 3-0-1-0)" },
           { type: "rest", time: 60 },
-          { type: "work", name: "Hip Extension (15; 2-0-2-0)" },
+          { type: "work", name: "Glute Drive (15; 2-0-2-0)" },
           { type: "rest", time: 60 },
         ],
       },
@@ -3024,7 +3024,7 @@ const programmes: ProgrammeMenu = {
         type: "superset",
         repeat: 4,
         activities: [
-          { type: "work", name: "Bench Press (8; 4-0-X-0)" },
+          { type: "work", name: "Bench Press (2-3; 4-0-X-0)" },
           { type: "rest", time: 90 },
           { type: "work", name: "Chin-up (Neutral; 6; 2-0-1-0)" },
           { type: "rest", time: 90 },
@@ -3044,9 +3044,12 @@ const programmes: ProgrammeMenu = {
         type: "superset",
         repeat: 3,
         activities: [
-          { type: "work", name: "External Rotation (DB on knee; 12; 3-0-1-0)" },
+          { type: "work", name: "External Rotation (Elbow High; 12; 3-0-1-0)" },
           { type: "rest", time: 45 },
-          { type: "work", name: "Trap 3 Raise (45° Incline; 12; 3-0-1-0)" },
+          {
+            type: "work",
+            name: "Trap 3 Raise (Bent Over; Head Supported; 12; 3-0-1-0)",
+          },
           { type: "rest", time: 45 },
         ],
       },
@@ -3084,6 +3087,158 @@ const programmes: ProgrammeMenu = {
           { type: "rest", time: 45 },
           { type: "work", name: "Hip Extension (15; 3-0-1-0)" },
           { type: "rest", time: 45 },
+        ],
+      },
+    ],
+    "2 Accumulation 1 (OHP)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Overhead Press (Mid Pinned; 12,8,8,8; 2-2-X-0)",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Chin-up (Supinated; 8; 2-0-1-0)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Flat DB Press (Neutral; 12; 3-0-1-0)" },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Seated Row (Pull to Chin; 12; 3-0-1-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Tricep Cable Pressdown (15; 3-0-1-0)" },
+          { type: "rest", time: 45 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Bicep Curl (High Cable; 15; 3-0-1-0)" },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+    "2 Accumulation 2 (Front Squat)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Front Squat (9; 4-0-X-0)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Front-Foot Flat Split Squat (12; 3-0-1-0)",
+          },
+          { type: "rest", time: 75 },
+          { type: "work", name: "Hamstring Curl (12; 3-0-1-0)" },
+          { type: "rest", time: 75 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Step Down (Heel Elevated; 15; 2-0-2-0)" },
+          { type: "rest", time: 45 },
+          { type: "work", name: "Glute Drive (15; 3-0-1-0)" },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+    "2 Accumulation 3 (Bench)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Inclined Bench (9; 4-0-X-0)" },
+          { type: "rest", time: 90 },
+          { type: "work", name: "Chin Up (8; 2-0-1-0)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Decline Dumbbell Press (12; 3-0-1-0)" },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Half Kneeling Cable Row(High Cable; 12; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "French Press(Bi-lateral; 15; 3-0-1-0)",
+          },
+          { type: "rest", time: 45 },
+          {
+            type: "work",
+            name: "Bicep Curl (Inclined; Arm Behind; 15; 2-0-2-0)",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+    "2 Accumulation 4 (Front Squat)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Front Squat (9; 4-0-X-0)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Rack Pull (11; 3-0-1-0)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Anteior Tib Raise Raise (15; 3-0-1-0)" },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Plank (Modified with Hip Lift; 12-20; 2-0-2-0)",
+          },
+          { type: "rest", time: 60 },
         ],
       },
     ],
