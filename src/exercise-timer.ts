@@ -1,6 +1,6 @@
 type RootExcercise = SimpleExercise | Superset;
 
-type SimpleExercise = Exercise | Rest | Stopwatch;
+type SimpleExercise = Exercise | Rest | Stopwatch | Burst;
 
 interface Exercise {
   type: "work";
@@ -17,6 +17,13 @@ interface Rest {
 
 interface Stopwatch {
   type: "stopwatch";
+  name: string;
+  link?: string;
+}
+
+interface Burst {
+  type: "burst";
+  time: number;
   name: string;
   link?: string;
 }
@@ -78,7 +85,7 @@ const programmes: ProgrammeMenu = {
       {
         type: "work",
         name: "Couch Stretch (Left)",
-        time: 30,
+        time: 60,
       },
       { type: "rest", time: 5 },
       {
@@ -127,6 +134,11 @@ const programmes: ProgrammeMenu = {
       type: "work",
       time: 40,
       name: "Dynamic Stability (Dumbbell Pass; Right)",
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [{ type: "burst", name: "Toe Jumps", time: 60 }],
     },
   ],
   "Gymnast Biceps": [
@@ -3273,6 +3285,13 @@ function showProgrammes(programmes: ProgrammeMenu) {
                           link: a.link,
                           name: `${a.name} [${i + 1}/${e.repeat}]`,
                         };
+                      case "burst":
+                        return {
+                          type: "burst" as const,
+                          time: a.time,
+                          link: a.link,
+                          name: `${a.name} [${i + 1}/${e.repeat}]`,
+                        };
                       case "stopwatch":
                         return {
                           type: "stopwatch" as const,
@@ -3310,6 +3329,7 @@ function remaining(exercises: RootExcercise[]): Remaining[] {
   for (const exercise of exercises) {
     switch (exercise.type) {
       case "work":
+      case "burst":
       case "stopwatch":
         const n = exercise.name.split("(")[0].trim();
         if (!seen.has(n)) {
@@ -3428,6 +3448,19 @@ function runProgramme(exercises: SimpleExercise[], remaining: Remaining[]) {
             document.body.appendChild(next);
           }
           break;
+        case "burst":
+          text.innerText = exercise.name;
+          if (exercise.link) {
+            const link = document.createElement("a");
+            link.href = exercise.link;
+            link.target = "_blank";
+            link.innerHTML = "🔗";
+            text.appendChild(link);
+          }
+          cancel = showBurstTimer(exercise.time, undefined, () =>
+            show(current + 1)
+          );
+          break;
         case "stopwatch":
           text.innerText = exercise.name;
           if (exercise.link) {
@@ -3530,6 +3563,92 @@ function showTimer(
       display.innerText = `${"0".repeat(
         length - Math.max(1, Math.ceil(Math.log10(current)))
       )}${Math.floor(current)} / ${timeout}`;
+      inner.style.width = `${Math.min(
+        100,
+        Math.max(0, (current * 100) / timeout)
+      )}%`;
+    }
+  }
+  pauseButton.addEventListener("click", () => {
+    if (handle == null) {
+      last = new Date();
+      handle = window.setInterval(tick, 100);
+    } else {
+      current += (new Date().getTime() - last.getTime()) / 1000;
+      window.clearInterval(handle);
+      handle = null;
+    }
+  });
+  document.body.appendChild(display);
+  document.body.appendChild(pauseButton);
+  if (upgradeTime) {
+    const tired = document.createElement("button");
+    tired.innerText = "Please, I'm tired";
+
+    document.body.appendChild(tired);
+    tired.addEventListener("click", () => {
+      timeout = upgradeTime;
+    });
+  }
+  handle = window.setInterval(tick, 100);
+  return () => {
+    if (handle != null) {
+      window.clearInterval(handle);
+    }
+  };
+}
+function showBurstTimer(
+  defaultTime: number,
+  upgradeTime: number | undefined,
+  finished: () => void
+): () => void {
+  function mixColor(scale: number) {
+    return (
+      "#" +
+      [
+        [230, 29],
+        [57, 53],
+        [70, 87],
+      ]
+        .map(([a, b]) =>
+          Math.trunc(Math.sqrt(a * a * (1 - scale) + b * b * scale)).toString(
+            16
+          )
+        )
+        .join("")
+    );
+  }
+  let timeout = defaultTime;
+  const display = document.createElement("p");
+  const pauseButton = document.createElement("button");
+  pauseButton.innerText = "Play/Pause";
+  const length = Math.ceil(Math.log10(timeout));
+  display.innerText = `${"0".repeat(length)} / ${timeout}`;
+  let handle: number | null = null;
+  let current = 0;
+  let last = new Date();
+  const inner = document.createElement("div");
+  inner.style.backgroundColor = mixColor(0);
+  const outer = document.createElement("div");
+  outer.appendChild(inner);
+  outer.className = "progress";
+  document.body.appendChild(outer);
+  inner.style.width = "0%";
+
+  function tick() {
+    const now = new Date();
+    current += (now.getTime() - last.getTime()) / 1000;
+    last = now;
+    if (current >= timeout) {
+      if (handle != null) {
+        window.clearInterval(handle);
+      }
+      finished();
+    } else {
+      display.innerText = `${"0".repeat(
+        length - Math.max(1, Math.ceil(Math.log10(current)))
+      )}${Math.floor(current)} / ${timeout}`;
+      inner.style.backgroundColor = mixColor(current / timeout);
       inner.style.width = `${Math.min(
         100,
         Math.max(0, (current * 100) / timeout)
