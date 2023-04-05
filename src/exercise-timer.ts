@@ -719,7 +719,71 @@ const programmes: ProgrammeMenu = {
       },
     ],
   },
-  "Jeff+Will Arm Hypertrophy": [
+  "Arm Hypertrophy 3": [
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "Unilateral Cable Bicep Curl in Shortened Position (12-15; 2-0-2-0)",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "Bicep Chinup (10-12; 2-0-1-0)",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Wrist Curl (12-15; 2-0-1-0)" },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "Elbow Pushup (12)",
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 4,
+      activities: [
+        {
+          type: "work",
+          name: "Real Pushup Position Hold",
+          time: 30,
+        },
+        { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 2,
+      activities: [
+        { type: "work", name: "Elevated Shoulder Isometric Walks", time: 40 },
+        { type: "rest", time: 60 },
+      ],
+    },
+  ],
+
+  "Arm Hypertrophy 2 (Jeff+Will)": [
     {
       type: "superset",
       repeat: 4,
@@ -781,7 +845,7 @@ const programmes: ProgrammeMenu = {
       ],
     },
   ],
-  "Jeff Arm Hypertrophy": [
+  "Arm Hypertrophy 1 (Jeff)": [
     {
       type: "superset",
       repeat: 2,
