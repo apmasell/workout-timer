@@ -3312,6 +3312,185 @@ const programmes: ProgrammeMenu = {
         ],
       },
     ],
+    "3 Accumulation 1 (OHP)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "DB Overhead Press (Neutral; Standing; 12; 4-0-X-0)",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Straight Arm Pushdown (Unilateral; 12; 4-0-X-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Flat DB Press (Semi-pronated; Fat Grip; 15; 3-0-1-0)",
+          },
+          { type: "rest", time: 45 },
+          {
+            type: "work",
+            name: "Dual DB Row (Chest Supported; Supinating; 15; 3-0-1-0)",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "External Rotation (From Knee; 6-8; 3-1-3-1)",
+            link: "https://www.youtube.com/watch?v=M9VV617qy_4",
+          },
+          { type: "rest", time: 45 },
+          {
+            type: "work",
+            name: "Wide Stance Walk Out (8)",
+            link: "https://www.youtube.com/watch?v=iVYH_xyLIL0",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+    "3 Accumulation 2 (Squat)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "High Bar Squat (12; 4-0-X-0)" },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Front Squat",
+            time: 20,
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Lunge (Deficit; 12/leg)",
+            link: "https://www.youtube.com/watch?v=W0wZ-yk6WR4",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Reverse Table Top (12; 3-0-3-0)",
+            link: "https://www.youtube.com/watch?v=n4Fn8SGQ-zY",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "3 Accumulation 3 (Bench)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Bench Press (Narrow Grip; Pronated; 12; 4-0-X-0)",
+          },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Chin Up (Neutral; AMREP; 4-0-X-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Half-Kneeling Overhead Press (15; 3-0-1-0)" },
+          { type: "rest", time: 45 },
+          {
+            type: "work",
+            name: "Cable Row (Single Arm; Low to High; Supinating; 15; 3-0-1-0)",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Side Kick Through (12; 1-0-1-0)",
+            link: "https://www.youtube.com/watch?v=1jCudOtlLsc",
+          },
+          { type: "rest", time: 45 },
+          {
+            type: "work",
+            name: "Tricep Extension (Cable; Overhead; Unilateral; 12; 3-0-1-0)",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+    "3 Accumulation 4 (Deadlift)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Good Morning (12; 4-0-X-0)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Bulgarian Split Squat (Dual DB; 5; 3-3-X-0)" },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Seated Good Morning (DB; 12; 3-0-1-0)",
+            link: "https://www.youtube.com/shorts/cbZeFHwuq-c",
+          },
+          { type: "rest", time: 75 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Step Down (TKE Modification; 20; 3-0-1-0)",
+            link: "https://www.youtube.com/watch?v=kJVuposhBdg",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Hip Extension (Single Leg; From Bench; 15; 3-0-1-0)",
+            link: "https://www.youtube.com/watch?v=K7tLjNNWnZM",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
   },
 };
 
