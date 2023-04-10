@@ -84,14 +84,8 @@ const programmes: ProgrammeMenu = {
       { type: "rest", time: 5 },
       {
         type: "work",
-        name: "Couch Stretch (Left)",
-        time: 60,
-      },
-      { type: "rest", time: 5 },
-      {
-        type: "work",
         name: "Couch Stretch (Right)",
-        time: 30,
+        time: 60,
       },
       { type: "rest", time: 5 },
       { type: "work", name: "Deep squat", time: 60 },
