@@ -57,7 +57,7 @@ const programmes: ProgrammeMenu = {
         name: "Lunge Side Rotation (Wall+Yoga Block; Left)",
         time: 20,
       },
-      { type: "rest", time: 5 },
+      { type: "rest", time: 10 },
       {
         type: "work",
         name: "Lunge Side Rotation (Wall+Yoga Block; Right)",
@@ -87,8 +87,9 @@ const programmes: ProgrammeMenu = {
         name: "Couch Stretch (Right)",
         time: 60,
       },
+      { type: "work", name: "Put on Squat Shoes" },
       { type: "rest", time: 5 },
-      { type: "work", name: "Deep squat", time: 60 },
+      { type: "work", name: "Deep squat", time: 120 },
     ],
   },
   "Jaw & Neck": [
