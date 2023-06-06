@@ -3492,6 +3492,176 @@ const programmes: ProgrammeMenu = {
         ],
       },
     ],
+    "3 Intensification (Inclined Press)": [
+      {
+        type: "superset",
+        repeat: 5,
+        activities: [
+          { type: "work", name: "Inclined Press (8; 4-0-X-0)" },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Chin Up (Eccentric; 8; 3-0-0-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "DB Press (Decline; Fat Grip; 12; 3-0-1-0)" },
+          { type: "rest", time: 45 },
+          { type: "work", name: "Pendelay Row (12; 2-1-X-1)" },
+          { type: "rest", time: 45 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "External Rotation (From knee; 6-8; 3-1-3-1)",
+            link: "https://youtu.be/M9VV617qy_4",
+          },
+          { type: "rest", time: 45 },
+          {
+            type: "work",
+            name: "Pancake Stretch (Cable Assisted; 8; 4-4-4-4)",
+            link: "https://youtu.be/tzKMFeZ_K9g",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+    "3 Intensification (Back Squat)": [
+      {
+        type: "superset",
+        repeat: 5,
+        activities: [
+          {
+            type: "work",
+            name: "Squat (Low Bar; 8; 4-0-X-0)",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Split Squat (Rear Leg Focus; No knee over toe; 8; 3-0-3-0)",
+          },
+          { type: "rest", time: 75 },
+          { type: "work", name: "Hamstring Curl (12; 3-0-1-0)" },
+          { type: "rest", time: 75 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Squat to Hamstring Stretch (15; 2-0-2-0)",
+            link: "https://youtu.be/1oQSsXhbhjk",
+          },
+          { type: "rest", time: 45 },
+          {
+            type: "work",
+            name: "Hip Extension (Banded)",
+            link: "https://youtube.com/shorts/IRscvDyN-8A",
+            time: 30,
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+    "3 Intensification (Dip)": [
+      {
+        type: "superset",
+        repeat: 5,
+        activities: [
+          { type: "work", name: "Dip (8; 4-0-X-0)" },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Pulldown (Dual Arm; 8; 4-0-1-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Close Grip Bench Press (Spoto; Fat Grip; 8; 3-3-1-0)",
+          },
+          { type: "rest", time: 60 },
+          { type: "work", name: "DB Row (Standing; Dual Arm; 12; 2-0-2-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Scapular Push Up (10; 3-1-3-1)",
+            link: "https://youtu.be/5YHZnEsE9hA",
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Bird Dog Isometric (Left)",
+            link: "https://youtu.be/pL6eIDHttXA",
+            time: 20,
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Bird Dog Isometric (Right)",
+            link: "https://youtu.be/pL6eIDHttXA",
+            time: 20,
+          },
+          { type: "rest", time: 10 },
+        ],
+      },
+    ],
+    "3 Intensification (Front Squat)": [
+      { type: "rest", time: 20 },
+      {
+        type: "superset",
+        repeat: 5,
+        activities: [
+          { type: "work", name: "Front Squat (Eccentric)", time: 10 },
+          { type: "work", name: "Front Squat (Hold)", time: 10 },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Deadlift (8; 4-0-1-0)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Anterior Tib Raise (15; 3-0-1-0)" },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Hip Mobility Drill (10/side)",
+            link: "https://youtu.be/qARWIQKokuA",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
   },
 };
 
