@@ -3758,6 +3758,7 @@ function remaining(exercises: RootExcercise[]): Remaining[] {
         for (const child of exercise.activities) {
           switch (child.type) {
             case "work":
+            case "burst":
             case "stopwatch":
               const n = child.name.split("(")[0].trim();
               if (!seen.has(n)) {
