@@ -122,6 +122,10 @@ const programmes: ProgrammeMenu = {
       type: "work",
       name: "Alternate Toe Lifts (15)",
     },
+    {
+      type: "work",
+      name: "Toe Spreads (15)",
+    },
     { type: "rest", time: 10 },
     { type: "work", time: 40, name: "Dynamic Stability (Dumbbell Pass; Left)" },
     { type: "rest", time: 10 },
@@ -133,7 +137,10 @@ const programmes: ProgrammeMenu = {
     {
       type: "superset",
       repeat: 3,
-      activities: [{ type: "burst", name: "Toe Jumps", time: 60 }],
+      activities: [
+        { type: "work", name: "Toe Jumps (120bpm)", time: 20 },
+        { type: "rest", time: 40 },
+      ],
     },
   ],
   "Gymnast Biceps": [
