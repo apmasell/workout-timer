@@ -3672,7 +3672,20 @@ const programmes: ProgrammeMenu = {
   },
 };
 
+const bindings: { [name: string]: () => void } = {};
+
+document.body.addEventListener("keydown", (event) => {
+  const callback = bindings[event.key];
+  if (callback) {
+    event.preventDefault();
+    callback();
+  }
+});
+
 function showProgrammes(programmes: ProgrammeMenu) {
+  for (const prop of Object.getOwnPropertyNames(bindings)) {
+    delete bindings[prop];
+  }
   while (document.body.hasChildNodes()) {
     document.body.removeChild(document.body.lastChild!);
   }
@@ -3785,42 +3798,55 @@ function runProgramme(exercises: SimpleExercise[], remaining: Remaining[]) {
     exercises.length--;
   }
   function show(current: number) {
+    for (const prop of Object.getOwnPropertyNames(bindings)) {
+      delete bindings[prop];
+    }
     while (document.body.hasChildNodes()) {
       document.body.removeChild(document.body.lastChild!);
     }
     beep.play();
     let cancel: () => void = () => {};
-    const repeat = document.createElement("button");
-    repeat.innerText = "⭯ Repeat Step";
-    repeat.addEventListener("click", () => {
+    const doRepeat: () => void = () => {
       cancel();
       show(current);
-    });
+    };
+    const repeat = document.createElement("button");
+    repeat.innerText = "⭯ Repeat Step";
+    repeat.addEventListener("click", doRepeat);
     document.body.appendChild(repeat);
-    const menu = document.createElement("button");
-    menu.innerText = "☰ Menu";
-    menu.addEventListener("click", () => {
+    bindings["F5"] = doRepeat;
+
+    const doMenu: () => void = () => {
       cancel();
       showProgrammes(programmes);
-    });
+    };
+    const menu = document.createElement("button");
+    menu.innerText = "☰ Menu";
+    menu.addEventListener("click", doMenu);
     document.body.appendChild(menu);
+    bindings["Escape"] = doMenu;
     if (current > 0) {
-      const previous = document.createElement("button");
-      previous.innerText = "❮❮ Skip Back";
-      previous.addEventListener("click", () => {
+      const doPrevious: () => void = () => {
         cancel();
         show(current - 1);
-      });
+      };
+      const previous = document.createElement("button");
+      previous.innerText = "❮❮ Skip Back";
+      previous.addEventListener("click", doPrevious);
       document.body.appendChild(previous);
+      bindings["ArrowUp"] = doPrevious;
+      bindings["i"] = doPrevious;
     }
     if (current < exercises.length) {
-      const next = document.createElement("button");
-      next.innerText = "Skip Ahead ❯❯";
-      next.addEventListener("click", () => {
+      const doNext: () => void = () => {
         cancel();
         show(current + 1);
-      });
+      };
+      const next = document.createElement("button");
+      next.innerText = "Skip Ahead ❯❯";
+      next.addEventListener("click", doNext);
       document.body.appendChild(next);
+      bindings["o"] = doNext;
     }
     if (current >= exercises.length) {
       const text = document.createElement("h1");
@@ -3858,10 +3884,12 @@ function runProgramme(exercises: SimpleExercise[], remaining: Remaining[]) {
               show(current + 1)
             );
           } else {
+            const doNext: () => void = () => show(current + 1);
             const next = document.createElement("button");
             next.innerText = "Continue ❯";
-            next.addEventListener("click", () => show(current + 1));
+            next.addEventListener("click", doNext);
             document.body.appendChild(next);
+            bindings["ArrowDown"] = doNext;
           }
           break;
         case "burst":
@@ -3985,7 +4013,7 @@ function showTimer(
       )}%`;
     }
   }
-  pauseButton.addEventListener("click", () => {
+  const togglePause: () => void = () => {
     if (handle == null) {
       last = new Date();
       handle = window.setInterval(tick, 100);
@@ -3994,7 +4022,9 @@ function showTimer(
       window.clearInterval(handle);
       handle = null;
     }
-  });
+  };
+  pauseButton.addEventListener("click", togglePause);
+  bindings["b"] = togglePause;
   document.body.appendChild(display);
   document.body.appendChild(pauseButton);
   if (upgradeTime) {
