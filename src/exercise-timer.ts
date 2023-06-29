@@ -134,6 +134,7 @@ const programmes: ProgrammeMenu = {
       time: 40,
       name: "Dynamic Stability (Dumbbell Pass; Right)",
     },
+    { type: "rest", time: 10 },
     {
       type: "superset",
       repeat: 3,
@@ -750,6 +751,22 @@ const programmes: ProgrammeMenu = {
       activities: [
         { type: "work", name: "Wrist Curl (12-15; 2-0-1-0)" },
         { type: "rest", time: 60 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Wrist Rotation (12-15)" },
+        { type: "rest", time: 45 },
+      ],
+    },
+    {
+      type: "superset",
+      repeat: 3,
+      activities: [
+        { type: "work", name: "Wrist Lift (12-15)" },
+        { type: "rest", time: 45 },
       ],
     },
     {
