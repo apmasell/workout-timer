@@ -3687,6 +3687,213 @@ const programmes: ProgrammeMenu = {
       },
     ],
   },
+  "GPP 3": {
+    "Day 1 (Upper)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Cuban Press (Banded; 15)",
+            link: "https://youtu.be/lgAgNLQRigI",
+          },
+          { type: "rest", time: 10 },
+          { type: "work", name: "DB Inclined Press (45°; 12; 3-0-1-0)" },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Side Plank (Left)",
+            link: "https://youtube.com/shorts/NnO-oVvOk3Q?feature=share",
+            time: 15,
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Side Plank (Right)",
+            link: "https://youtube.com/shorts/NnO-oVvOk3Q?feature=share",
+            time: 15,
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "DB Pullover (Banded; 12; 3-0-3-0)",
+            link: "https://youtu.be/pR47sxwYFi4",
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Paloff Press (Rotational; 15)",
+            link: "https://youtube.com/shorts/B0NIj69AbEk?feature=share",
+          },
+          { type: "rest", time: 10 },
+          { type: "work", name: "Side Plank (4-6; Kick-through)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "Day 2 (Lower)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Seated Good Morning (DB; 15; 3-0-3-0)" },
+          { type: "rest", time: 10 },
+          { type: "work", name: "Back Squat (Banded; Box; 6; X-1-X-1)" },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Copenhagen Plank (Left; Short Lever)",
+            time: 30,
+            link: "https://youtube.com/shorts/Rwap0_j5i5A?feature=share",
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Copenhagen Plank (Right; Short Lever)",
+            time: 30,
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "RDL (BB; 8; 3-0-1-0" },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Hindu Squats (20; 2-0-2-0)",
+            link: "https://youtube.com/shorts/13fTUq0qxa8?feature=share",
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Shoulder Taps (20)",
+            link: "https://youtu.be/8rgurWd-PB8",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "Day 3 (Upper)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Bench Press (Football Bar; Banded; 6; X-1-X-1)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Chin Up (Neutral; Eccentric; 5; 5-0-0-0)" },
+          { type: "rest", time: 30 },
+          {
+            type: "work",
+            name: "Paloff Hold (Left; Split Stance)",
+            time: 30,
+            link: "https://youtube.com/shorts/JVPX2fWpNyw?feature=share",
+          },
+          { type: "rest", time: 10 },
+          { type: "work", name: "Paloff Hold (Right; Split Stance)", time: 30 },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Cable Row (Unilateral; 12; 3-0-1-0)",
+            link: "https://youtu.be/WH7J9jkEqRQ",
+          },
+          { type: "rest", time: 10 },
+          { type: "work", name: "Dumbell Bench (Neutral; 12; 3-0-1-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Prone Scorpion Movement Flow (12)",
+            link: "https://youtu.be/Ta1wtgZCsVE",
+          },
+          { type: "rest", time: 30 },
+        ],
+      },
+    ],
+    "Day 4 (Lower)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Seated Good Morning (Banded; 15; 3-0-3-0)",
+            link: "https://youtube.com/shorts/yICaZ7llVbU?feature=share",
+          },
+          { type: "rest", time: 30 },
+          {
+            type: "work",
+            name: "Front Foot Elevated Split Squat (Front Heel Elevated; Hamstring to calf; 6; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Front Squat (#1; Lower)", time: 6 },
+          { type: "burst", name: "Front Squat (#1; Rise)", time: 6 },
+          { type: "work", name: "Front Squat (#2; Lower)", time: 6 },
+          { type: "burst", name: "Front Squat (#2; Rise)", time: 6 },
+          { type: "work", name: "Front Squat (#3; Lower)", time: 6 },
+          { type: "burst", name: "Front Squat (#3; Rise)", time: 6 },
+          { type: "work", name: "Front Squat (#4; Lower)", time: 6 },
+          { type: "burst", name: "Front Squat (#4; Rise)", time: 6 },
+          { type: "work", name: "Front Squat (#5; Lower)", time: 6 },
+          { type: "burst", name: "Front Squat (#5; Rise)", time: 6 },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "RDL (Split Stance; 8; 3-0-1-0)",
+            link: "https://youtube.com/shorts/eeGUOf8zPX4?feature=share",
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Plank (Contralateral; 20; 2-0-2-0)",
+            link: "https://youtu.be/-slYZChMfKE",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+  },
 };
 
 const bindings: { [name: string]: () => void } = {};
@@ -3822,7 +4029,7 @@ function runProgramme(exercises: SimpleExercise[], remaining: Remaining[]) {
       document.body.removeChild(document.body.lastChild!);
     }
     beep.play();
-    let cancel: () => void = () => {};
+    let cancel: () => void = () => { };
     const doRepeat: () => void = () => {
       cancel();
       show(current);
