@@ -3897,6 +3897,222 @@ const programmes: ProgrammeMenu = {
       },
     ],
   },
+  Hyper: {
+    "Day 1 (Upper)": [
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          {
+            type: "work",
+            name: "Landmine Shoulder Press (Single Arm; Split Stance; Protract at top; 6-8/side; 3-0-3-0)",
+            link: "https://youtube.com/shorts/p824YTOQoFI",
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Good Morning (Stated; DB at chest; Deep breathing; 6-8; 3-0-3-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Lateral Raise (Cable; Low to high; 12-15/side; 2-0-2-0)",
+          },
+          { type: "rest", time: 10 },
+          { type: "work", name: "Jefferson Curl (Skill Movement)", time: 45 },
+          { type: "work", name: "Jefferson Curl (Weighted; 6)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 2,
+        activities: [
+          {
+            type: "work",
+            name: "Shoulder Taps (Remain in protraction for whole set)",
+            time: 20,
+          },
+          { type: "rest", time: 10 },
+          { type: "work", name: "Skull Crusher (AMRAP; 3-0-3-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "Day 2 (Lower)": [
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          {
+            type: "work",
+            name: "Landmine Goblet Squat (6-8; 3-0-3-0)",
+            link: "https://youtu.be/_mfORB47xMs",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Reverse Lunge (Rotation; 12-15/side; 2-0-2-0)",
+            link: "https://youtube.com/shorts/gapSUH6eEok?feature=share",
+          },
+          { type: "rest", time: 20 },
+          { type: "work", name: "Paloff Isometric (Left)", time: 30 },
+          { type: "rest", time: 5 },
+          { type: "work", name: "Paloff Isometric (Right)", time: 30 },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Hip Bridge (Heel Elevated; Hip Extension Focus; Slow)",
+            time: 60,
+            link: "https://youtu.be/BN3znRssCL4",
+          },
+          { type: "rest", time: 20 },
+          {
+            type: "work",
+            name: "Reverse Nordic Curl (AMRAP; 5-0-5-0)",
+            link: "https://youtube.com/shorts/Dd3SX08tZV4",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 2,
+        activities: [
+          {
+            type: "work",
+            name: "Cuban Press (Defranco; 6; 3-1-1-1)",
+            link: "https://youtu.be/EMwA266_Nx4",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "Day 3 (Upper)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "RDL (Split Stance; DB; 8-10/side; 4-0-1-0)" },
+          { type: "rest", time: 10 },
+          { type: "work", name: "Chin Up (Eccentric Only; 1; 30-0-0-0" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "OHP (Single Arm; Half Kneeling; Band Resisted; 8-10/side; 4-0-1-0)",
+          },
+          { type: "rest", time: 10 },
+          { type: "work", name: "Jefferson Curl (Skill Movement)", time: 45 },
+          { type: "work", name: "Jefferson Curl (Weighted; 6)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Paloff Rotation (Dynamic Feet; Left)",
+            time: 20,
+          },
+          { type: "rest", time: 5 },
+          {
+            type: "work",
+            name: "Paloff Rotation (Dynamic Feet; Right)",
+            time: 20,
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Rotational Medicine Ball Slam (Soft Ball; Left)",
+            time: 20,
+          },
+          { type: "rest", time: 5 },
+          {
+            type: "work",
+            name: "Rotational Medicine Ball Slam (Soft Ball; Right)",
+            time: 20,
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "Day 4 (Lower)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Inclined Press (45°; DB; Semi-Pronated; 4-0-1-0)",
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Cable Row (Inclined Bench Supported; Single Arm; 8-10/side; 4-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Lunge with Rotation (Weight Plate; 20)",
+            link: "https://youtube.com/shorts/Ssa889qWpY0",
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Cable External Rotation (10-15; 3-0-1-0)",
+            link: "https://youtu.be/b7VWVZHU_8M",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "California Press (DB; 8-10; 4-0-1-0",
+            link: "https://youtu.be/lUW5Vrp9o04",
+          },
+          { type: "rest", time: 10 },
+          { type: "work", name: "Contralateral Plank (From Elbows)", time: 20 },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+  },
 };
 
 const bindings: { [name: string]: () => void } = {};
