@@ -3898,7 +3898,7 @@ const programmes: ProgrammeMenu = {
     ],
   },
   Hyper: {
-    "Day 1 (Upper)": [
+    "3 Day 1 (Upper)": [
       {
         type: "superset",
         repeat: 6,
@@ -3945,7 +3945,7 @@ const programmes: ProgrammeMenu = {
         ],
       },
     ],
-    "Day 2 (Lower)": [
+    "3 Day 2 (Lower)": [
       {
         type: "superset",
         repeat: 6,
@@ -4006,7 +4006,7 @@ const programmes: ProgrammeMenu = {
         ],
       },
     ],
-    "Day 3 (Upper)": [
+    "3 Day 3 (Upper)": [
       {
         type: "superset",
         repeat: 4,
@@ -4062,7 +4062,7 @@ const programmes: ProgrammeMenu = {
         ],
       },
     ],
-    "Day 4 (Lower)": [
+    "3 Day 4 (Lower)": [
       {
         type: "superset",
         repeat: 4,
@@ -4108,6 +4108,206 @@ const programmes: ProgrammeMenu = {
           },
           { type: "rest", time: 10 },
           { type: "work", name: "Contralateral Plank (From Elbows)", time: 20 },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "4 Day 1 (Upper)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "DB Press (Decline; Neutral Grip; 10-12; 3-1-X-0)",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Cable Row (Single Arm; Low to High; 10-12; 3-1-X-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "DB Press (15° Incline; Alternating; 12-15; 2-0-2-0)",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Powell Raise (Standing; Cable; Single Arm; 12-15; 2-0-2-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Paloff Press (Left)",
+            time: 30,
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Paloff Press (Right)",
+            time: 30,
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "University Coil Stretch (Left; Wall)",
+            time: 5,
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "University Coil Stretch (Right; Wall)",
+            time: 5,
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "4 Day 2 (Lower)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "RDL (BB; Snatch Grip; 10-12; 3-1-X-0)" },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Anti-Rotation (Rope; Static Torso; 15/side; 2-0-2-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Kettlebell Swing (Banded; 12-15; 2-0-2-0)" },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Cossack Squat (Side Lunge; Heel Elevated; 12-15; 2-0-2-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Single Leg RDL (Roller on wall; 8-10; Slow tempo)",
+          },
+          { type: "rest", time: 10 },
+          { type: "work", name: "Hip Airplane (Skill exercise; 5-8)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "4 Day 3 (Upper)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Chin Up (Eccentric Only; Neutral Close Grip; 1)",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Overhead Carry (Left; KB; Walking; Single Arm; Elevated)",
+            time: 60,
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Overhead Carry (Right; KB; Walking; Single Arm; Elevated)",
+            time: 60,
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Suitcase Row (Landmine; 12-15; 2-0-2-0)" },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Standing Telle Raise (DB; 12-15; 2-0-2-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Paloff Press (10/side; 2-0-2-0)" },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Landmine University Coil (Isometric BW; 3-5s/side)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "4 Day 4 (Lower)": [
+      { type: "rest", time: 20 },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Split Squat (Left; Isometric; Knee as close to floor as possible)",
+            time: 60,
+          },
+          { type: "rest", time: 20 },
+          {
+            type: "work",
+            name: "Split Squat (Right; Isometric; Knee as close to floor as possible)",
+            time: 60,
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Bulgarian Split Squat (Bi Lateral; DB; 10-12; 3-1-X-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Sissy Squat (12-15; 2-0-2-0)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Beast Pose to Kick Through (5/side)" },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Dead Bug (Banded Upper; Lower Movement; 20; Slow tempo)",
+          },
           { type: "rest", time: 60 },
         ],
       },
