@@ -93,6 +93,10 @@ const allProgrammes: ProgrammeMenu = {
       { type: "work", name: "Put on Squat Shoes" },
       { type: "rest", time: 5 },
       { type: "work", name: "Deep squat", time: 120 },
+      { type: "rest", time: 15 },
+      { type: "work", name: "Floating Stand on Block (Left)", time: 30 },
+      { type: "rest", time: 5 },
+      { type: "work", name: "Floating Stand on Block (Right)", time: 30 },
     ],
   },
   "Jaw & Neck": [
