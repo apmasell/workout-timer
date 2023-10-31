@@ -43,7 +43,7 @@ const chord = new Audio(
 type Programme = ProgrammeMenu | RootExcercise[];
 type ProgrammeMenu = { [s: string]: Programme };
 
-const programmes: ProgrammeMenu = {
+const allProgrammes: ProgrammeMenu = {
   "Warm-up": {
     Upper: [
       { type: "work", name: "Nerve glides" },
@@ -4316,6 +4316,7 @@ const programmes: ProgrammeMenu = {
 };
 
 const bindings: { [name: string]: () => void } = {};
+let active: SimpleExercise[] = [];
 
 document.body.addEventListener("keydown", (event) => {
   const callback = bindings[event.key];
@@ -4338,8 +4339,8 @@ function showProgrammes(programmes: ProgrammeMenu) {
     const selector = document.createElement("button");
     selector.innerText = name;
     if (Array.isArray(exercises)) {
-      selector.addEventListener("click", () =>
-        runProgramme(
+      selector.addEventListener("click", (click) => {
+        active = active.concat(
           exercises.flatMap((e) => {
             if (e.type == "superset") {
               const result: SimpleExercise[] = [];
@@ -4377,15 +4378,33 @@ function showProgrammes(programmes: ProgrammeMenu) {
             } else {
               return [e];
             }
-          }),
-          remaining(exercises)
-        )
-      );
+          })
+        );
+
+        if (click.shiftKey) {
+          showProgrammes(allProgrammes);
+        } else {
+          runProgramme(active, remaining(active));
+        }
+      });
     } else {
       selector.addEventListener("click", () => showProgrammes(exercises));
     }
     document.body.appendChild(selector);
     document.body.appendChild(document.createTextNode(" "));
+  }
+  if (active.length > 0) {
+    const run = document.createElement("button");
+    run.innerText = "Run";
+    run.addEventListener("click", () =>
+      runProgramme(active, remaining(active))
+    );
+    const clear = document.createElement("button");
+    clear.innerText = "clear";
+    clear.addEventListener("click", () => {
+      active = [];
+      showProgrammes(programmes);
+    });
   }
 }
 interface Remaining {
@@ -4466,7 +4485,7 @@ function runProgramme(exercises: SimpleExercise[], remaining: Remaining[]) {
 
     const doMenu: () => void = () => {
       cancel();
-      showProgrammes(programmes);
+      showProgrammes(allProgrammes);
     };
     const menu = document.createElement("button");
     menu.innerText = "☰ Menu";
@@ -4778,4 +4797,4 @@ function showBurstTimer(
   };
 }
 
-showProgrammes(programmes);
+showProgrammes(allProgrammes);
