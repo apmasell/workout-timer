@@ -4389,6 +4389,7 @@ function showProgrammes(programmes: ProgrammeMenu) {
           showProgrammes(allProgrammes);
         } else {
           runProgramme(active, remaining(active));
+          active = [];
         }
       });
     } else {
@@ -4399,12 +4400,13 @@ function showProgrammes(programmes: ProgrammeMenu) {
   }
   if (active.length > 0) {
     const run = document.createElement("button");
-    run.innerText = "Run";
-    run.addEventListener("click", () =>
-      runProgramme(active, remaining(active))
-    );
+    run.innerText = "Run ❯";
+    run.addEventListener("click", () => {
+      runProgramme(active, remaining(active));
+      active = [];
+    });
     const clear = document.createElement("button");
-    clear.innerText = "clear";
+    clear.innerText = "Clear ⌫";
     clear.addEventListener("click", () => {
       active = [];
       showProgrammes(programmes);
