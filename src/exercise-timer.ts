@@ -729,190 +729,241 @@ const allProgrammes: ProgrammeMenu = {
       },
     ],
   },
-  "Arm Hypertrophy 3": [
-    {
-      type: "superset",
-      repeat: 4,
-      activities: [
-        {
-          type: "work",
-          name: "Unilateral Cable Bicep Curl in Shortened Position (12-15; 2-0-2-0)",
-        },
-        { type: "rest", time: 60 },
-      ],
-    },
-    {
-      type: "superset",
-      repeat: 4,
-      activities: [
-        {
-          type: "work",
-          name: "Bicep Chinup (10-12; 2-0-1-0)",
-        },
-        { type: "rest", time: 60 },
-      ],
-    },
-    {
-      type: "superset",
-      repeat: 3,
-      activities: [
-        { type: "work", name: "Wrist Curl (12-15; 2-0-1-0)" },
-        { type: "rest", time: 60 },
-      ],
-    },
-    {
-      type: "superset",
-      repeat: 3,
-      activities: [
-        { type: "work", name: "Wrist Rotation (12-15)" },
-        { type: "rest", time: 45 },
-      ],
-    },
-    {
-      type: "superset",
-      repeat: 3,
-      activities: [
-        { type: "work", name: "Wrist Lift (12-15)" },
-        { type: "rest", time: 45 },
-      ],
-    },
-    {
-      type: "superset",
-      repeat: 4,
-      activities: [
-        {
-          type: "work",
-          name: "Elbow Pushup (12)",
-        },
-        { type: "rest", time: 60 },
-      ],
-    },
-    {
-      type: "superset",
-      repeat: 4,
-      activities: [
-        {
-          type: "work",
-          name: "Real Pushup Position Hold",
-          time: 30,
-        },
-        { type: "rest", time: 60 },
-      ],
-    },
-    {
-      type: "superset",
-      repeat: 2,
-      activities: [
-        { type: "work", name: "Elevated Shoulder Isometric Walks", time: 40 },
-        { type: "rest", time: 60 },
-      ],
-    },
-  ],
+  "Arm Hypertrophy": {
+    "4 (Will)": [
+      {
+        type: "superset",
+        repeat: 5,
+        activities: [
+          {
+            type: "work",
+            name: "Bent Elbow Pronation/Supination (Left)",
+            time: 30,
+          },
+          { type: "rest", time: 5 },
+          {
+            type: "work",
+            name: "Bent Elbow Pronation/Supination (Right)",
+            time: 30,
+          },
+          { type: "rest", time: 5 },
+          {
+            type: "work",
+            name: "Lat Stretch (Supinated curl with elbows on the bench)",
+            time: 30,
+          },
+          { type: "rest", time: 10 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Pushup (4)" },
+          { type: "rest", time: 15 },
+          { type: "work", name: "Pushup (4)" },
+          { type: "rest", time: 15 },
+          { type: "work", name: "Standing Bicep Curl (4)" },
+          { type: "rest", time: 15 },
+          { type: "work", name: "Standing Bicep Curl (4)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "DB California Press (10-12)" },
+          { type: "work", name: "High Cable Bicep (15-20)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "3": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Unilateral Cable Bicep Curl in Shortened Position (12-15; 2-0-2-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Bicep Chinup (10-12; 2-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Wrist Curl (12-15; 2-0-1-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Wrist Rotation (12-15)" },
+          { type: "rest", time: 45 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Wrist Lift (12-15)" },
+          { type: "rest", time: 45 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Elbow Pushup (12)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Real Pushup Position Hold",
+            time: 30,
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 2,
+        activities: [
+          { type: "work", name: "Elevated Shoulder Isometric Walks", time: 40 },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
 
-  "Arm Hypertrophy 2 (Jeff+Will)": [
-    {
-      type: "superset",
-      repeat: 4,
-      activities: [
-        {
-          type: "work",
-          name: "Unilateral Cable Bicep Curl in Shortened Position (12-15; 2-0-2-0)",
-        },
-        { type: "rest", time: 60 },
-      ],
-    },
-    {
-      type: "superset",
-      repeat: 4,
-      activities: [
-        {
-          type: "work",
-          name: "Wide Grip Standing Barbell Curl Against Wall (10-12; 2-0-1-0)",
-        },
-        { type: "rest", time: 60 },
-      ],
-    },
-    {
-      type: "superset",
-      repeat: 3,
-      activities: [
-        { type: "work", name: "Bayesian Bicep Curl (12-15; 2-0-1-0)" },
-        { type: "rest", time: 60 },
-      ],
-    },
-    {
-      type: "superset",
-      repeat: 4,
-      activities: [
-        {
-          type: "work",
-          name: "Bent-over Tricep Cable Pressdown (10-12; 2-0-X-0)",
-        },
-        { type: "rest", time: 60 },
-      ],
-    },
-    {
-      type: "superset",
-      repeat: 4,
-      activities: [
-        {
-          type: "work",
-          name: "Tricep Behind-the-head Cable Extension (12-15; 2-0-1-0)",
-        },
-        { type: "rest", time: 60 },
-      ],
-    },
-    {
-      type: "superset",
-      repeat: 2,
-      activities: [
-        { type: "work", name: "Elevated Shoulder Isometric Walks", time: 40 },
-        { type: "rest", time: 60 },
-      ],
-    },
-  ],
-  "Arm Hypertrophy 1 (Jeff)": [
-    {
-      type: "superset",
-      repeat: 2,
-      activities: [
-        { type: "work", name: "Preacher Curl (12-15; 2-0-2-0)" },
-        { type: "rest", time: 60 },
-      ],
-    },
-    {
-      type: "superset",
-      repeat: 4,
-      activities: [
-        { type: "work", name: "Standing Barbell Curl (6-8; 2-0-1-0)" },
-        { type: "rest", time: 60 },
-      ],
-    },
-    {
-      type: "superset",
-      repeat: 3,
-      activities: [
-        { type: "work", name: "Bayesian Bicep Curl (12-15; 2-0-1-0)" },
-        { type: "rest", time: 60 },
-      ],
-    },
-    {
-      type: "superset",
-      repeat: 4,
-      activities: [
-        { type: "work", name: "Tricep Pressdown (10-12; 2-0-1-0)" },
-        { type: "rest", time: 60 },
-      ],
-    },
-    {
-      type: "superset",
-      repeat: 2,
-      activities: [
-        { type: "work", name: "DB Neutral Grip Press (12-15; 2-0-1-0)" },
-        { type: "rest", time: 60 },
-      ],
-    },
-  ],
+    "2 (Jeff+Will)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Unilateral Cable Bicep Curl in Shortened Position (12-15; 2-0-2-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Wide Grip Standing Barbell Curl Against Wall (10-12; 2-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Bayesian Bicep Curl (12-15; 2-0-1-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Bent-over Tricep Cable Pressdown (10-12; 2-0-X-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Tricep Behind-the-head Cable Extension (12-15; 2-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 2,
+        activities: [
+          { type: "work", name: "Elevated Shoulder Isometric Walks", time: 40 },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "1 (Jeff)": [
+      {
+        type: "superset",
+        repeat: 2,
+        activities: [
+          { type: "work", name: "Preacher Curl (12-15; 2-0-2-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Standing Barbell Curl (6-8; 2-0-1-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Bayesian Bicep Curl (12-15; 2-0-1-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Tricep Pressdown (10-12; 2-0-1-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 2,
+        activities: [
+          { type: "work", name: "DB Neutral Grip Press (12-15; 2-0-1-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+  },
   GVT: {
     "Day 1": [
       { type: "work", name: "Foam Roll Back" },
