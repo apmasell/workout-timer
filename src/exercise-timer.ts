@@ -4395,46 +4395,57 @@ function showProgrammes(programmes: ProgrammeMenu) {
     selector.innerText = name;
     if (Array.isArray(exercises)) {
       selector.addEventListener("click", (click) => {
-        active = active.concat(
-          exercises.flatMap((e) => {
-            if (e.type == "superset") {
-              const result: SimpleExercise[] = [];
-              for (let i = 0; i < e.repeat; i++) {
-                result.push(
-                  ...e.activities.map((a) => {
-                    switch (a.type) {
-                      case "rest":
-                        return a;
-                      case "work":
-                        return {
-                          type: "work" as const,
-                          time: a.time,
-                          link: a.link,
-                          name: `${a.name} [${i + 1}/${e.repeat}]`,
-                        };
-                      case "burst":
-                        return {
-                          type: "burst" as const,
-                          time: a.time,
-                          link: a.link,
-                          name: `${a.name} [${i + 1}/${e.repeat}]`,
-                        };
-                      case "stopwatch":
-                        return {
-                          type: "stopwatch" as const,
-                          name: `${a.name} [${i + 1}/${e.repeat}]`,
-                        };
-                    }
-                  })
-                );
-              }
-
-              return result;
-            } else {
-              return [e];
+        const newExercises = exercises.flatMap((e) => {
+          if (e.type == "superset") {
+            const result: SimpleExercise[] = [];
+            for (let i = 0; i < e.repeat; i++) {
+              result.push(
+                ...e.activities.map((a) => {
+                  switch (a.type) {
+                    case "rest":
+                      return a;
+                    case "work":
+                      return {
+                        type: "work" as const,
+                        time: a.time,
+                        link: a.link,
+                        name: `${a.name} [${i + 1}/${e.repeat}]`,
+                      };
+                    case "burst":
+                      return {
+                        type: "burst" as const,
+                        time: a.time,
+                        link: a.link,
+                        name: `${a.name} [${i + 1}/${e.repeat}]`,
+                      };
+                    case "stopwatch":
+                      return {
+                        type: "stopwatch" as const,
+                        name: `${a.name} [${i + 1}/${e.repeat}]`,
+                      };
+                  }
+                })
+              );
             }
-          })
-        );
+
+            return result;
+          } else {
+            return [e];
+          }
+        });
+        if (active.length > 0 && newExercises.length > 0) {
+          const last = active[active.length - 1];
+          const first = newExercises[0];
+          if (
+            first.type == "work" &&
+            first.time &&
+            last.type == "work" &&
+            last.time
+          ) {
+            active.push({ type: "rest", time: 60 });
+          }
+        }
+        active = active.concat(newExercises);
 
         if (click.shiftKey) {
           showProgrammes(allProgrammes);
