@@ -4467,12 +4467,14 @@ function showProgrammes(programmes: ProgrammeMenu) {
       runProgramme(active, remaining(active));
       active = [];
     });
+    document.body.appendChild(run);
     const clear = document.createElement("button");
     clear.innerText = "Clear ⌫";
     clear.addEventListener("click", () => {
       active = [];
       showProgrammes(programmes);
     });
+    document.body.appendChild(clear);
   }
 }
 interface Remaining {
