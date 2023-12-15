@@ -124,33 +124,50 @@ const allProgrammes: ProgrammeMenu = {
       ],
     },
   ],
-  "Foot Strength": [
-    {
-      type: "work",
-      name: "Alternate Toe Lifts (15)",
-    },
-    {
-      type: "work",
-      name: "Toe Spreads (15)",
-    },
-    { type: "rest", time: 10 },
-    { type: "work", time: 40, name: "Dynamic Stability (Dumbbell Pass; Left)" },
-    { type: "rest", time: 10 },
-    {
-      type: "work",
-      time: 40,
-      name: "Dynamic Stability (Dumbbell Pass; Right)",
-    },
-    { type: "rest", time: 10 },
-    {
-      type: "superset",
-      repeat: 3,
-      activities: [
-        { type: "work", name: "Toe Jumps (120bpm)", time: 20 },
-        { type: "rest", time: 40 },
-      ],
-    },
-  ],
+  Physiotherapy: {
+    "Foot Strength": [
+      {
+        type: "work",
+        name: "Alternate Toe Lifts (15)",
+      },
+      {
+        type: "work",
+        name: "Toe Spreads (15)",
+      },
+      { type: "rest", time: 10 },
+      {
+        type: "work",
+        time: 40,
+        name: "Dynamic Stability (Dumbbell Pass; Left)",
+      },
+      { type: "rest", time: 10 },
+      {
+        type: "work",
+        time: 40,
+        name: "Dynamic Stability (Dumbbell Pass; Right)",
+      },
+      { type: "rest", time: 10 },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Toe Jumps (120bpm)", time: 20 },
+          { type: "rest", time: 40 },
+        ],
+      },
+    ],
+    "Pec/Rib Irritation": [
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Full Can Hold", time: 30 },
+          { type: "rest", time: 60 },
+        ],
+      },
+      { type: "work", name: "3 Position Overhead Carry" },
+    ],
+  },
   "Gymnast Biceps": [
     { type: "rest", time: 30 },
     {
