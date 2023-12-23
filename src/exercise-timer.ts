@@ -4508,7 +4508,7 @@ function remaining(exercises: RootExcercise[]): Remaining[] {
       case "work":
       case "burst":
       case "stopwatch":
-        const n = exercise.name.split("(")[0].trim();
+        const n = exercise.name.split(/[([]/)[0].trim();
         if (!seen.has(n)) {
           seen.add(n);
           results.push({ index, name: n, link: exercise.link });
