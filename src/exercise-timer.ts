@@ -168,29 +168,6 @@ const allProgrammes: ProgrammeMenu = {
       { type: "work", name: "3 Position Overhead Carry" },
     ],
   },
-  "Gymnast Biceps": [
-    { type: "rest", time: 30 },
-    {
-      type: "superset",
-      repeat: 3,
-      activities: [
-        { type: "work", name: "90° Hangs", time: 30 },
-        { type: "rest", time: 60 },
-        { type: "work", name: "Isometric Pushup", time: 30 },
-        { type: "rest", time: 60 },
-      ],
-    },
-    {
-      type: "superset",
-      repeat: 2,
-      activities: [
-        { type: "work", name: "Bar Shuffle", time: 30 },
-        { type: "rest", time: 60 },
-        { type: "work", name: "Maltese on Safties", time: 30 },
-        { type: "rest", time: 60 },
-      ],
-    },
-  ],
   Tabata: [
     {
       type: "superset",
@@ -976,6 +953,29 @@ const allProgrammes: ProgrammeMenu = {
         repeat: 2,
         activities: [
           { type: "work", name: "DB Neutral Grip Press (12-15; 2-0-1-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "Gymnast Biceps": [
+      { type: "rest", time: 30 },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "90° Hangs", time: 30 },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Isometric Pushup", time: 30 },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 2,
+        activities: [
+          { type: "work", name: "Bar Shuffle", time: 30 },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Maltese on Safties", time: 30 },
           { type: "rest", time: 60 },
         ],
       },
