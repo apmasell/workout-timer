@@ -724,6 +724,19 @@ const allProgrammes: ProgrammeMenu = {
     ],
   },
   "Arm Hypertrophy": {
+    Pinwheels: [
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Pinwheel Curls",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
     "4 (Will)": [
       {
         type: "superset",
