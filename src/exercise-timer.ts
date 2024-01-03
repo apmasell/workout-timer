@@ -4398,6 +4398,183 @@ const allProgrammes: ProgrammeMenu = {
       },
     ],
   },
+
+  Rebuild: {
+    "Day 1": [
+      {
+        type: "work",
+        name: "Thoracic Spine Foam Roll Overhead Reach",
+        link: "https://youtube.com/shorts/RIFF0SzPkps",
+      },
+      {
+        type: "work",
+        name: "Tactical Frog Stretch",
+        link: "https://www.youtube.com/shorts/CnaSR5wGfT0",
+      },
+      ...[5, 3, 3].flatMap<RootExcercise>((i) => [
+        { type: "work", name: `Bench Press (Flat; ${i})` },
+        { type: "rest", time: 2 * 60 },
+      ]),
+
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Single Arm Row (Plank Modification; 10; 3-0-3-0)",
+            link: "https://www.youtube.com/shorts/Egks86GwCSs",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "California Press (Flat; BB; 12-15; 2-0-2-0)",
+            link: "https://www.youtube.com/watch?v=f40WOYyv4Og",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Bicep Curl (BB; Wide Grip; Creating External Rotation; 12-15; 2-0-2-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Bird Dog (Emphasis on core; 10-20; 3-0-3-0)",
+            link: "https://www.youtube.com/watch?v=QVRtIHp9h-M",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+    "Day 2": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Good Morning (Seated; DB; 8; 4-0-1-0)" },
+          { type: "rest", time: 30 },
+          {
+            type: "work",
+            name: "Plank (Side; Star; 8; 2-0-2-0)",
+            link: "https://www.youtube.com/shorts/JZi_sc1kpcg",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      ...[5, 3, 3].flatMap<RootExcercise>((i) => [
+        { type: "work", name: `RDL (BB; ${i})` },
+        { type: "rest", time: 2 * 60 },
+      ]),
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Leg Curl (Banded; Prone; 12-15; 2-0-2-0)",
+            link: "https://www.youtube.com/watch?v=LtTcXXgeRYo",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Calf Raise (Single Leg; Modified; AMRAP; 2-0-2-0)",
+            link: "https://www.youtube.com/shorts/00LA3bXdgR8",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+    "Day 3": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Downward Dog to Toe Touch (5/side)",
+            link: "https://www.youtube.com/watch?v=rMYnbfYhPNU",
+          },
+          { type: "rest", time: 30 },
+          { type: "work", name: "KB Windmill (5/side)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      ...[5, 3, 3].flatMap<RootExcercise>((i) => [
+        { type: "work", name: `OHP (BB; Seated; ${i})` },
+        { type: "rest", time: 2 * 60 },
+      ]),
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Upright Row (Modified; 12-15; 2-0-2-0)",
+            link: "https://www.youtube.com/shorts/kDZPM8OsFmA",
+          },
+          { type: "rest", time: 45 },
+          {
+            type: "work",
+            name: "Tricep Cable Extension (Single Arm; 12-15; 2-0-2-0)",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+    "Day 4": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Banded Overhead RNT Squat (Pelvis Position; 5-10)",
+            link: "https://www.youtube.com/watch?v=vKzS5LNTJ9w",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+      ...[5, 3, 3].flatMap<RootExcercise>((i) => [
+        { type: "work", name: `Back Squat (BB; ${i})` },
+        { type: "rest", time: 2 * 60 },
+      ]),
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Split Squat (Goblet; Bulgarian in Band; 8)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Banded Leg Curl (Single Leg; Prone; 12-15; 2-0-2-0)",
+          },
+          { type: "rest", time: 45 },
+          { type: "work", name: "Calf Raise/Tibia Raise (AMRAP)" },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+  },
 };
 
 const bindings: { [name: string]: () => void } = {};
