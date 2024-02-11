@@ -72,12 +72,12 @@ const allProgrammes: ProgrammeMenu = {
       { type: "work", name: "Static Front Rack", time: 30 },
     ],
     Lower: [
-      { type: "work", name: "Foam roll back" },
       { type: "work", name: "Massage feet" },
+      { type: "work", name: "Foam roll back (with plate stretch)" },
       { type: "work", name: "Thoracic extensions & rotations" },
       { type: "work", name: "Vertical Wall Hamstring stretch", time: 90 },
       { type: "rest", time: 15 },
-      { type: "work", name: "Frog stretch", time: 60 },
+      { type: "work", name: "Tactical frog stretch", time: 60 },
       { type: "rest", time: 15 },
       {
         type: "work",
@@ -96,7 +96,7 @@ const allProgrammes: ProgrammeMenu = {
       { type: "work", name: "Floating Stand on Block (Right)", time: 30 },
       { type: "work", name: "Put on Squat Shoes" },
       { type: "rest", time: 5 },
-      { type: "work", name: "Deep squat", time: 120 },
+      { type: "work", name: "Deep squat with plate", time: 120 },
     ],
   },
   "Jaw & Neck": [
@@ -4571,6 +4571,179 @@ const allProgrammes: ProgrammeMenu = {
           { type: "rest", time: 45 },
           { type: "work", name: "Calf Raise/Tibia Raise (AMRAP)" },
           { type: "rest", time: 45 },
+        ],
+      },
+    ],
+  },
+  Rehab: {
+    "Day 1 (OH Squat 1)": [
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Counter Balance Squat (Heel Elevated; 6/side; 3-2-1-0)",
+            link: "https://youtu.be/cgZFXAJOk1k",
+          },
+          { type: "rest", time: 45 },
+          {
+            type: "work",
+            name: "Reverse Lunge Press (Alternating; 8/side)",
+            link: "https://youtu.be/ROmjwgVkHec",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Sots Press (Heel Elevated - High; DB Single Arm; 8-10)",
+            link: "https://youtu.be/cyB1ECaWPlA?si=tVcauRzDJdDvHWEM",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Towel Row (Elevated Step; 8-10)" },
+          { type: "rest", time: 30 },
+          {
+            type: "work",
+            name: "Split Squat (Front Foot Heel Elevated; 6/side; 2-2-1-1)",
+          },
+          { type: "rest", time: 30 },
+        ],
+      },
+    ],
+    "Day 2 (Bench)": [
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Plank Rollout",
+            link: "https://youtu.be/VusYgtyKoQE?si=S2xQA2fC9RJa3Df0",
+          },
+          { type: "rest", time: 45 },
+          {
+            type: "work",
+            name: "Banded DB Pullover (Lat elevation and scapular movement; 8-10)",
+            link: "https://youtu.be/mrmlJFUcavA?si=EyMGa8n23qAjnmGs",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Bench Press (8-10)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Cuban Press (Chain; 12-15)" },
+          { type: "rest", time: 30 },
+          { type: "work", name: "Dead Bug (20)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "Day 3 (OH Squat 2)": [
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Seated Good Morning (DB; 12)" },
+          { type: "rest", time: 45 },
+          {
+            type: "work",
+            name: "Lunge (Alternating; Overhead Carry; 8)",
+            link: "https://youtu.be/fh6ac5SurJE?si=2k98CQms67-z41GW",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "OH Squat (Heel Elevated - High; DB Single Arm; 9-10)",
+            link: "https://youtube.com/shorts/f24xAKpRCtA?si=IZE-tKKoklrUOWtP",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "DB Row (Pank on Bench; 8-10)" },
+          { type: "rest", time: 30 },
+          {
+            type: "work",
+            name: "Split Stance RDL (Hamstring Stretch, Bilateral DB; 6-8; 2-2-1-1)",
+          },
+          { type: "rest", time: 30 },
+        ],
+      },
+    ],
+    "Day 4 (Posterior Chain)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Single Leg RDL with Reach (8/side)",
+            link: "https://youtu.be/-DMwwqn5gpk?feature=shared",
+          },
+          { type: "rest", time: 30 },
+          {
+            type: "work",
+            name: "Inverted Row (4-6)",
+            link: "https://youtu.be/9fItzuh9Iok?si=GEAJHHlzRtIJoyYM",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Bottoms-up Windmill (6-8)" },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Star Plank (AMRAP; 2-0-2-0)",
+            link: "https://youtube.com/shorts/Ne5I4Ut57io?si=fiRjQUwSWLd2lCVy",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Modified Plank (AMRAP)",
+            link: "https://youtu.be/hpx0twB4atQ?si=hqvnd13XotbO68Ka",
+          },
+          { type: "rest", time: 60 },
         ],
       },
     ],
