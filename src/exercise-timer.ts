@@ -993,6 +993,63 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
+    BFR: [
+      {
+        type: "superset",
+        repeat: 2,
+        activities: [
+          { type: "work", name: "Spider Curl (BFR 1; 15)" },
+          { type: "rest", time: 30 },
+          { type: "work", name: "Spider Curl (BFR 2; 15)" },
+          { type: "rest", time: 30 },
+          { type: "work", name: "Spider Curl (BFR 3; 15)" },
+          { type: "rest", time: 30 },
+          { type: "work", name: "Spider Curl (BFR 4; 15)" },
+          { type: "rest", time: 30 },
+          { type: "work", name: "Spider Curl (BFR 5; 30)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 2,
+        activities: [
+          { type: "work", name: "Tricep Pressdown (BFR 1; 15)" },
+          { type: "rest", time: 30 },
+          { type: "work", name: "Tricep Pressdown (BFR 2; 15)" },
+          { type: "rest", time: 30 },
+          { type: "work", name: "Tricep Pressdown (BFR 3; 15)" },
+          { type: "rest", time: 30 },
+          { type: "work", name: "Tricep Pressdown (BFR 4; 15)" },
+          { type: "rest", time: 30 },
+          { type: "work", name: "Tricep Pressdown (BFR 5; 30)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Inclined DB Curl (Inclined Bench; Neutral Grip; 12-15; 4-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "California Press (12-15; 4-0-1-0)",
+            link: "https://youtu.be/vW3kbiiJxjE?si=ZkA9rrVfpfTduM6n",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
   },
   GVT: {
     "Day 1": [
@@ -4575,8 +4632,8 @@ const allProgrammes: ProgrammeMenu = {
       },
     ],
   },
-  Rehab: {
-    "Day 1 (OH Squat 1)": [
+  Ribhab: {
+    "1 Day 1 (OH Squat 1)": [
       {
         type: "superset",
         repeat: 3,
@@ -4621,7 +4678,7 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
-    "Day 2 (Bench)": [
+    "1 Day 2 (Bench)": [
       {
         type: "superset",
         repeat: 3,
@@ -4659,7 +4716,7 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
-    "Day 3 (OH Squat 2)": [
+    "1 Day 3 (OH Squat 2)": [
       {
         type: "superset",
         repeat: 3,
@@ -4701,7 +4758,7 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
-    "Day 4 (Posterior Chain)": [
+    "1 Day 4 (Posterior Chain)": [
       {
         type: "superset",
         repeat: 4,
@@ -4742,6 +4799,233 @@ const allProgrammes: ProgrammeMenu = {
             type: "work",
             name: "Modified Plank (AMRAP)",
             link: "https://youtu.be/hpx0twB4atQ?si=hqvnd13XotbO68Ka",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "2 Day 1 (OH Squats 3)": [
+      {
+        type: "work",
+        name: "Thoraic Spine Mobility",
+        link: "https://youtu.be/SQF-0s1CckA?si=mK8AHonvlhhrOM-8",
+      },
+      {
+        type: "work",
+        name: "Shoulder External Rotation",
+        link: "https://youtu.be/_poO6PY0sl0?si=ES6fj4bjR4Pw3M6Z",
+      },
+      {
+        type: "work",
+        name: "Hip Mobility",
+        link: "https://youtube.com/shorts/8Un6PaPpSK4?si=ZHwElrO1oYR_b0S5",
+      },
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          {
+            type: "work",
+            name: "Overhead BB Squat (Heel Elevated; 3-5; 3-3-1-0)",
+            link: "https://youtu.be/L5ik3oTNYn8?si=CQrD08ZvXJ_mizrW",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "OHP (DB; Standing; 8-10; 3-0-1-0)" },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Reverse Lunge (Slider; 8-10/side; 3-0-1-0)",
+            link: "https://youtu.be/_KokK9DS-qI?si=AYafkpgNl0pm5bgn",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Seated Shoulder Depression (Leg Lift Off)",
+            time: 30,
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "DB Armbar (12-15/side)",
+            link: "https://youtube.com/shorts/AQDuHnGYFNs?si=XJoyd3jQHl4UCBAR",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "2 Day 2 (Sots Press)": [
+      { type: "work", name: "Kettlebell Windmill" },
+      {
+        type: "work",
+        name: "Plate Counterbalance Lateral Squat",
+        link: "https://youtube.com/shorts/D4O004KDtDc?si=lHnADxSc2uOKVg4l",
+      },
+      {
+        type: "work",
+        name: "External Rotation Press",
+        link: "https://youtu.be/NIK0aJDO7Pk?si=MPOgpxqT3mpKjKO5",
+      },
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          {
+            type: "work",
+            name: "Banded Sots Press (BB; 3-5; 3-3-1-0)",
+            link: "https://youtu.be/2Uo0XZF8afk?si=274i_ykX9ESkwXGC",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "RDL (Wide Snatch Grip; 8-10; 3-0-1-0)" },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "DB Flat Press (Single Arm; McGil; 8-10/side)",
+            link: "https://youtu.be/wMCw1di4Ir4?si=5J7xM4vvYT9gjs4r",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Shoulder External Rotation (Isometrics; 6-8; 5sec)",
+            link: "https://youtu.be/UCAZ748Z9-U?si=RmFHBXQ4XNcXsA3t",
+          },
+          {
+            type: "work",
+            name: "Hamstring Walkouts",
+            link: "https://youtu.be/jQ9BcglfyVo?si=uqfbd1qXxFeuE_Nv",
+            time: 40,
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "2 Day 3 (OH Squats 4)": [
+      {
+        type: "work",
+        name: "Thoraic Spine Mobility",
+        link: "https://youtu.be/SQF-0s1CckA?si=mK8AHonvlhhrOM-8",
+      },
+      {
+        type: "work",
+        name: "Shoulder External Rotation",
+        link: "https://youtu.be/_poO6PY0sl0?si=ES6fj4bjR4Pw3M6Z",
+      },
+      {
+        type: "work",
+        name: "Hip Mobility",
+        link: "https://youtube.com/shorts/8Un6PaPpSK4?si=ZHwElrO1oYR_b0S5",
+      },
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          {
+            type: "work",
+            name: "Overhead BB Squat (Heel Elevated; 3-5; 3-3-1-0)",
+            link: "https://youtu.be/L5ik3oTNYn8?si=CQrD08ZvXJ_mizrW",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Standing Side Laterial Raise (Cable; 8-10; 3-0-1-0)",
+            link: "https://youtu.be/rLApu9dc3kc?si=gq6esLFWitifWMZh",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Front Foot Split Squat (Heel Elevated; 8-10/side)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Trap 3 Raise (Inclined Bench; 3-5; 4-0-4-1)" },
+          {
+            type: "work",
+            name: "DB Armbar (12-15/side)",
+            link: "https://youtube.com/shorts/AQDuHnGYFNs?si=XJoyd3jQHl4UCBAR",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "2 Day 4 (Romanian Rhythm)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Romaining Rhythm Squats (50)",
+            link: "https://youtu.be/OeFwOsknVr4?si=EdpXeNresogtrVRf",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Chin-up (Pronated; 2-3)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Landmine Press (8-10/side)" },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Copenhagen Plank (6-8/side)",
+            link: "https://youtu.be/0PQrzCUXZk8?si=gsQAQM-9qgD2j4UC",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "burst",
+            name: "Lateral Plank (Left; Banded Hip Abduction)",
+            time: 30,
+            link: "https://youtube.com/shorts/meuIOrCmWJ4?si=EITnBGb0jgJq2q7J",
+          },
+          {
+            type: "burst",
+            name: "Lateral Plank (Right; Banded Hip Abduction)",
+            time: 30,
+            link: "https://youtube.com/shorts/meuIOrCmWJ4?si=EITnBGb0jgJq2q7J",
           },
           { type: "rest", time: 60 },
         ],
