@@ -54,22 +54,8 @@ const allProgrammes: ProgrammeMenu = {
       { type: "rest", time: 5 },
       { type: "work", name: "Dead Hang (Right)", time: 10 },
       { type: "work", name: "Halos (25lbs; 10)" },
-      { type: "rest", time: 15 },
-      {
-        type: "work",
-        name: "Lunge Side Rotation (Wall+Yoga Block; Left)",
-        time: 20,
-      },
-      { type: "rest", time: 10 },
-      {
-        type: "work",
-        name: "Lunge Side Rotation (Wall+Yoga Block; Right)",
-        time: 20,
-      },
       { type: "work", name: "Band pulls" },
       { type: "work", name: "Train Tracks" },
-      { type: "rest", time: 15 },
-      { type: "work", name: "Static Front Rack", time: 30 },
     ],
     Lower: [
       { type: "work", name: "Massage feet" },
@@ -91,9 +77,9 @@ const allProgrammes: ProgrammeMenu = {
         time: 60,
       },
       { type: "rest", time: 15 },
-      { type: "work", name: "Floating Stand on Block (Left)", time: 30 },
+      { type: "work", name: "Floating Stand on Wall (Left)", time: 30 },
       { type: "rest", time: 5 },
-      { type: "work", name: "Floating Stand on Block (Right)", time: 30 },
+      { type: "work", name: "Floating Stand on Wall (Right)", time: 30 },
       { type: "work", name: "Put on Squat Shoes" },
       { type: "rest", time: 5 },
       { type: "work", name: "Deep squat with plate", time: 120 },
@@ -4989,7 +4975,7 @@ const allProgrammes: ProgrammeMenu = {
         activities: [
           {
             type: "work",
-            name: "Romaining Rhythm Squats (50)",
+            name: "Romanian Rhythm Squats (50)",
             link: "https://youtu.be/OeFwOsknVr4?si=EdpXeNresogtrVRf",
           },
           { type: "rest", time: 60 },
@@ -5064,7 +5050,9 @@ const allProgrammes: ProgrammeMenu = {
         type: "superset",
         repeat: 3,
         activities: [
-          { type: "work", name: "Pallof Press (Supine; 12-15; 2-0-2-0)" },
+          { type: "work", name: "Pallof Press (Left; Supine; 12-15; 2-0-2-0)", time: 40 },
+          { type: "rest", time: 10 },
+          { type: "work", name: "Pallof Press (Right; Supine; 12-15; 2-0-2-0)", time: 40 },
           { type: "rest", time: 60 },
         ],
       },
@@ -5176,7 +5164,7 @@ const allProgrammes: ProgrammeMenu = {
           { type: "rest", time: 60 },
           {
             type: "work",
-            name: "Landmine (Protraction; 8}",
+            name: "Landmine (Protraction; 8)",
             link: "https://youtu.be/JTdnxF6-2xE?si=LjD9SnetW55FR0K2",
           },
           { type: "rest", time: 60 },
