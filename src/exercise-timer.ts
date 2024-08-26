@@ -4440,6 +4440,184 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
+
+    "1.1 (Upper)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Overhead Press (75° Incline; DB; 10; 3-0-3-0)",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Seated Cable Row (QL; 12; 3-0-3-0)",
+            link: "https://www.instagram.com/reel/C--K-tTJi7X/",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Lu Raise (12-15; 3-0-2-0)",
+            link: "https://youtube.com/shorts/kZz5VQ8B4Ao",
+          },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Decline DB Pullover (12-15; 3-0-3-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "High Cable Bicep Curl (Single; 15-20; 2-0-2-0)",
+          },
+          { type: "rest", time: 45 },
+          { type: "work", name: "Cable Push Down (Single 15-20; 2-0-2-0)" },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+    "1.2 (Quad)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Elevated Split Squat (DB; Goblet Hold; 6-8; 3-0-1-0)",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Walking Lunge (20)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Reverse Nordic (Banded)",
+            link: "https://youtu.be/-yf6BI9d4Us",
+            time: 60,
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Hanging Knee Raise (Alternating; AMRAP)",
+            link: "https://youtu.be/E1q-EszVizU",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+    ],
+    "1.3 (Upper)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Decline DB Press (10; 3-0-3-0)" },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Single Arm Row (Cable; Half-Kneeling; High to Low; 12; 3-0-3-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Telle Raise (12-15; 3-0-2-0)",
+            link: "https://youtu.be/8CNDw4leEv4",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Row (DB; Single Arm; Elbow Out; 12-15; 3-0-3-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Cable Bicep Curl (Elbow Behind Body; 12-20; 2-0-2-0)",
+          },
+          { type: "rest", time: 45 },
+          {
+            type: "work",
+            name: "Tricep Extension (Arm Overhead; 15-20; 2-0-2-0)",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+    "1.4 (Hamstring)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Single Leg RDL (Externally Supported; Load DB Contralateral; 12; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Sliding Lateral Lunge (6-8)",
+            link: "https://youtube.com/shorts/WM427jz_eKs",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Pigeon Stretch Cable Row (8-10; 3-0-3-0)",
+            link: "https://youtu.be/nZZ1NpsnSxE",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Hamstring Curl (Towel Slider; 15-20; 2-0-2-0)",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+    ],
   },
 
   Rebuild: {
@@ -5050,9 +5228,17 @@ const allProgrammes: ProgrammeMenu = {
         type: "superset",
         repeat: 3,
         activities: [
-          { type: "work", name: "Pallof Press (Left; Supine; 12-15; 2-0-2-0)", time: 40 },
+          {
+            type: "work",
+            name: "Pallof Press (Left; Supine; 12-15; 2-0-2-0)",
+            time: 40,
+          },
           { type: "rest", time: 10 },
-          { type: "work", name: "Pallof Press (Right; Supine; 12-15; 2-0-2-0)", time: 40 },
+          {
+            type: "work",
+            name: "Pallof Press (Right; Supine; 12-15; 2-0-2-0)",
+            time: 40,
+          },
           { type: "rest", time: 60 },
         ],
       },
