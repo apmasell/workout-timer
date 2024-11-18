@@ -4618,6 +4618,146 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
+    "2.1 (Upper)": [
+      {
+        type: "superset",
+        repeat: 5,
+        activities: [
+          {
+            type: "work",
+            name: "DB Overhead Press (Unilateral; Half-Kneeling; DB on Down Knee; 6-8; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Cable Row (Single Arm; 12; 3-0-1-0)",
+            link: "https://youtu.be/-WwdXO0IC0o",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Powell Raise (DB; Side Lying; 10-12; 3-0-1-0)",
+            link: "https://youtu.be/uzFTTZEosgg",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Supine (Toes to Bar; AMRAP; 3-0-3-0)",
+            link: "https://youtu.be/wAM2K_C5BzA",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Bicep Curl (Zotman; Dual Arm; 8-10; 3-0-1-0)",
+          },
+          { type: "rest", time: 45 },
+          {
+            type: "work",
+            name: "Tricep Extension (Skull Crusher; DB; 8-10; 3-0-1-0)",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+    "2.2 (Quads)": [
+      { type: "rest", time: 20 },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Split Squat (Isometric; Left)", time: 30 },
+          { type: "rest", time: 10 },
+          { type: "work", name: "Split Squat (Isometric; Right)", time: 30 },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Split Squat (Rear-Foot Elevated; 6; 4-0-1-0)",
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Split Squat (Front-Foot Elevated; 6; 3-0-1-0)",
+          },
+          { type: "rest", time: 10 },
+          { type: "work", name: "Reverse Nordic (AMRAP; 3-0-3-0" },
+          { type: "rest", time: 120 },
+        ],
+      },
+    ],
+    "2.3 (Upper)": [
+      {
+        type: "superset",
+        repeat: 5,
+        activities: [
+          { type: "work", name: "Dip (6-8; 3-0-1-0)" },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Pullover (DB; Fat Grip; 12; 3-0-1-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Push up (Neutral; DB; 12-15; 3-0-2-0)" },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Row (Cable; Seated; Blue Handle; Semi-Pronated; 12-15; 3-0-3-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Bicep Curl (Preacher; Single Arm; 8-10; 3-0-1-0)",
+          },
+          { type: "rest", time: 45 },
+          {
+            type: "work",
+            name: "Cable Tricep Extension (Cable; Unilateral; Arm Overhead; 8-10; 3-0-1-0)",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
+    "2.4 (Hamstring)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "RDL (BB; Eccentric Focus; 6; 5-0-X-0)" },
+          { type: "rest", time: 10 },
+          { type: "work", name: "Hamstring Curl (Towel; 12; 3-0-3-0)" },
+          { type: "rest", time: 10 },
+          { type: "work", name: "RDL (Single Leg; 6; 3-0-1-0)" },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Hip Extension (Feet Elevated; 15-20; 2-0-2-0)",
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+    ],
   },
 
   Rebuild: {
