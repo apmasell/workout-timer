@@ -710,6 +710,38 @@ const allProgrammes: ProgrammeMenu = {
     ],
   },
   "Arm Hypertrophy": {
+    Fast: [
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Ez-Bar Bicep Curl (To Face; Myorep; 12)",
+          },
+          {
+            type: "work",
+            name: "California Curl (12)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Lying Bicep Curls (12)",
+          },
+          {
+            type: "work",
+            name: "OH Triceps Extension (Ez-bar; 12)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
     Pinwheels: [
       {
         type: "superset",
