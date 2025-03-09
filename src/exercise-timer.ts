@@ -4056,6 +4056,84 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
+    "Day 1 (Cole)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            time: 10,
+            name: "Chin-up (Netural, Eccentrict Only)",
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            time: 10,
+            name: "Chin-up (Netural, Eccentrict Only)",
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            time: 10,
+            name: "Chin-up (Netural, Eccentrict Only)",
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            time: 10,
+            name: "Chin-up (Netural, Eccentrict Only)",
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Split Squat (Wedge; DB; 4-6; 4-1-1-0)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Overhead Press (Unilateral; Netural; Standing; 6-8; 3-1-1-1)",
+          },
+          { type: "rest", time: 75 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Powell Raise (Floor; DB; Neutral; 8-10; 3-0-1-1)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "RDL (DB; Single Leg; 10-12; 3-1-1-1)" },
+          { type: "rest", time: 45 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", time: 60, name: "Front Plank" },
+          { type: "rest", time: 30 },
+        ],
+      },
+    ],
   },
   Hyper: {
     "3 Day 1 (Upper)": [
