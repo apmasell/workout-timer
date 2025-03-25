@@ -5622,6 +5622,73 @@ const allProgrammes: ProgrammeMenu = {
       },
     ],
   },
+  SPP: {
+    "1 Day 1": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Chinup (Close grip; Eccentric; Neutral; 3-5-0-0; AMRAP)",
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Split Squat (Front-foot elevated; Rotational; 4-1-1-0; 3-5)",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Overhead Press (Half-kneeling; Rotational; 3-1-1-1; 5-7)",
+          },
+          { type: "rest", time: 75 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "External Rotation (Elbow on knee; Low Pulley; 3-0-1-1; 6-8)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Good Morning (Seated; BB; Wide Stance; 3-1-1-0; 7-9)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Clamshell Plank (8-10; 2-1-2-1)" },
+          { type: "rest", time: 30 },
+        ],
+      },
+    ],
+  },
 };
 
 const bindings: { [name: string]: () => void } = {};
