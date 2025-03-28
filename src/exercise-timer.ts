@@ -710,7 +710,7 @@ const allProgrammes: ProgrammeMenu = {
     ],
   },
   "Arm Hypertrophy": {
-    Fast: [
+    Fast1: [
       {
         type: "superset",
         repeat: 3,
@@ -737,6 +737,38 @@ const allProgrammes: ProgrammeMenu = {
           {
             type: "work",
             name: "OH Triceps Extension (Ez-bar; 12)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    Fast2: [
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Bayesian Curl (12)",
+          },
+          {
+            type: "work",
+            name: "Overhead Triceps Press (Dumbell; 12)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Preacher Curl (12)",
+          },
+          {
+            type: "work",
+            name: "Tricep Kickback (Standing; 12)",
           },
           { type: "rest", time: 60 },
         ],
