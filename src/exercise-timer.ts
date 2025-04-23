@@ -5720,6 +5720,71 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
+    "2 Day 1": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Rack Chin-Up (Neutral; Close grip; 3-0-X-0; AMRAP)",
+          },
+          { type: "rest", time: 180 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Zombie Squat (BB; Medium Stance; 4-6; 4-0-X-0)",
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "OHP (Seated; Unsupported; DB; Neutral; 6-8)" },
+          { type: "rest", time: 75 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "External Rotation (Prone; 15° Incline; DB; 8-10; 3-0-1-1)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Step Up (Front; DB; Neutral; 10-12; 3-1-1-1)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Plank (Side; Rotational + Reach; 6-8; 2-0-2-0)",
+          },
+          { type: "rest", time: 45 },
+        ],
+      },
+    ],
   },
 };
 
