@@ -5932,6 +5932,10 @@ function showProgrammes(programmes: ProgrammeMenu) {
     });
     document.body.appendChild(clear);
   }
+  const menu = document.createElement("button");
+  menu.innerText = "☰ Menu";
+  menu.addEventListener("click", () => showProgrammes(allProgrammes));
+  document.body.appendChild(menu);
 }
 interface Remaining {
   index: number;
