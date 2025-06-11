@@ -5785,6 +5785,44 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
+    "3 Day 3": [
+      ...[9, 7, 5, 9, 7, 5].flatMap<RootExcercise>((i) => [
+        {
+          type: "work",
+          name: `BB OHP (${i}; Fat Grip; Seated; Unsupported; 3-1-X-1)`,
+        },
+        { type: "rest", time: 90 },
+        { type: "work", name: `Standing Bicep Curl (${i}; Ez-bar; 3-1-X-1)` },
+        { type: "rest", time: 90 },
+      ]),
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Eccentric Dip (5-7; V-Bar; Semi-Pronated; 5-0-0-0)",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Bicep Curl (DB; Fat Grip; 45° Incline; DB; Neutral; 6-8; 3-1-1-0)",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Lateral Raise (DB; Fat Grip; Seated; Telle; Neutral; 8-10; 3-1-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
   },
 };
 
