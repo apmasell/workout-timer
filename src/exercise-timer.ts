@@ -67,14 +67,7 @@ const allProgrammes: ProgrammeMenu = {
       { type: "rest", time: 15 },
       {
         type: "work",
-        name: "Couch Stretch (Left)",
-        time: 60,
-      },
-      { type: "rest", time: 5 },
-      {
-        type: "work",
-        name: "Couch Stretch (Right)",
-        time: 60,
+        name: "Splayed Hip Stretch",
       },
       { type: "rest", time: 15 },
       { type: "work", name: "Floating Stand on Wall (Left)", time: 30 },
@@ -768,7 +761,7 @@ const allProgrammes: ProgrammeMenu = {
           },
           {
             type: "work",
-            name: "Tricep Kickback (Standing; 12)",
+            name: "Tricep Kickback (12)",
           },
           { type: "rest", time: 60 },
         ],
