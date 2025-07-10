@@ -5817,6 +5817,54 @@ const allProgrammes: ProgrammeMenu = {
       },
     ],
   },
+  FH: {
+    "1 Day 3 (Deadlift)": [
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          {
+            type: "work",
+            name: "Deadlift (Wide Grip; Conventional; 4-6; 3-2-X-0)",
+          },
+          { type: "rest", time: 10 },
+          {
+            type: "work",
+            name: "Deadlift (Medium Grip; Conventional; 1-3; 3-2-X-0)",
+          },
+          { type: "rest", time: 90 },
+          {
+            type: "work",
+            name: "Standing Press (BB; Medium Grip; BB; 6-8; 3-1-X-1)",
+          },
+          { type: "rest", time: 75 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Zottman Curl (Seated; DB; 6-8; 3-1-1-1)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Powell Raise (Floor; DB; 8-10; 3-0-1-1)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+  },
 };
 
 const bindings: { [name: string]: () => void } = {};
