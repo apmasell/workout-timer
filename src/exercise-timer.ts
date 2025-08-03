@@ -64,12 +64,10 @@ const allProgrammes: ProgrammeMenu = {
       { type: "work", name: "Vertical Wall Hamstring stretch", time: 90 },
       { type: "rest", time: 15 },
       { type: "work", name: "Tactical frog stretch", time: 60 },
-      { type: "rest", time: 15 },
       {
         type: "work",
         name: "Splayed Hip Stretch",
       },
-      { type: "rest", time: 15 },
       { type: "work", name: "Floating Stand on Wall (Left)", time: 30 },
       { type: "rest", time: 5 },
       { type: "work", name: "Floating Stand on Wall (Right)", time: 30 },
@@ -706,30 +704,44 @@ const allProgrammes: ProgrammeMenu = {
     Fast1: [
       {
         type: "superset",
-        repeat: 3,
+        repeat: 4,
         activities: [
           {
             type: "work",
-            name: "Ez-Bar Bicep Curl (To Face; Myorep; 12)",
+            name: "Ez-Bar Bicep Curl (To Face; 6)",
           },
+          { type: "rest", time: 20 },
           {
             type: "work",
-            name: "California Curl (12)",
+            name: "California Curl (6)",
+          },
+          { type: "rest", time: 20 },
+          {
+            type: "work",
+            name: "Towel Hold",
+            time: 20,
           },
           { type: "rest", time: 60 },
         ],
       },
       {
         type: "superset",
-        repeat: 3,
+        repeat: 4,
         activities: [
           {
             type: "work",
-            name: "Lying Bicep Curls (12)",
+            name: "Lying Bicep Curls (8)",
           },
+          { type: "rest", time: 20 },
           {
             type: "work",
-            name: "OH Triceps Extension (Ez-bar; 12)",
+            name: "OH Triceps Extension (Ez-bar; 8)",
+          },
+          { type: "rest", time: 20 },
+          {
+            type: "work",
+            name: "Plate Pinch",
+            time: 20,
           },
           { type: "rest", time: 60 },
         ],
@@ -738,31 +750,89 @@ const allProgrammes: ProgrammeMenu = {
     Fast2: [
       {
         type: "superset",
-        repeat: 3,
+        repeat: 4,
         activities: [
           {
             type: "work",
-            name: "Bayesian Curl (12)",
+            name: "Bayesian Curl (Myorep; 15-20)",
           },
+          { type: "rest", time: 20 },
           {
             type: "work",
-            name: "Overhead Triceps Press (Dumbell; 12)",
+            name: "Overhead Triceps Press (Myorep; Dumbell; 15-20)",
+          },
+          { type: "rest", time: 20 },
+          {
+            type: "work",
+            name: "Wrist Curl (Myorep; 15-20)",
           },
           { type: "rest", time: 60 },
         ],
       },
       {
         type: "superset",
-        repeat: 3,
+        repeat: 4,
         activities: [
           {
             type: "work",
-            name: "Preacher Curl (12)",
+            name: "Concentration Curl (Myorep; 15-20)",
           },
+          { type: "rest", time: 20 },
           {
             type: "work",
-            name: "Tricep Kickback (12)",
+            name: "Cable Triceps Extension (Myorep; 15-20)",
           },
+          { type: "rest", time: 20 },
+          {
+            type: "work",
+            name: "Wrist Extension (Myorep; 15-20)",
+          },
+
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    Fast3: [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Wall Curl (Ez-bar Myorep; 15-20)",
+          },
+          { type: "rest", time: 20 },
+          {
+            type: "work",
+            name: "Triceps Pressdown (Rope Myorep; 15-20)",
+          },
+          { type: "rest", time: 20 },
+          {
+            type: "work",
+            name: "Retraction Dips (10)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Pinwheel Curl (Myorep; 15-20)",
+          },
+          { type: "rest", time: 20 },
+          {
+            type: "work",
+            name: "Pull-over (DB; Myorep; 15-20)",
+          },
+          { type: "rest", time: 20 },
+          {
+            type: "work",
+            name: "Wrist Lift (Myorep; 15-20)",
+          },
+
           { type: "rest", time: 60 },
         ],
       },
