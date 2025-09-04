@@ -5934,6 +5934,46 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
+    "3 Day 3 (Deadlift)": [
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          { type: "work", name: "Deadlift (BB; Medium Grip; 3-6; 3-2-X-0)" },
+          { type: "rest", time: 180 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          {
+            type: "work",
+            name: "OHP (Standing; BB; Medium Grip; 3-6; 3-0-X-1)",
+          },
+          { type: "rest", time: 180 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Row (Bentover; DB; Nuetral; 6-8; 3-0-1-0)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Lateral Raise (Seated; DB; Neutral; 7-9; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
   },
 };
 
