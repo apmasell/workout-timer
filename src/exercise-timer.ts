@@ -799,7 +799,7 @@ const allProgrammes: ProgrammeMenu = {
         activities: [
           {
             type: "work",
-            name: "Wall Curl (Ez-bar Myorep; 15-20)",
+            name: "Drag Curl (Ez-bar Myorep; 15-20)",
           },
           { type: "rest", time: 20 },
           {
@@ -830,7 +830,7 @@ const allProgrammes: ProgrammeMenu = {
           { type: "rest", time: 20 },
           {
             type: "work",
-            name: "Wrist Lift (Myorep; 15-20)",
+            name: "Wrist Extension (Cable; Behind Back; Myorep; 15-20)",
           },
 
           { type: "rest", time: 60 },
