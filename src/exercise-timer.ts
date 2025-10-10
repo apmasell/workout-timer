@@ -4963,6 +4963,141 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
+    "Cole 1 (Day 1 - Back and Chest)": [
+      {
+        type: "superset",
+        repeat: 5,
+        activities: [
+          {
+            type: "work",
+            name: "Chin-up (Supinated; Medium Grip; 4-6; 3-1-1-0)",
+          },
+          { type: "rest", time: 30 },
+          {
+            type: "work",
+            name: "Chest Press (25°; DB; Pronated; 6-8; 4-1-1-1)",
+          },
+          { type: "rest", time: 30 },
+          {
+            type: "work",
+            name: "Rack Pull (Wide Grip; DB starts under leg; 8-10; 3-2-1-0)",
+          },
+          { type: "rest", time: 150 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Cable Row (Seated; Mid pulley; 8/8/8; 3-2-1-1)",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Fly (25°; Fat Grip; Neutral; DB; 8-10; 4-1-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "Cole 1 (Day 2 - Legs)": [
+      {
+        type: "superset",
+        repeat: 5,
+        activities: [
+          {
+            type: "work",
+            name: "Back Sqaut(Wedges; Medium Stance; 4-6; 4-0-1-0)",
+          },
+          { type: "rest", time: 30 },
+          {
+            type: "work",
+            name: "Nordic Fall (6-8; 3-0-1-0)",
+          },
+          { type: "rest", time: 30 },
+          {
+            type: "work",
+            name: "Split Squat (Bulgarian; Front foot elevated; 8-10; 2-1-1-0)",
+          },
+          { type: "rest", time: 150 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Back Extension (8; 2-1-1-1)",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Calf Raise (Unilateral; DB; 8-10; 3-3-1-1",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "Cole 1 (Day 3 - Shoulders and Arms)": [
+      {
+        type: "superset",
+        repeat: 5,
+        activities: [
+          {
+            type: "work",
+            name: "Inclined Press (55°; Barbell; Close Grip; 4-6; 3-1-1-0)",
+          },
+          { type: "rest", time: 30 },
+          {
+            type: "work",
+            name: "Zottman Curl (Neutral to Pronated; 6-8; 3-1-1-1)",
+          },
+          { type: "rest", time: 30 },
+          {
+            type: "work",
+            name: "Seated Lateral Raise (Neutral; Tilt foward; DB starts under leg; 8-10; 3-0-1-1)",
+          },
+          { type: "rest", time: 150 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Pressdown (Drop set; Close grip; Pronated; 8/8/8; 3-1-1-1)",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Spider Curl (Unilateral; Supinated; DB; 8-10; 3-2-1-1)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
   },
 
   Rebuild: {
