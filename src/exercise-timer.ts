@@ -6289,48 +6289,6 @@ function runProgramme(exercises: SimpleExercise[], remaining: Remaining[]) {
       : beep
     ).play();
     let cancel: () => void = () => {};
-    const doRepeat: () => void = () => {
-      cancel();
-      show(current);
-    };
-    const repeat = document.createElement("button");
-    repeat.innerText = "⭯ Repeat Step";
-    repeat.addEventListener("click", doRepeat);
-    document.body.appendChild(repeat);
-    bindings["F5"] = doRepeat;
-
-    const doMenu: () => void = () => {
-      cancel();
-      showProgrammes(allProgrammes);
-    };
-    const menu = document.createElement("button");
-    menu.innerText = "☰ Menu";
-    menu.addEventListener("click", doMenu);
-    document.body.appendChild(menu);
-    bindings["Escape"] = doMenu;
-    if (current > 0) {
-      const doPrevious: () => void = () => {
-        cancel();
-        show(current - 1);
-      };
-      const previous = document.createElement("button");
-      previous.innerText = "❮❮ Skip Back";
-      previous.addEventListener("click", doPrevious);
-      document.body.appendChild(previous);
-      bindings["ArrowUp"] = doPrevious;
-      bindings["i"] = doPrevious;
-    }
-    if (current < exercises.length) {
-      const doNext: () => void = () => {
-        cancel();
-        show(current + 1);
-      };
-      const next = document.createElement("button");
-      next.innerText = "Skip Ahead ❯❯";
-      next.addEventListener("click", doNext);
-      document.body.appendChild(next);
-      bindings["o"] = doNext;
-    }
     if (current >= exercises.length) {
       const text = document.createElement("h1");
       text.innerText = "DONE!!!";
@@ -6421,6 +6379,48 @@ function runProgramme(exercises: SimpleExercise[], remaining: Remaining[]) {
       }
 
       document.body.appendChild(upcoming);
+    }
+    const doRepeat: () => void = () => {
+      cancel();
+      show(current);
+    };
+    const repeat = document.createElement("button");
+    repeat.innerText = "⭯ Repeat Step";
+    repeat.addEventListener("click", doRepeat);
+    document.body.appendChild(repeat);
+    bindings["F5"] = doRepeat;
+
+    const doMenu: () => void = () => {
+      cancel();
+      showProgrammes(allProgrammes);
+    };
+    const menu = document.createElement("button");
+    menu.innerText = "☰ Menu";
+    menu.addEventListener("click", doMenu);
+    document.body.appendChild(menu);
+    bindings["Escape"] = doMenu;
+    if (current > 0) {
+      const doPrevious: () => void = () => {
+        cancel();
+        show(current - 1);
+      };
+      const previous = document.createElement("button");
+      previous.innerText = "❮❮ Skip Back";
+      previous.addEventListener("click", doPrevious);
+      document.body.appendChild(previous);
+      bindings["ArrowUp"] = doPrevious;
+      bindings["i"] = doPrevious;
+    }
+    if (current < exercises.length) {
+      const doNext: () => void = () => {
+        cancel();
+        show(current + 1);
+      };
+      const next = document.createElement("button");
+      next.innerText = "Skip Ahead ❯❯";
+      next.addEventListener("click", doNext);
+      document.body.appendChild(next);
+      bindings["o"] = doNext;
     }
   }
   show(0);
