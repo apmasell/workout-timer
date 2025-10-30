@@ -5098,6 +5098,53 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
+    "Cole 2 (Day 3 - Shoulders and Arms)": [
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Row (35° Incline; Prone; DB; Pronated; AMRAP; 3-0-1-2)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      ...[10, 8, 6, 15].flatMap<RootExcercise>((i) => [
+        { type: "work", name: `Row (35° Incline; BB; ${i}; 4-0-1-0)` },
+        { type: "rest", time: 60 },
+      ]),
+      ...[10, 8, 6, 15].flatMap<RootExcercise>((i) => [
+        {
+          type: "work",
+          name: `Curl (Scott; EZ-Bar; Close Grip; Semi-supinated; ${i}; 3-1-1-1)`,
+        },
+        { type: "rest", time: 60 },
+      ]),
+
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Triceps Extension (Flat; DB; Netural; 8-10; 3-1-1-1)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Lateral Raise (Seated; DB; Neutral; 8-10; 3-0-1-1)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
   },
 
   Rebuild: {
