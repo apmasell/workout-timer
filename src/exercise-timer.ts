@@ -6466,6 +6466,7 @@ function runProgramme(exercises: SimpleExercise[], remaining: Remaining[]) {
       document.body.appendChild(next);
       bindings["o"] = doNext;
     }
+    window.scrollTo(0, 0);
   }
   show(0);
 }
