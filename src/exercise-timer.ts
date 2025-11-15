@@ -72,6 +72,16 @@ const allProgrammes: ProgrammeMenu = {
       { type: "rest", time: 5 },
       { type: "work", name: "Deep squat with plate", time: 120 },
     ],
+    "Wrist Flexors": [
+      {
+        type: "superset",
+        repeat: 5,
+        activities: [
+          { type: "work", time: 45, name: "Isometric Wrist Curl" },
+          { type: "rest", time: 120 },
+        ],
+      },
+    ],
   },
   "Jaw & Neck": [
     { type: "rest", time: 60 },
@@ -5108,7 +5118,7 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
       ...[10, 8, 6, 15].flatMap<RootExcercise>((i) => [
-        { type: "work", name: `Row (35° Incline; BB; ${i}; 4-0-1-0)` },
+        { type: "work", name: `Chest Press (35° Incline; BB; ${i}; 4-0-1-0)` },
         { type: "rest", time: 60 },
       ]),
       ...[10, 8, 6, 15].flatMap<RootExcercise>((i) => [
