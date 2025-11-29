@@ -5151,6 +5151,36 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
+    "Cole 3 (Day 3)": [
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          { type: "work", name: "Flat Bench (BB; Close Grip; 4-6; 3-0-1-0)" },
+          { type: "rest", time: 30 },
+          {
+            type: "work",
+            name: "Curl (EZ-bar; Standing; Semi-supinated; 6-8; 3-1-1-1)",
+          },
+          { type: "rest", time: 30 },
+          { type: "work", name: "Curl (55° Incline; DB; (8-10; 3-1-1-0)" },
+          { type: "rest", time: 30 },
+          { type: "work", name: "Flat Bench (BB; Close Grip; 10-12; 3-0-1-0)" },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Lateral Raise (Standing; DB; Neutral; AMRAP)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
   },
 
   Rebuild: {
