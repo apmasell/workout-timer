@@ -707,6 +707,46 @@ const allProgrammes: ProgrammeMenu = {
     ],
   },
   "Arm Hypertrophy": {
+    Pump1: [
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          { type: "work", name: "Drag Curl (EZ-Bar; 20)" },
+          { type: "rest", time: 30 },
+          { type: "work", name: "Bent-over Extensions (20; Facing Away)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Reverse Grip Curls (EZ-Bar; 10)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    Pump2: [
+      {
+        type: "superset",
+        repeat: 6,
+        activities: [
+          { type: "work", name: "Pinweel Preacher Curl (20)" },
+          { type: "rest", time: 30 },
+          { type: "work", name: "French Press (EZ-Bar; 20)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "stopwatch", name: "Towel Holds" },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
     Fast1: [
       {
         type: "superset",
