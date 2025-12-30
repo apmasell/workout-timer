@@ -6233,6 +6233,53 @@ const allProgrammes: ProgrammeMenu = {
       },
     ],
   },
+  Intensification: {
+    "1 Cole (Day 3)": [
+      {
+        type: "superset",
+        repeat: 5,
+        activities: [
+          {
+            type: "work",
+            name: "Deadlift (Conventional; Wide Grip; Pronated; 3-5 Singles; 3-2-X-0)",
+          },
+          { type: "rest", time: 180 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 5,
+        activities: [
+          {
+            type: "work",
+            name: "OHP (Standing; BB; Medium Grip; 3-5 Singles; 3-1-X-1)",
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Zottman Curl (Seated; 4-6; 3-1-1-0)" },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Lateral Raise (Telle; Seated; DB; Neutral; 6-8; 3-1-1-1)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "work", name: "Powell Raise (Floor; DB; 6-8; 3-0-1-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+  },
 };
 
 const bindings: { [name: string]: () => void } = {};
