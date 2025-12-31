@@ -720,7 +720,7 @@ const allProgrammes: ProgrammeMenu = {
       },
       {
         type: "superset",
-        repeat: 3,
+        repeat: 4,
         activities: [
           { type: "work", name: "Reverse Grip Curls (EZ-Bar; 10)" },
           { type: "rest", time: 60 },
@@ -730,7 +730,7 @@ const allProgrammes: ProgrammeMenu = {
     Pump2: [
       {
         type: "superset",
-        repeat: 6,
+        repeat: 4,
         activities: [
           { type: "work", name: "Pinweel Preacher Curl (20)" },
           { type: "rest", time: 30 },
