@@ -720,7 +720,7 @@ const allProgrammes: ProgrammeMenu = {
       },
       {
         type: "superset",
-        repeat: 3,
+        repeat: 4,
         activities: [
           { type: "work", name: "Reverse Grip Curls (EZ-Bar; 10)" },
           { type: "rest", time: 60 },
@@ -732,7 +732,7 @@ const allProgrammes: ProgrammeMenu = {
         type: "superset",
         repeat: 6,
         activities: [
-          { type: "work", name: "Pinweel Preacher Curl (20)" },
+          { type: "work", name: "Hammer Preacher Curl (20)" },
           { type: "rest", time: 30 },
           { type: "work", name: "French Press (EZ-Bar; 20)" },
           { type: "rest", time: 90 },
@@ -740,7 +740,7 @@ const allProgrammes: ProgrammeMenu = {
       },
       {
         type: "superset",
-        repeat: 3,
+        repeat: 4,
         activities: [
           { type: "stopwatch", name: "Towel Holds" },
           { type: "rest", time: 60 },
