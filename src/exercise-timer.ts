@@ -722,7 +722,7 @@ const allProgrammes: ProgrammeMenu = {
         type: "superset",
         repeat: 4,
         activities: [
-          { type: "work", name: "Reverse Grip Curls (EZ-Bar; 10)" },
+          { type: "work", name: "Lu Raises (10)" },
           { type: "rest", time: 60 },
         ],
       },
