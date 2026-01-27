@@ -6279,6 +6279,140 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
+    "2 Cole (Day 1)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Squat (BB; Medium Stance; 3-6; 3-0-X-0)" },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Squat (BB; Medium Stance; 6-12; 3-0-X-0)" },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Glute Ham Raise (Nordic Curl; Banded; AMRAP; 3-0-X-0)",
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Romanian Deadlift (Supported; DB; Single Let; Contralateral; 6-8; 3-1-1-1)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "stopwatch",
+            name: "Dead Hang (Medium Grip; Pronated; 10-60s)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "2 Cole (Day 2)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Chest Press (BB; Medium; 3-6; 3-0-X-0)" },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Chest Press (BB; Medium; 6-12; 3-0-X-0)" },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Chin-up (Close grip; Neutral; Assisted; AMRAP; 3-0-X-0)",
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Lateral Raise (25° Incline; Prone; DB; Neutral; 6-8; 3-1-1-1)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "stopwatch", name: "Plank (Front; 30-120s)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "2 Cole (Day 3)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Deadlift (BB; Medium Stance; 3-6; 3-0-X-0)" },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Deadlift (BB; Medium Stance; 6-12; 3-0-X-0)" },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Overhead Press (Standing; BB; Medium; AMRAP; 3-0-X-0)",
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Bulgarian Split Squat (DB; Contralateral; 6-8; 3-1-1-1)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          { type: "stopwatch", name: "Plank (Side; Left; 30-90s)" },
+          { type: "rest", time: 60 },
+          { type: "stopwatch", name: "Plank (Side; Right; 30-90s)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
   },
 };
 
