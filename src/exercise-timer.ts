@@ -707,6 +707,16 @@ const allProgrammes: ProgrammeMenu = {
     ],
   },
   "Arm Hypertrophy": {
+    "Chin-ups": [
+      {
+        type: "superset",
+        repeat: 2,
+        activities: [
+          { type: "work", name: "Chin-up (Assisted; 10)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+    ],
     Pump1: [
       {
         type: "superset",
