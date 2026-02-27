@@ -6423,6 +6423,56 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
+    "3 Cole (Day 3)": [
+      ...[5, 4, 3, 2, 1, 1].flatMap<RootExcercise>((i) => [
+        { type: "work", name: `Deadlift (${i}; 3-2-X-0)` },
+        { type: "rest", time: 180 },
+      ]),
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Deadlift (3; 3-2-X-0)",
+          },
+          { type: "rest", time: 150 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Deadlift (5; 3-2-X-0)",
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Overhead Press (Standing; 6-8; 3-1-X-1)",
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "T-Raise (Floor; Head Supported; Neutral; 6-8; 3-1-1-1)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
   },
 };
 
