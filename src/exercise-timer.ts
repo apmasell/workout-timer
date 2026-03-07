@@ -1219,6 +1219,41 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
+    "Rice Bucket": [
+      {
+        type: "superset",
+        repeat: 2,
+        activities: [
+          { type: "work", name: "Dig (Left)", time: 30 },
+          { type: "work", name: "Dig (Right; CCW)", time: 30 },
+          { type: "rest", time: 30 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 2,
+        activities: [
+          { type: "work", name: "Swirl (Left; CCW)", time: 30 },
+          { type: "work", name: "Swirl (Right; CCW)", time: 30 },
+          { type: "rest", time: 30 },
+          { type: "work", name: "Swirl (Left; CW)", time: 30 },
+          { type: "work", name: "Swirl (Right; CW)", time: 30 },
+          { type: "rest", time: 30 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 2,
+        activities: [
+          { type: "work", name: "Spread (Left)", time: 30 },
+          { type: "work", name: "Spread (Right)", time: 30 },
+          { type: "rest", time: 30 },
+          { type: "work", name: "Squeeze (Left)", time: 30 },
+          { type: "work", name: "Squeeze (Right)", time: 30 },
+          { type: "rest", time: 30 },
+        ],
+      },
+    ],
   },
   GVT: {
     "Day 1": [
