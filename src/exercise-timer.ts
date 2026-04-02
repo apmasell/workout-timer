@@ -161,6 +161,51 @@ const allProgrammes: ProgrammeMenu = {
       repeat: 8,
     },
   ],
+  Accumulation: {
+    "1 Cole 3 (Shoulders & Arms": [
+      ...[12, 10, 8, 12, 10, 8].flatMap<RootExcercise>((i) => [
+        {
+          type: "work",
+          name: `Seated Barbell Press (Medium Grip; ${i}; 3-0-1-0)`,
+        },
+        { type: "rest", time: 90 },
+        {
+          type: "work",
+          name: `Bent-over Row (Flat; DB; Unilateral; ${i}; 3-0-1-0)`,
+        },
+        { type: "rest", time: 90 },
+      ]),
+
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Lateral Raise (Seated; DB; Neutral; 12-15; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Curl (45° Incline; DB; Neutral; 12-15; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Triceps Extension (Flat; DB; Neutral; 12-15; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+  },
 
   "Will Wave-loaded": {
     "Day 1": [
@@ -1225,7 +1270,7 @@ const allProgrammes: ProgrammeMenu = {
         repeat: 2,
         activities: [
           { type: "work", name: "Dig (Left)", time: 30 },
-          { type: "work", name: "Dig (Right; CCW)", time: 30 },
+          { type: "work", name: "Dig (Right)", time: 30 },
           { type: "rest", time: 30 },
         ],
       },
