@@ -752,6 +752,17 @@ const allProgrammes: ProgrammeMenu = {
     ],
   },
   "Arm Hypertrophy": {
+    Grippers: [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Squeeze (Left)", time: 30 },
+          { type: "work", name: "Squeeze (Right)", time: 30 },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
     "Chin-ups": [
       {
         type: "superset",
