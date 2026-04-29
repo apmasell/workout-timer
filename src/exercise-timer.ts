@@ -205,6 +205,257 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
+    "2 Cole 1 (Chest and Biceps)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Chest Press (25° Incline; BB; Medium Grip; 4-0-X-0; 4-8)",
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Chest Press (15° Incline; DB; Pronated; 3-1-1-1; 8-12)",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Chest Fly (Flat; DB; Pronated; 3-0-1-0; 12-16)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Curl (Standing; EZ-Bar; Medium; 3-0-X-0; 4-8)",
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Curl (45° Inclined; DB; Supinated; 3-1-1-1; 8-12)",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Wrist Curl (Supported; DB; Supinated; 3-0-1-0; 12-16)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "2 Cole 2 (Quads and Abs)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Front Squat (BB; 4-0-X-0; 4-8)" },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Bulgarian Split Squat (DB; 3-1-1-1; 8-12)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Sissy Squat (3-0-1-0; 12-16)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Cable Crunch (Kneeling; High Pulley; Rope; 3-0-X-0; 4-8)",
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Hip Raise (Supine; 3-1-1-1; 8-12)" },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Ball Crunch (3-0-1-0; 12-16)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "2 Cole 3 (Back and Triceps)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Chin-up (Neutral; Close Grip; 4-0-X-0; 4-8)" },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Landmine Row (Bent-over; T-Bar; Close grip; 3-1-1-1; 8-12)",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Pull over (Flat; DB; Neutral; 3-0-1-0; 12-16)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Chest Press (Flat; BB; Close Grip; 3-0-X-0; 4-8)",
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Tricep Extension (Flat; DB; Neutral; 3-1-1-1; 8-12)",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "French Press (Standing; Low Pulley; Rope; 3-0-1-0; 12-16)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "2 Cole 4 (Hamstrings and Delts)": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Nordic Curl (4-0-X-0; 4-8)" },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Romanian Deadlift (DB; Medium Grip; 3-1-1-1; 8-12)",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Calf Raise (Standing; DB; Unilateral; 3-0-1-0; 12-16)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Overhead Press (Seated; DB; Pronated; 3-0-X-0; 4-8)",
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Lateral Raise (35° Inclined; DB; Pronated; 3-1-1-1; 8-12)",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Lateral Raise (Standing; DB; Leaning Away; Unilateral; 3-0-1-0; 12-16)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
   },
 
   "Will Wave-loaded": {
