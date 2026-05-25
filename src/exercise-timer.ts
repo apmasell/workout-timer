@@ -162,6 +162,130 @@ const allProgrammes: ProgrammeMenu = {
     },
   ],
   Accumulation: {
+    "3 Cole 1 (Chest & Back)": [
+      {
+        type: "superset",
+        repeat: 10,
+        activities: [
+          {
+            type: "work",
+            name: "Press (15° Incline; DB; Pronated; 10; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Row (15° Incline; DB; Pronated; 10; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Fly (Flat; DB; 15-20; 3-0-1-0)" },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Pullover (Flat; DB toegether; 15-20; Pronated; 10; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "3 Cole 2 (Quads & Hamstrings)": [
+      {
+        type: "superset",
+        repeat: 10,
+        activities: [
+          {
+            type: "work",
+            name: "Leg Curl (Lying; DB; Feet Neutral; Plantarflexed; 10; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Squat (Back; BB; Medium Stance; 10; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Back Extension (Flat; DB; 15-20; 3-0-1-0)" },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Split Squat (DB; 15-20; Pronated; 15-20; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "3 Cole 3 (Biceps & Triceps)": [
+      {
+        type: "superset",
+        repeat: 10,
+        activities: [
+          { type: "work", name: "Press (Flat; BB; Close Grip; 10; 3-0-1-0)" },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Curl (Standing; EZ-Bar; Close Grip; Semi-Supinated; 10; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "French Press (Seated; DB; Single Arm; 15-20; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Curl (35° Incline; DB; Supinated; 15-20; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
+    "3 Cole 4 (Posterior Chain & Shoulders)": [
+      {
+        type: "superset",
+        repeat: 10,
+        activities: [
+          {
+            type: "work",
+            name: "Romanian Deadlift (BB; Medium Grip; 10; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+          { type: "work", name: "Arnold Press (Seated; DB; 10; 3-0-1-0)" },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Calve Raise (Seated; DB; Single Leg; 15-20; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Lateral Raise (Seated; DB; Neutral; 15-20; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
     "1 Cole 3 (Shoulders & Arms)": [
       ...[12, 10, 8, 12, 10, 8].flatMap<RootExcercise>((i) => [
         {
