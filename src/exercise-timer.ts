@@ -1662,7 +1662,7 @@ const allProgrammes: ProgrammeMenu = {
       },
       {
         type: "superset",
-        repeat: 2,
+        repeat: 3,
         activities: [
           { type: "work", name: "Swirl (Left; CCW)", time: 30 },
           { type: "work", name: "Swirl (Right; CCW)", time: 30 },
@@ -1674,13 +1674,10 @@ const allProgrammes: ProgrammeMenu = {
       },
       {
         type: "superset",
-        repeat: 2,
+        repeat: 3,
         activities: [
           { type: "work", name: "Spread (Left)", time: 30 },
           { type: "work", name: "Spread (Right)", time: 30 },
-          { type: "rest", time: 30 },
-          { type: "work", name: "Squeeze (Left)", time: 30 },
-          { type: "work", name: "Squeeze (Right)", time: 30 },
           { type: "rest", time: 30 },
         ],
       },
