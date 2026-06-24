@@ -6705,6 +6705,41 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
+    "Cole 1 Day 3 (Full-Body)": [
+      ...[8, 6, 4, 8, 6, 4].flatMap<RootExcercise>((i) => [
+        { type: "work", name: `Standing Press (2-6; Fat Grips; 3-0-1-0)` },
+        { type: "rest", time: 90 },
+        { type: "work", name: `Deadlift (Wide Grip; ${i}; 3-0-1-0)` },
+        { type: "rest", time: 90 },
+      ]),
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Lateral Raise (Seated; Telle; DB; Neutral; 6-8; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Deadlift & Row (Romanian; Supported; DB; Neutral; 8-10; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Trap 3 Raise (Fat Grips; Prone; 35° Incline; DB; Neutral; 10-12-; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
   },
   Intensification: {
     "1 Cole (Day 3)": [
