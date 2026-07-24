@@ -6740,6 +6740,51 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
+    "Cole 1-2 Day 3 (Full-Body)": [
+      {
+        type: "superset",
+        repeat: 10,
+        activities: [
+          {
+            type: "work",
+            name: "Deadlift (Conventional; BB; Wide Grip; Elevated; 5; 3-0-X-0",
+          },
+          { type: "rest", time: 90 },
+          {
+            type: "work",
+            name: "Overhead Press (Standing; BB; Medium; 5; 3-0-X-0)",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Press (Flat; Telle; DB; Neutral; 10-15; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+          {
+            type: "work",
+            name: "Lateral Raise (Seated; DB; Neutral; 10-15; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Trap 3 (Prone; 35° Incline; DB; Neutral; 10-12; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
   },
   Intensification: {
     "1 Cole (Day 3)": [
