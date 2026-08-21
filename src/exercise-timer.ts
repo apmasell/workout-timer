@@ -6619,6 +6619,50 @@ const allProgrammes: ProgrammeMenu = {
     ],
   },
   FH: {
+    "Cole 1-3 Day 3 (Full Body)": [
+      ...[8, 7, 6, 5, 4].flatMap<RootExcercise>((i) => [
+        { type: "work", name: `Deadlift (Mediu Grip; ${i}; 3-0-X-0)` },
+        { type: "rest", time: 150 },
+      ]),
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Standing Press (BB; Medium Grip; 2-6; 3-0-X-0)",
+          },
+          { type: "rest", time: 150 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Seated Pulldown (High Pulley; Neutral; Unilateral; 4-8; 3-0-1-0)",
+          },
+          { type: "rest", time: 90 },
+          {
+            type: "work",
+            name: "Flat Press (DB; Neutral; 4-8; 3-0-1-0)",
+          },
+          { type: "rest", time: 90 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 3,
+        activities: [
+          {
+            type: "work",
+            name: "Powell Raise (Floor; DB; Neutral; 6-8; 3-0-1-0)",
+          },
+          { type: "rest", time: 60 },
+        ],
+      },
+    ],
     "1 Day 3 (Deadlift)": [
       {
         type: "superset",
