@@ -2572,6 +2572,57 @@ const allProgrammes: ProgrammeMenu = {
         ],
       },
     ],
+    "1 Cole Day 3": [
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Push Press (Standing; Fat Grips; BB; Medium Grip; 10-12; 3-0-X-0)",
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "Deadlift (Elevated; Fat Grips; Conventional; BB; Medium Grip; 10-12; 3-0-X-0)",
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Power Clean (Neutral; DB; 10-12; 3-0-X-0)" },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          { type: "work", name: "Renegade Row (DB; 10-12; 3-0-X-0)" },
+          { type: "rest", time: 120 },
+        ],
+      },
+      {
+        type: "superset",
+        repeat: 4,
+        activities: [
+          {
+            type: "work",
+            name: "External Rotation (Prone; 45° Incline; DB; 10-12; 3-0-X-0)",
+          },
+          { type: "rest", time: 120 },
+        ],
+      },
+    ],
   },
   "Jeff's Comeback Programme": {
     "1 Lower": [
